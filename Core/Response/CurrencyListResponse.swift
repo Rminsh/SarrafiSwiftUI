@@ -23,6 +23,7 @@ struct CurrencyListResponse {
     
     init(currencyStruct: CurrencyStruct) {
         
+        // MARK: - Currency
         addObj(
             type: .cash,
             currencyObject: currencyStruct.current.price_dollar_rl,
@@ -57,6 +58,30 @@ struct CurrencyListResponse {
         
         addObj(
             type: .cash,
+            currencyObject: currencyStruct.current.price_aud,
+            currencyName: Current.CodingKeys.price_aud.rawValue,
+            title: "AUD",
+            toCurrency: .rial
+        )
+        
+        addObj(
+            type: .cash,
+            currencyObject: currencyStruct.current.price_nzd,
+            currencyName: Current.CodingKeys.price_nzd.rawValue,
+            title: "NZD",
+            toCurrency: .rial
+        )
+        
+        addObj(
+            type: .cash,
+            currencyObject: currencyStruct.current.price_sgd,
+            currencyName: Current.CodingKeys.price_sgd.rawValue,
+            title: "SGD",
+            toCurrency: .rial
+        )
+        
+        addObj(
+            type: .cash,
             currencyObject: currencyStruct.current.price_gbp,
             currencyName: Current.CodingKeys.price_gbp.rawValue,
             title: "GBP",
@@ -76,6 +101,14 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_try,
             currencyName: Current.CodingKeys.price_try.rawValue,
             title: "TRY",
+            toCurrency: .rial
+        )
+        
+        addObj(
+            type: .cash,
+            currencyObject: currencyStruct.current.price_chf,
+            currencyName: Current.CodingKeys.price_chf.rawValue,
+            title: "CHF",
             toCurrency: .rial
         )
         
@@ -105,9 +138,25 @@ struct CurrencyListResponse {
         
         addObj(
             type: .cash,
+            currencyObject: currencyStruct.current.price_inr,
+            currencyName: Current.CodingKeys.price_inr.rawValue,
+            title: "INR",
+            toCurrency: .rial
+        )
+        
+        addObj(
+            type: .cash,
             currencyObject: currencyStruct.current.price_iqd,
             currencyName: Current.CodingKeys.price_iqd.rawValue,
             title: "IQD",
+            toCurrency: .rial
+        )
+        
+        addObj(
+            type: .cash,
+            currencyObject: currencyStruct.current.price_sek,
+            currencyName: Current.CodingKeys.price_sek.rawValue,
+            title: "SEK",
             toCurrency: .rial
         )
         
@@ -127,14 +176,7 @@ struct CurrencyListResponse {
             toCurrency: .rial
         )
         
-        addObj(
-            type: .cash,
-            currencyObject: currencyStruct.current.price_inr,
-            currencyName: Current.CodingKeys.price_inr.rawValue,
-            title: "INR",
-            toCurrency: .rial
-        )
-        
+        // MARK: - Gold and Coins
         addObj(
             type: .gold,
             currencyObject: currencyStruct.current.sekee,
@@ -215,6 +257,7 @@ struct CurrencyListResponse {
             toCurrency: .dollar
         )
         
+        // MARK: - Digital Currency
         addObj(
             type: .crypto,
             currencyObject: currencyStruct.current.bitcoin,
@@ -260,6 +303,55 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.stellar,
             currencyName: Current.CodingKeys.stellar.rawValue,
             title: "Stellar",
+            toCurrency: .dollar
+        )
+        
+        // MARK: - Oil and Gas
+        addObj(
+            type: .oil,
+            currencyObject: currencyStruct.current.oil_usa,
+            currencyName: Current.CodingKeys.oil_usa.rawValue,
+            title: "Oil USA",
+            toCurrency: .dollar
+        )
+        
+        addObj(
+            type: .oil,
+            currencyObject: currencyStruct.current.oil_brent,
+            currencyName: Current.CodingKeys.oil_brent.rawValue,
+            title: "Oil Brent",
+            toCurrency: .dollar
+        )
+        
+        addObj(
+            type: .oil,
+            currencyObject: currencyStruct.current.oil_opec,
+            currencyName: Current.CodingKeys.oil_opec.rawValue,
+            title: "Oil Opec",
+            toCurrency: .dollar
+        )
+        
+        addObj(
+            type: .oil,
+            currencyObject: currencyStruct.current.gas_usa,
+            currencyName: Current.CodingKeys.gas_usa.rawValue,
+            title: "Gas USA",
+            toCurrency: .dollar
+        )
+        
+        addObj(
+            type: .oil,
+            currencyObject: currencyStruct.current.gas_natural_usa,
+            currencyName: Current.CodingKeys.gas_natural_usa.rawValue,
+            title: "Natural Gas USA",
+            toCurrency: .dollar
+        )
+        
+        addObj(
+            type: .oil,
+            currencyObject: currencyStruct.current.gasoline_uk,
+            currencyName: Current.CodingKeys.gasoline_uk.rawValue,
+            title: "Gasoline UK",
             toCurrency: .dollar
         )
     }

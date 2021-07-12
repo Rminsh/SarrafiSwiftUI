@@ -30,16 +30,21 @@
 "USD (Soleymanie)" = "USD (Soleymanie)";
 "EUR" = "EUR";
 "CAD" = "CAD";
+"AUD" = "AUD";
+"NZD" = "NZD";
+"SGD" = "SGD";
 "GBP" = "GBP";
 "AED" = "AED";
 "TRY" = "TRY";
+"CHF" = "CHF";
 "CNY" = "CNY";
 "JPY" = "JPY";
 "AFN" = "AFN";
+"INR" = "INR";
 "IQD" = "IQD";
+"SEK" = "SEK";
 "MYR" = "MYR";
 "RUB" = "RUB";
-"INR" = "INR";
 
 "New Coin" = "New Coin";
 "Old Coin" = "Old Coin";
@@ -58,3 +63,10 @@
 "Dash" = "Dash";
 "Litecoin" = "Litecoin";
 "Stellar" = "Stellar";
+
+"Oil USA" = "Oil USA";
+"Oil Brent" = "Oil Brent";
+"Oil Opec" = "Oil Opec";
+"Gas USA" = "Gas USA";
+"Natural Gas USA" = "Natural Gas USA";
+"Gasoline UK" = "Gasoline UK";
