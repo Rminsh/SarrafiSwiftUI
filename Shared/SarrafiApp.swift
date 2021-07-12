@@ -9,6 +9,17 @@ import SwiftUI
 
 @main
 struct SarrafiApp: App {
+    
+    init(){
+        #if os(iOS)
+        Theme.navigationBar(
+            fontInLine: "Shabnam-Medium",
+            fontLarge: "Shabnam-Bold",
+            background: UIColor(named: "BackgroundColor")
+        )
+        #endif
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

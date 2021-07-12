@@ -25,16 +25,14 @@ struct SymbolRowView: View {
                 VStack {
                     // MARK: - Symbol title
                     Text(title)
-                        .font(.title3)
-                        .fontWeight(.bold)
+                        .customFont(name: "Shabnam", style: .title3, weight: .medium)
                         .dynamicTypeSize(.xSmall ... .large)
                         .foregroundStyle(.primary)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
                     // MARK: - Updated time
                     Text(time)
-                        .font(.footnote)
-                        .fontWeight(.medium)
+                        .customFont(name: "Shabnam", style: .footnote, weight: .medium)
                         .foregroundStyle(.secondary)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
@@ -45,14 +43,12 @@ struct SymbolRowView: View {
                 switch symbolCurrency {
                 case .rial:
                     Text(LocalizedStringKey("\(Int(price)) Rial"))
-                        .font(.title2)
-                        .fontWeight(.medium)
+                        .customFont(name: "Shabnam", style: .title2, weight: .medium)
                         .dynamicTypeSize(.xSmall ... .large)
                         .foregroundStyle(.primary)
                 case .dollar:
                     Text(LocalizedStringKey("\(Int(price)) Dollar"))
-                        .font(.title2)
-                        .fontWeight(.medium)
+                        .customFont(name: "Shabnam", style: .title2, weight: .medium)
                         .dynamicTypeSize(.xSmall ... .large)
                         .foregroundStyle(.primary)
                 }
@@ -62,11 +58,11 @@ struct SymbolRowView: View {
                 switch symbolCurrency {
                 case .rial:
                     Text("\(Int(priceChange)) Rial")
-                        .font(.subheadline)
+                        .customFont(name: "Shabnam", style: .subheadline, weight: .regular)
                         .foregroundStyle(.primary)
                 case .dollar:
                     Text("\(Int(priceChange)) Dollar")
-                        .font(.subheadline)
+                        .customFont(name: "Shabnam", style: .subheadline, weight: .regular)
                         .foregroundStyle(.primary)
                 }
                 
@@ -75,15 +71,15 @@ struct SymbolRowView: View {
                 switch status {
                 case .up:
                     Label("\(pricePercentChange, specifier: "%.2f")%", systemImage: "chevron.up")
-                        .font(.subheadline)
+                        .customFont(name: "Shabnam", style: .subheadline, weight: .regular)
                         .foregroundStyle(.secondary)
                 case .down:
                     Label("\(pricePercentChange, specifier: "%.2f")%", systemImage: "chevron.down")
-                        .font(.subheadline)
+                        .customFont(name: "Shabnam", style: .subheadline, weight: .regular)
                         .foregroundStyle(.secondary)
                 case .stable:
                     Text("\(pricePercentChange, specifier: "%.0f")%")
-                        .font(.subheadline)
+                        .customFont(name: "Shabnam", style: .subheadline, weight: .regular)
                         .foregroundStyle(.secondary)
                 }
             }

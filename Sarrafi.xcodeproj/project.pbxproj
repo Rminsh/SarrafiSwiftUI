@@ -19,6 +19,19 @@
 		C653A76F267B3AA50043E4BB /* AppSidebarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653A76C267B3AA50043E4BB /* AppSidebarNavigation.swift */; };
 		C653A770267B3AA50043E4BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653A76D267B3AA50043E4BB /* ContentView.swift */; };
 		C653A771267B3AA50043E4BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653A76D267B3AA50043E4BB /* ContentView.swift */; };
+		C657262D269C904B00461C8C /* Shabnam-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6572628269C904B00461C8C /* Shabnam-Light.ttf */; };
+		C657262E269C904B00461C8C /* Shabnam-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6572628269C904B00461C8C /* Shabnam-Light.ttf */; };
+		C657262F269C904B00461C8C /* Shabnam-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6572629269C904B00461C8C /* Shabnam-Medium.ttf */; };
+		C6572630269C904B00461C8C /* Shabnam-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6572629269C904B00461C8C /* Shabnam-Medium.ttf */; };
+		C6572631269C904B00461C8C /* Shabnam-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C657262A269C904B00461C8C /* Shabnam-Thin.ttf */; };
+		C6572632269C904B00461C8C /* Shabnam-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C657262A269C904B00461C8C /* Shabnam-Thin.ttf */; };
+		C6572633269C904B00461C8C /* Shabnam.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C657262B269C904B00461C8C /* Shabnam.ttf */; };
+		C6572634269C904B00461C8C /* Shabnam.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C657262B269C904B00461C8C /* Shabnam.ttf */; };
+		C6572635269C904B00461C8C /* Shabnam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C657262C269C904B00461C8C /* Shabnam-Bold.ttf */; };
+		C6572636269C904B00461C8C /* Shabnam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C657262C269C904B00461C8C /* Shabnam-Bold.ttf */; };
+		C6A6BA60269C94C100967073 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6BA5F269C94C100967073 /* Theme.swift */; };
+		C6A6BA62269C95F700967073 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6BA61269C95F700967073 /* CustomFont.swift */; };
+		C6A6BA63269C95F700967073 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6BA61269C95F700967073 /* CustomFont.swift */; };
 		C6ABD86F267A90190082BDB2 /* SymbolBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */; };
 		C6ABD870267A90190082BDB2 /* SymbolBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */; };
 		C6C41964269B68C30050DD1C /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C41963269B68C30050DD1C /* SectionView.swift */; };
@@ -55,6 +68,14 @@
 		C652CE78267A517200B1D9BA /* SymbolRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolRowView.swift; sourceTree = "<group>"; };
 		C653A76C267B3AA50043E4BB /* AppSidebarNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSidebarNavigation.swift; sourceTree = "<group>"; };
 		C653A76D267B3AA50043E4BB /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6572628269C904B00461C8C /* Shabnam-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-Light.ttf"; sourceTree = "<group>"; };
+		C6572629269C904B00461C8C /* Shabnam-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-Medium.ttf"; sourceTree = "<group>"; };
+		C657262A269C904B00461C8C /* Shabnam-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-Thin.ttf"; sourceTree = "<group>"; };
+		C657262B269C904B00461C8C /* Shabnam.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shabnam.ttf; sourceTree = "<group>"; };
+		C657262C269C904B00461C8C /* Shabnam-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-Bold.ttf"; sourceTree = "<group>"; };
+		C6572638269C90F500461C8C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6A6BA5F269C94C100967073 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		C6A6BA61269C95F700967073 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolBackground.swift; sourceTree = "<group>"; };
 		C6C41963269B68C30050DD1C /* SectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		C6EB21DD267FA7CB00671861 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -132,6 +153,7 @@
 		C652CE76267A4F2300B1D9BA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C6A6BA61269C95F700967073 /* CustomFont.swift */,
 				C6C41963269B68C30050DD1C /* SectionView.swift */,
 				C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */,
 			);
@@ -155,6 +177,18 @@
 				C6F2C86F2680B45B00C93AC0 /* NavigationItem.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C6572627269C903D00461C8C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C657262C269C904B00461C8C /* Shabnam-Bold.ttf */,
+				C6572628269C904B00461C8C /* Shabnam-Light.ttf */,
+				C6572629269C904B00461C8C /* Shabnam-Medium.ttf */,
+				C657262A269C904B00461C8C /* Shabnam-Thin.ttf */,
+				C657262B269C904B00461C8C /* Shabnam.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		C6EB21D9267FA78400671861 /* Core */ = {
@@ -206,7 +240,9 @@
 		C6EB21F4267FC08600671861 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C6572638269C90F500461C8C /* Info.plist */,
 				C6EB21F5267FC0A300671861 /* AppTabNavigation.swift */,
+				C6A6BA5F269C94C100967073 /* Theme.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -214,6 +250,7 @@
 		C6F2C8722680C37900C93AC0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C6572627269C903D00461C8C /* Fonts */,
 				C652CE5B267A4F0500B1D9BA /* Assets.xcassets */,
 				C6F2C8792680C3CC00C93AC0 /* Localizable.strings */,
 				C6F2C8882680D86200C93AC0 /* Localizable.stringsdict */,
@@ -301,8 +338,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C657262D269C904B00461C8C /* Shabnam-Light.ttf in Resources */,
 				C652CE6B267A4F0500B1D9BA /* Assets.xcassets in Resources */,
+				C6572631269C904B00461C8C /* Shabnam-Thin.ttf in Resources */,
 				C6F2C8762680C3CC00C93AC0 /* Localizable.strings in Resources */,
+				C6572635269C904B00461C8C /* Shabnam-Bold.ttf in Resources */,
+				C657262F269C904B00461C8C /* Shabnam-Medium.ttf in Resources */,
+				C6572633269C904B00461C8C /* Shabnam.ttf in Resources */,
 				C6F2C8852680D86200C93AC0 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,8 +353,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C657262E269C904B00461C8C /* Shabnam-Light.ttf in Resources */,
 				C652CE6C267A4F0500B1D9BA /* Assets.xcassets in Resources */,
+				C6572632269C904B00461C8C /* Shabnam-Thin.ttf in Resources */,
 				C6F2C8772680C3CC00C93AC0 /* Localizable.strings in Resources */,
+				C6572636269C904B00461C8C /* Shabnam-Bold.ttf in Resources */,
+				C6572630269C904B00461C8C /* Shabnam-Medium.ttf in Resources */,
+				C6572634269C904B00461C8C /* Shabnam.ttf in Resources */,
 				C6F2C8862680D86200C93AC0 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,12 +381,14 @@
 				C6EB21F1267FB0D200671861 /* NetworkingError.swift in Sources */,
 				C6EB21E7267FAF6000671861 /* ChartModel.swift in Sources */,
 				C6EB21F6267FC0A300671861 /* AppTabNavigation.swift in Sources */,
+				C6A6BA62269C95F700967073 /* CustomFont.swift in Sources */,
 				C6EB21EA267FAFA200671861 /* CurrencyService.swift in Sources */,
 				C6EB21E3267FAF6000671861 /* Charts.swift in Sources */,
 				C6EB21E5267FAF6000671861 /* CurrencyModel.swift in Sources */,
 				C6EB21DE267FA7CB00671861 /* Constants.swift in Sources */,
 				C653A76E267B3AA50043E4BB /* AppSidebarNavigation.swift in Sources */,
 				C6ABD86F267A90190082BDB2 /* SymbolBackground.swift in Sources */,
+				C6A6BA60269C94C100967073 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +398,7 @@
 			files = (
 				C652CE7A267A517200B1D9BA /* SymbolRowView.swift in Sources */,
 				C652CE6A267A4F0500B1D9BA /* SymbolListView.swift in Sources */,
+				C6A6BA63269C95F700967073 /* CustomFont.swift in Sources */,
 				C653A771267B3AA50043E4BB /* ContentView.swift in Sources */,
 				C6EB21EF267FB09F00671861 /* CurrencyListResponse.swift in Sources */,
 				C652CE68267A4F0500B1D9BA /* SarrafiApp.swift in Sources */,
@@ -513,7 +563,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YB99NQ76R5;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = Sarrafi;
+				INFOPLIST_KEY_CFBundleName = Sarrafi;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -525,7 +579,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.Sarrafi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.shalchian.Sarrafi;
 				PRODUCT_NAME = Sarrafi;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -543,7 +597,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YB99NQ76R5;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = Sarrafi;
+				INFOPLIST_KEY_CFBundleName = Sarrafi;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -555,7 +613,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.Sarrafi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.shalchian.Sarrafi;
 				PRODUCT_NAME = Sarrafi;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;

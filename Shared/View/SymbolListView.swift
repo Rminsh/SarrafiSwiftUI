@@ -19,65 +19,73 @@ struct SymbolListView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(currencyList, id: \.id) { currency in
-                    SymbolRowView(
-                        title: currency.title,
-                        price: currency.currentPrice,
-                        priceHigh: currency.priceUp,
-                        priceLow: currency.priceDown,
-                        priceChange: currency.priceChange,
-                        pricePercentChange: currency.percentChange,
-                        status: currency.status,
-                        time: currency.globalTime,
-                        symbolCurrency: currency.toCurrency
-                    )
-                        .cornerRadius(12)
-                        #if os(iOS)
-                        .listRowSeparator(.hidden)
-                        #endif
+            ZStack {
+                Color("BackgroundColor")
+                    .edgesIgnoringSafeArea(.all)
+                List {
+                    ForEach(currencyList, id: \.id) { currency in
+                        SymbolRowView(
+                            title: currency.title,
+                            price: currency.currentPrice,
+                            priceHigh: currency.priceUp,
+                            priceLow: currency.priceDown,
+                            priceChange: currency.priceChange,
+                            pricePercentChange: currency.percentChange,
+                            status: currency.status,
+                            time: currency.globalTime,
+                            symbolCurrency: currency.toCurrency
+                        )
+                            .cornerRadius(12)
+                            #if os(iOS)
+                            .listRowSeparator(.hidden)
+                            .listRowBackground(Color.clear)
+                            #endif
+                    }
                 }
-            }
-            .overlay {
-                if currencyList.isEmpty {
-                    ZStack {
-                        if isLoading {
-                            ProgressView()
-                        }
-                        
-                        if hasError {
-                            VStack {
-                                Text(error?.errorDescription ?? "")
-                                    .foregroundColor(.secondary)
-                                    .multilineTextAlignment(.center)
-                                
-                                Button(action: {
-                                    #if os(iOS)
-                                    async {
-                                        await fetchList()
-                                    }
-                                    #elseif os(macOS)
-                                    Task.init() {
-                                        await fetchList()
-                                    }
-                                    #endif
-                                }) {
-                                    Text("Try_again")
-                                }
-                                .buttonStyle(.bordered)
+                
+                .overlay {
+                    if currencyList.isEmpty {
+                        ZStack {
+                            if isLoading {
+                                ProgressView()
                             }
-                            .padding()
+                            
+                            if hasError {
+                                VStack {
+                                    Text(error?.errorDescription ?? "")
+                                        .customFont(name: "Shabnam", style: .body)
+                                        .foregroundColor(.secondary)
+                                        .multilineTextAlignment(.center)
+                                    
+                                    Button(action: {
+                                        #if os(iOS)
+                                        async {
+                                            await fetchList()
+                                        }
+                                        #elseif os(macOS)
+                                        Task.init() {
+                                            await fetchList()
+                                        }
+                                        #endif
+                                    }) {
+                                        Text("Try_again")
+                                            .customFont(name: "Shabnam", style: .body)
+                                    }
+                                    .buttonStyle(.bordered)
+                                }
+                                .padding()
+                            }
                         }
                     }
                 }
+                .refreshable {
+                    await fetchList()
+                }
+                .task {
+                    await fetchList()
+                }
+                .listStyle(.plain)
             }
-            .refreshable {
-                await fetchList()
-            }
-            .task {
-                await fetchList()
-            }
-            .listStyle(.plain)
             #if os(macOS)
             .frame(minWidth: 325)
             #endif
