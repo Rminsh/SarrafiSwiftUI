@@ -1,0 +1,60 @@
+/* 
+  Localizable.strings
+  Sarrafi
+
+  Created by armin on 6/21/21.
+  
+*/
+// MARK: - App content
+"APP_NAME" = "Sarrafi";
+
+"Try_again" = "Try again";
+"network_error_failed" = "Failed to get data";
+"network_error_parsing" = "Could not parse data";
+"network_error_unexpected" = "Received unexpected error";
+
+// MARK: - Settings (iOS)
+"Settings" = "Settings";
+"App_Icon" = "App Icon";
+"Changelog" = "Changelog";
+"About" = "About";
+
+// MARK: - Currency types
+"Cash" = "Currency";
+"Gold" = "Gold";
+"Crypto" = "Crypto";
+"Oil" = "Oil & Energy";
+
+// MARK: - Currency names
+"USD (Centeral bank)" = "USD (Centeral bank)";
+"USD (Soleymanie)" = "USD (Soleymanie)";
+"EUR" = "EUR";
+"CAD" = "CAD";
+"GBP" = "GBP";
+"AED" = "AED";
+"TRY" = "TRY";
+"CNY" = "CNY";
+"JPY" = "JPY";
+"AFN" = "AFN";
+"IQD" = "IQD";
+"MYR" = "MYR";
+"RUB" = "RUB";
+"INR" = "INR";
+
+"New Coin" = "New Coin";
+"Old Coin" = "Old Coin";
+"Coin / Half" = "Coin / Half";
+"Coin / Quarter" = "Coin / Quarter";
+"Coin / Gram" = "Coin / Gram";
+"Gold 24" = "Gold 24";
+"Gold 18" = "Gold 18";
+"Mesghal" = "Mesghal";
+"Gold" = "Gold";
+"Silver" = "Silver";
+
+"Bitcoin" = "Bitcoin";
+"Ethereum" = "Ethereum";
+"Ripple" = "Ripple";
+"Dash" = "Dash";
+"Litecoin" = "Litecoin";
+"Stellar" = "Stellar";

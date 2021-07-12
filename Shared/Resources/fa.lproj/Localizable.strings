@@ -1,0 +1,60 @@
+/* 
+  Localizable.strings
+  Sarrafi
+
+  Created by armin on 6/21/21.
+  
+*/
+// MARK: - App content
+"APP_NAME" = "صرافی";
+
+"Try_again" = "دوباره تلاش کنید";
+"network_error_failed" = "خطا در دریافت اطلاعات";
+"network_error_parsing" = "خطا در بارگزاری اطلاعات";
+"network_error_unexpected" = "خطای ناشناس در دریافت اطلاعات";
+
+// MARK: - Settings (iOS)
+"Settings" = "تنظیمات";
+"App_Icon" = "آیکون برنامه";
+"Changelog" = "تغییرات";
+"About" = "درباره ما";
+
+// MARK: - Currency types
+"Cash" = "ارز";
+"Gold" = "طلا و سکه";
+"Crypto" = "ارز دیجیتال";
+"Oil" = "نفت";
+
+// MARK: - Currency names
+"USD (Centeral bank)" = "دلار آمریکا (بانک مرکزی)";
+"USD (Soleymanie)" = "دلار سلیمانیه";
+"EUR" = "یورو";
+"CAD" = "دلار کانادا";
+"GBP" = "پوند انگلیس";
+"AED" = "درهم امارات";
+"TRY" = "لیر ترکیه";
+"CNY" = "یوان چین";
+"JPY" = "ین ژاپن";
+"AFN" = "افغانی";
+"IQD" = "دینار عراق";
+"MYR" = "رینگیت مالزی";
+"RUB" = "روبل روسیه";
+"INR" = "روپیه هند";
+
+"New Coin" = "سکه امامی";
+"Old Coin" = "سکه بهار آزادی";
+"Coin / Half" = "نیم سکه";
+"Coin / Quarter" = "ربع سکه";
+"Coin / Gram" = "سکه گرمی";
+"Gold 24" = "طلای ۲۴ عیار";
+"Gold 18" = "طلای ۱۸ عیار";
+"Mesghal" = "مثقال طلا";
+"Gold" = "انس طلا";
+"Silver" = "انس نقره";
+
+"Bitcoin" = "بیت کوین / Bitcoin";
+"Ethereum" = "اتریوم / Ethereum";
+"Ripple" = "ریپل / Ripple";
+"Dash" = "دش / Dash";
+"Litecoin" = "لایت کوین/Litecoin";
+"Stellar" = "استلار / Stellar";

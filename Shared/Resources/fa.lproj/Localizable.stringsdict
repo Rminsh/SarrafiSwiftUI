@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%lld Rial</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@price@</string>
+		<key>price</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>بدون تغییر</string>
+			<key>other</key>
+			<string>%lld ریال</string>
+		</dict>
+	</dict>
+	<key>%lld Dollar</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@price@</string>
+		<key>price</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>بدون تغییر</string>
+			<key>other</key>
+			<string>%lld دلار</string>
+		</dict>
+	</dict>
+	<key>%lld Toman</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@price@</string>
+		<key>price</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>بدون تغییر</string>
+			<key>other</key>
+			<string>%lld تومان</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
