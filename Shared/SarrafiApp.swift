@@ -19,7 +19,6 @@ struct SarrafiApp: App {
         #if os(macOS)
         .windowToolbarStyle(.unifiedCompact)
         #endif
-        //.windowStyle(HiddenTitleBarWindowStyle())
         
     }
 }

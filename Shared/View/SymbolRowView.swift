@@ -59,6 +59,18 @@ struct SymbolRowView: View {
             }
             
             HStack {
+                switch symbolCurrency {
+                case .rial:
+                    Text("\(Int(priceChange)) Rial")
+                        .font(.subheadline)
+                        .foregroundStyle(.primary)
+                case .dollar:
+                    Text("\(Int(priceChange)) Dollar")
+                        .font(.subheadline)
+                        .foregroundStyle(.primary)
+                }
+                
+                Spacer()
                 
                 switch status {
                 case .up:
@@ -74,20 +86,6 @@ struct SymbolRowView: View {
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }
-                
-                Spacer()
-                
-                switch symbolCurrency {
-                case .rial:
-                    Text("\(Int(priceChange)) Rial")
-                        .font(.subheadline)
-                        .foregroundStyle(.primary)
-                case .dollar:
-                    Text("\(Int(priceChange)) Dollar")
-                        .font(.subheadline)
-                        .foregroundStyle(.primary)
-                }
-                
             }
         }
         .padding(.horizontal)
