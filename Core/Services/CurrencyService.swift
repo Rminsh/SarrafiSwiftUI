@@ -13,12 +13,12 @@ class CurrencyService {
     static let shared = CurrencyService()
     
     let logger = Logger(subsystem: Constants.AppID, category: "persistence")
-    let url = URL(string: Constants.SymbolListAPI)!
+    let urlList = URL(string: Constants.SymbolListAPI)!
     
     func fetchData() async throws -> CurrencyListResponse {
         
         let session = URLSession.shared
-        var request = URLRequest(url: url)
+        var request = URLRequest(url: urlList)
         
         request.httpMethod = "GET"
         request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")

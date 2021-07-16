@@ -10,6 +10,8 @@
 		C624263E26A173B50064E7CD /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624263C26A173B10064E7CD /* VisualEffectBlur.swift */; };
 		C624264126A17EAD0064E7CD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624264026A17EAD0064E7CD /* Date+Extensions.swift */; };
 		C624264226A17EAD0064E7CD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624264026A17EAD0064E7CD /* Date+Extensions.swift */; };
+		C624264426A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624264326A190BA0064E7CD /* CurrencyService+ChartMethod.swift */; };
+		C624264526A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624264326A190BA0064E7CD /* CurrencyService+ChartMethod.swift */; };
 		C652CE67267A4F0500B1D9BA /* SarrafiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE59267A4F0300B1D9BA /* SarrafiApp.swift */; };
 		C652CE68267A4F0500B1D9BA /* SarrafiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE59267A4F0300B1D9BA /* SarrafiApp.swift */; };
 		C652CE69267A4F0500B1D9BA /* SymbolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE5A267A4F0300B1D9BA /* SymbolListView.swift */; };
@@ -45,6 +47,8 @@
 		C6ABD870267A90190082BDB2 /* SymbolBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */; };
 		C6C41964269B68C30050DD1C /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C41963269B68C30050DD1C /* SectionView.swift */; };
 		C6C41965269B68C30050DD1C /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C41963269B68C30050DD1C /* SectionView.swift */; };
+		C6D164F726A1DF7500EFC825 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C6D164F626A1DF7500EFC825 /* SwiftUICharts */; };
+		C6D164FA26A1DF8E00EFC825 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C6D164F926A1DF8E00EFC825 /* SwiftUICharts */; };
 		C6EB21DE267FA7CB00671861 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21DD267FA7CB00671861 /* Constants.swift */; };
 		C6EB21DF267FA7CB00671861 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21DD267FA7CB00671861 /* Constants.swift */; };
 		C6EB21E3267FAF6000671861 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21E0267FAF5F00671861 /* Charts.swift */; };
@@ -69,6 +73,7 @@
 /* Begin PBXFileReference section */
 		C624263C26A173B10064E7CD /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		C624264026A17EAD0064E7CD /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		C624264326A190BA0064E7CD /* CurrencyService+ChartMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrencyService+ChartMethod.swift"; sourceTree = "<group>"; };
 		C652CE59267A4F0300B1D9BA /* SarrafiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SarrafiApp.swift; sourceTree = "<group>"; };
 		C652CE5A267A4F0300B1D9BA /* SymbolListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolListView.swift; sourceTree = "<group>"; };
 		C652CE5B267A4F0500B1D9BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D164F726A1DF7500EFC825 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D164FA26A1DF8E00EFC825 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +152,7 @@
 				C624263B26A1738E0064E7CD /* macOS */,
 				C652CE58267A4F0300B1D9BA /* Shared */,
 				C652CE61267A4F0500B1D9BA /* Products */,
+				C6D164F826A1DF8E00EFC825 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,6 +229,13 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		C6D164F826A1DF8E00EFC825 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6EB21D9267FA78400671861 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				C6EB21E9267FAFA200671861 /* CurrencyService.swift */,
+				C624264326A190BA0064E7CD /* CurrencyService+ChartMethod.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -304,6 +320,9 @@
 			dependencies = (
 			);
 			name = "Sarrafi (iOS)";
+			packageProductDependencies = (
+				C6D164F626A1DF7500EFC825 /* SwiftUICharts */,
+			);
 			productName = "Sarrafi (iOS)";
 			productReference = C652CE60267A4F0500B1D9BA /* Sarrafi.app */;
 			productType = "com.apple.product-type.application";
@@ -321,6 +340,9 @@
 			dependencies = (
 			);
 			name = "Sarrafi (macOS)";
+			packageProductDependencies = (
+				C6D164F926A1DF8E00EFC825 /* SwiftUICharts */,
+			);
 			productName = "Sarrafi (macOS)";
 			productReference = C652CE66267A4F0500B1D9BA /* Sarrafi.app */;
 			productType = "com.apple.product-type.application";
@@ -353,6 +375,9 @@
 				fa,
 			);
 			mainGroup = C652CE53267A4F0300B1D9BA;
+			packageReferences = (
+				C6D164F526A1DF7500EFC825 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = C652CE61267A4F0500B1D9BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -403,6 +428,7 @@
 				C624264126A17EAD0064E7CD /* Date+Extensions.swift in Sources */,
 				C652CE69267A4F0500B1D9BA /* SymbolListView.swift in Sources */,
 				C67F0927269EFA2A00E2A242 /* Extensions+Double.swift in Sources */,
+				C624264426A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */,
 				C6C41964269B68C30050DD1C /* SectionView.swift in Sources */,
 				C6F2C8702680B45B00C93AC0 /* NavigationItem.swift in Sources */,
 				C653A770267B3AA50043E4BB /* ContentView.swift in Sources */,
@@ -434,6 +460,7 @@
 				C652CE6A267A4F0500B1D9BA /* SymbolListView.swift in Sources */,
 				C6A6BA63269C95F700967073 /* CustomFont.swift in Sources */,
 				C653A771267B3AA50043E4BB /* ContentView.swift in Sources */,
+				C624264526A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */,
 				C6EB21EF267FB09F00671861 /* CurrencyListResponse.swift in Sources */,
 				C6A6BA66269CC58000967073 /* SymbolDetailView.swift in Sources */,
 				C67F0928269EFA2A00E2A242 /* Extensions+Double.swift in Sources */,
@@ -587,6 +614,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -623,6 +651,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -746,6 +775,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6D164F526A1DF7500EFC825 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6D164F626A1DF7500EFC825 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6D164F526A1DF7500EFC825 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		C6D164F926A1DF8E00EFC825 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6D164F526A1DF7500EFC825 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C652CE54267A4F0300B1D9BA /* Project object */;
 }

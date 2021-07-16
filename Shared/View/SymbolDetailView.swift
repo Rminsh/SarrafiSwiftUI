@@ -9,8 +9,13 @@
 import SwiftUI
 
 struct SymbolDetailView: View {
-    
+    var currencyProvider: CurrencyService = .shared
     let currency: CurrencyModel
+    
+    @State private var chartsObject: Charts? = nil
+    @State private var isLoading = false
+    @State private var error: NetworkingError?
+    @State private var hasError = false
     
     @Environment(\.colorScheme) var colorScheme
     
@@ -53,6 +58,42 @@ struct SymbolDetailView: View {
                     .customFont(name: "Shabnam", style: .subheadline, weight: .light)
                     .dynamicTypeSize(.xSmall ... .small)
                     
+                    // MARK: - Chart
+                    ZStack {
+                        if isLoading {
+                            ProgressView()
+                        }
+                        
+                        if hasError {
+                            VStack {
+                                Text(error?.errorDescription ?? "")
+                                    .customFont(name: "Shabnam", style: .body)
+                                    .foregroundColor(.secondary)
+                                    .multilineTextAlignment(.center)
+                                    .textSelection(.disabled)
+                                
+                                Button(action: {
+                                    Task.init() {
+                                        await fetchChart()
+                                    }
+                                }) {
+                                    Text("Try_again")
+                                        .customFont(name: "Shabnam", style: .body)
+                                        .textSelection(.disabled)
+                                }
+                                .buttonStyle(.bordered)
+                            }
+                            .padding()
+                        }
+                        
+                        // TODO: Add Chart view
+                        
+                        
+                        
+                        
+                    }
+                    
+                    // MARK: - Price Change
                     HStack {
                         VStack(alignment: .leading, spacing: 10) {
                             Text("Price Change")
@@ -90,6 +131,7 @@ struct SymbolDetailView: View {
                     .cornerRadius(8)
                     .padding(.horizontal)
                     
+                    // MARK: - Most and least price of the day
                     HStack {
                         PriceChangeView(
                             status: .up,
@@ -122,6 +164,12 @@ struct SymbolDetailView: View {
                     }
                     .padding(.horizontal)
                 }
+            }
+            .refreshable {
+                await fetchChart()
+            }
+            .task {
+                await fetchChart()
             }
             .textSelection(.enabled)
             .foregroundStyle(.primary)
@@ -160,6 +208,18 @@ struct PriceChangeView: View {
 }
 
 extension SymbolDetailView {
+    private func fetchChart() async {
+        hasError = false
+        isLoading = true
+        do {
+            chartsObject = try await currencyProvider.getChart(for: currency)
+        } catch {
+            self.error = error as? NetworkingError
+            self.hasError = true
+        }
+        isLoading = false
+    }
+    
     func colorStatus(status: SymbolStatus) -> Color {
         switch status {
         case .up:
