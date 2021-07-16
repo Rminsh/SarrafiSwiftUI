@@ -22,6 +22,7 @@ class CurrencyService {
         
         request.httpMethod = "GET"
         request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        request.cachePolicy = .reloadIgnoringLocalAndRemoteCacheData
         
         guard let (data, response) = try? await session.data(for: request),
               let httpResponse = response as? HTTPURLResponse,

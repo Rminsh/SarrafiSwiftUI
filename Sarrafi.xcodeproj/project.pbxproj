@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C624263E26A173B50064E7CD /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624263C26A173B10064E7CD /* VisualEffectBlur.swift */; };
+		C624264126A17EAD0064E7CD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624264026A17EAD0064E7CD /* Date+Extensions.swift */; };
+		C624264226A17EAD0064E7CD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624264026A17EAD0064E7CD /* Date+Extensions.swift */; };
 		C652CE67267A4F0500B1D9BA /* SarrafiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE59267A4F0300B1D9BA /* SarrafiApp.swift */; };
 		C652CE68267A4F0500B1D9BA /* SarrafiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE59267A4F0300B1D9BA /* SarrafiApp.swift */; };
 		C652CE69267A4F0500B1D9BA /* SymbolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE5A267A4F0300B1D9BA /* SymbolListView.swift */; };
@@ -29,9 +32,15 @@
 		C6572634269C904B00461C8C /* Shabnam.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C657262B269C904B00461C8C /* Shabnam.ttf */; };
 		C6572635269C904B00461C8C /* Shabnam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C657262C269C904B00461C8C /* Shabnam-Bold.ttf */; };
 		C6572636269C904B00461C8C /* Shabnam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C657262C269C904B00461C8C /* Shabnam-Bold.ttf */; };
+		C67F0927269EFA2A00E2A242 /* Extensions+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0926269EFA2A00E2A242 /* Extensions+Double.swift */; };
+		C67F0928269EFA2A00E2A242 /* Extensions+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0926269EFA2A00E2A242 /* Extensions+Double.swift */; };
+		C69EA912269F385700BF1706 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA911269F385600BF1706 /* ProgressBar.swift */; };
+		C69EA913269F385700BF1706 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA911269F385600BF1706 /* ProgressBar.swift */; };
 		C6A6BA60269C94C100967073 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6BA5F269C94C100967073 /* Theme.swift */; };
 		C6A6BA62269C95F700967073 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6BA61269C95F700967073 /* CustomFont.swift */; };
 		C6A6BA63269C95F700967073 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6BA61269C95F700967073 /* CustomFont.swift */; };
+		C6A6BA65269CC58000967073 /* SymbolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6BA64269CC58000967073 /* SymbolDetailView.swift */; };
+		C6A6BA66269CC58000967073 /* SymbolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6BA64269CC58000967073 /* SymbolDetailView.swift */; };
 		C6ABD86F267A90190082BDB2 /* SymbolBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */; };
 		C6ABD870267A90190082BDB2 /* SymbolBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */; };
 		C6C41964269B68C30050DD1C /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C41963269B68C30050DD1C /* SectionView.swift */; };
@@ -55,11 +64,11 @@
 		C6F2C8712680B45B00C93AC0 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2C86F2680B45B00C93AC0 /* NavigationItem.swift */; };
 		C6F2C8762680C3CC00C93AC0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6F2C8792680C3CC00C93AC0 /* Localizable.strings */; };
 		C6F2C8772680C3CC00C93AC0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6F2C8792680C3CC00C93AC0 /* Localizable.strings */; };
-		C6F2C8852680D86200C93AC0 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = C6F2C8882680D86200C93AC0 /* Localizable.stringsdict */; };
-		C6F2C8862680D86200C93AC0 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = C6F2C8882680D86200C93AC0 /* Localizable.stringsdict */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C624263C26A173B10064E7CD /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		C624264026A17EAD0064E7CD /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		C652CE59267A4F0300B1D9BA /* SarrafiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SarrafiApp.swift; sourceTree = "<group>"; };
 		C652CE5A267A4F0300B1D9BA /* SymbolListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolListView.swift; sourceTree = "<group>"; };
 		C652CE5B267A4F0500B1D9BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,8 +83,11 @@
 		C657262B269C904B00461C8C /* Shabnam.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shabnam.ttf; sourceTree = "<group>"; };
 		C657262C269C904B00461C8C /* Shabnam-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-Bold.ttf"; sourceTree = "<group>"; };
 		C6572638269C90F500461C8C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C67F0926269EFA2A00E2A242 /* Extensions+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Double.swift"; sourceTree = "<group>"; };
+		C69EA911269F385600BF1706 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		C6A6BA5F269C94C100967073 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		C6A6BA61269C95F700967073 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		C6A6BA64269CC58000967073 /* SymbolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetailView.swift; sourceTree = "<group>"; };
 		C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolBackground.swift; sourceTree = "<group>"; };
 		C6C41963269B68C30050DD1C /* SectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		C6EB21DD267FA7CB00671861 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -89,8 +101,6 @@
 		C6F2C86F2680B45B00C93AC0 /* NavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
 		C6F2C87A2680C3D300C93AC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C6F2C87B2680C3E500C93AC0 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Localizable.strings; sourceTree = "<group>"; };
-		C6F2C8892680D86B00C93AC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
-		C6F2C88A2680D8E100C93AC0 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fa; path = fa.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +121,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C624263B26A1738E0064E7CD /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				C624263C26A173B10064E7CD /* VisualEffectBlur.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		C624263F26A17EAD0064E7CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C624264026A17EAD0064E7CD /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C652CE53267A4F0300B1D9BA = {
 			isa = PBXGroup;
 			children = (
 				C6EB21D9267FA78400671861 /* Core */,
-				C652CE58267A4F0300B1D9BA /* Shared */,
 				C6EB21F4267FC08600671861 /* iOS */,
+				C624263B26A1738E0064E7CD /* macOS */,
+				C652CE58267A4F0300B1D9BA /* Shared */,
 				C652CE61267A4F0500B1D9BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -153,9 +180,11 @@
 		C652CE76267A4F2300B1D9BA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C69EA911269F385600BF1706 /* ProgressBar.swift */,
 				C6A6BA61269C95F700967073 /* CustomFont.swift */,
 				C6C41963269B68C30050DD1C /* SectionView.swift */,
 				C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */,
+				C67F0926269EFA2A00E2A242 /* Extensions+Double.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -165,6 +194,7 @@
 			children = (
 				C652CE78267A517200B1D9BA /* SymbolRowView.swift */,
 				C652CE5A267A4F0300B1D9BA /* SymbolListView.swift */,
+				C6A6BA64269CC58000967073 /* SymbolDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +226,7 @@
 			children = (
 				C6EB21DD267FA7CB00671861 /* Constants.swift */,
 				C6EB21DA267FA7AE00671861 /* Error */,
+				C624263F26A17EAD0064E7CD /* Extensions */,
 				C6EB21DB267FA7B300671861 /* Model */,
 				C6EB21EC267FB09900671861 /* Response */,
 				C6EB21DC267FA7B800671861 /* Services */,
@@ -253,7 +284,6 @@
 				C6572627269C903D00461C8C /* Fonts */,
 				C652CE5B267A4F0500B1D9BA /* Assets.xcassets */,
 				C6F2C8792680C3CC00C93AC0 /* Localizable.strings */,
-				C6F2C8882680D86200C93AC0 /* Localizable.stringsdict */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -345,7 +375,6 @@
 				C6572635269C904B00461C8C /* Shabnam-Bold.ttf in Resources */,
 				C657262F269C904B00461C8C /* Shabnam-Medium.ttf in Resources */,
 				C6572633269C904B00461C8C /* Shabnam.ttf in Resources */,
-				C6F2C8852680D86200C93AC0 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +389,6 @@
 				C6572636269C904B00461C8C /* Shabnam-Bold.ttf in Resources */,
 				C6572630269C904B00461C8C /* Shabnam-Medium.ttf in Resources */,
 				C6572634269C904B00461C8C /* Shabnam.ttf in Resources */,
-				C6F2C8862680D86200C93AC0 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +400,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C652CE79267A517200B1D9BA /* SymbolRowView.swift in Sources */,
+				C624264126A17EAD0064E7CD /* Date+Extensions.swift in Sources */,
 				C652CE69267A4F0500B1D9BA /* SymbolListView.swift in Sources */,
+				C67F0927269EFA2A00E2A242 /* Extensions+Double.swift in Sources */,
 				C6C41964269B68C30050DD1C /* SectionView.swift in Sources */,
 				C6F2C8702680B45B00C93AC0 /* NavigationItem.swift in Sources */,
 				C653A770267B3AA50043E4BB /* ContentView.swift in Sources */,
@@ -383,9 +413,11 @@
 				C6EB21F6267FC0A300671861 /* AppTabNavigation.swift in Sources */,
 				C6A6BA62269C95F700967073 /* CustomFont.swift in Sources */,
 				C6EB21EA267FAFA200671861 /* CurrencyService.swift in Sources */,
+				C69EA912269F385700BF1706 /* ProgressBar.swift in Sources */,
 				C6EB21E3267FAF6000671861 /* Charts.swift in Sources */,
 				C6EB21E5267FAF6000671861 /* CurrencyModel.swift in Sources */,
 				C6EB21DE267FA7CB00671861 /* Constants.swift in Sources */,
+				C6A6BA65269CC58000967073 /* SymbolDetailView.swift in Sources */,
 				C653A76E267B3AA50043E4BB /* AppSidebarNavigation.swift in Sources */,
 				C6ABD86F267A90190082BDB2 /* SymbolBackground.swift in Sources */,
 				C6A6BA60269C94C100967073 /* Theme.swift in Sources */,
@@ -397,10 +429,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C652CE7A267A517200B1D9BA /* SymbolRowView.swift in Sources */,
+				C69EA913269F385700BF1706 /* ProgressBar.swift in Sources */,
+				C624264226A17EAD0064E7CD /* Date+Extensions.swift in Sources */,
 				C652CE6A267A4F0500B1D9BA /* SymbolListView.swift in Sources */,
 				C6A6BA63269C95F700967073 /* CustomFont.swift in Sources */,
 				C653A771267B3AA50043E4BB /* ContentView.swift in Sources */,
 				C6EB21EF267FB09F00671861 /* CurrencyListResponse.swift in Sources */,
+				C6A6BA66269CC58000967073 /* SymbolDetailView.swift in Sources */,
+				C67F0928269EFA2A00E2A242 /* Extensions+Double.swift in Sources */,
 				C652CE68267A4F0500B1D9BA /* SarrafiApp.swift in Sources */,
 				C6EB21F2267FB0D200671861 /* NetworkingError.swift in Sources */,
 				C6EB21E8267FAF6000671861 /* ChartModel.swift in Sources */,
@@ -408,6 +444,7 @@
 				C6EB21E4267FAF6000671861 /* Charts.swift in Sources */,
 				C6C41965269B68C30050DD1C /* SectionView.swift in Sources */,
 				C6EB21E6267FAF6000671861 /* CurrencyModel.swift in Sources */,
+				C624263E26A173B50064E7CD /* VisualEffectBlur.swift in Sources */,
 				C6EB21DF267FA7CB00671861 /* Constants.swift in Sources */,
 				C653A76F267B3AA50043E4BB /* AppSidebarNavigation.swift in Sources */,
 				C6ABD870267A90190082BDB2 /* SymbolBackground.swift in Sources */,
@@ -425,15 +462,6 @@
 				C6F2C87B2680C3E500C93AC0 /* fa */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		C6F2C8882680D86200C93AC0 /* Localizable.stringsdict */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6F2C8892680D86B00C93AC0 /* en */,
-				C6F2C88A2680D8E100C93AC0 /* fa */,
-			);
-			name = Localizable.stringsdict;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -559,9 +587,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YB99NQ76R5;
+				DEVELOPMENT_TEAM = L4C26EK8EJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -581,6 +610,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.shalchian.Sarrafi;
 				PRODUCT_NAME = Sarrafi;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -593,9 +623,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YB99NQ76R5;
+				DEVELOPMENT_TEAM = L4C26EK8EJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -615,6 +646,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.shalchian.Sarrafi;
 				PRODUCT_NAME = Sarrafi;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

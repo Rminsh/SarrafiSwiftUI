@@ -24,25 +24,24 @@ struct SymbolListView: View {
                     .edgesIgnoringSafeArea(.all)
                 List {
                     ForEach(currencyList, id: \.id) { currency in
-                        SymbolRowView(
-                            title: currency.title,
-                            price: currency.currentPrice,
-                            priceHigh: currency.priceUp,
-                            priceLow: currency.priceDown,
-                            priceChange: currency.priceChange,
-                            pricePercentChange: currency.percentChange,
-                            status: currency.status,
-                            time: currency.globalTime,
-                            symbolCurrency: currency.toCurrency
-                        )
-                            .cornerRadius(12)
-                            #if os(iOS)
-                            .listRowSeparator(.hidden)
-                            .listRowBackground(Color.clear)
-                            #endif
+                        ZStack {
+                            SymbolRowView(currency: currency)
+                                .cornerRadius(12)
+                            NavigationLink(destination: SymbolDetailView(currency: currency)) {
+                                EmptyView()
+                            }
+                            .tint(.clear)
+                            .opacity(0)
+                        }
+                        #if os(iOS)
+                        .listRowSeparator(.hidden)
+                        .listRowBackground(Color.clear)
+                        #endif
                     }
                 }
-                
+                #if os(iOS)
+                .listStyle(.plain)
+                #endif
                 .overlay {
                     if currencyList.isEmpty {
                         ZStack {
@@ -58,15 +57,9 @@ struct SymbolListView: View {
                                         .multilineTextAlignment(.center)
                                     
                                     Button(action: {
-                                        #if os(iOS)
-                                        async {
-                                            await fetchList()
-                                        }
-                                        #elseif os(macOS)
                                         Task.init() {
                                             await fetchList()
                                         }
-                                        #endif
                                     }) {
                                         Text("Try_again")
                                             .customFont(name: "Shabnam", style: .body)
@@ -84,7 +77,6 @@ struct SymbolListView: View {
                 .task {
                     await fetchList()
                 }
-                .listStyle(.plain)
             }
             #if os(macOS)
             .frame(minWidth: 325)

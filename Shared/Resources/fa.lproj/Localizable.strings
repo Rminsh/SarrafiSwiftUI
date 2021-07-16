@@ -25,6 +25,21 @@
 "Crypto" = "ارز دیجیتال";
 "Oil" = "نفت";
 
+"Rial" = "ریال";
+"Toman" = "تومان";
+"Dollar" = "دلار";
+
+"Without change" = "بدون تغییر";
+"Price Change" = "تغییرات قیمت";
+"Last update" = "آخرین به‌روزرسانی";
+
+"Increase" = "افزایش";
+"Stable" = "ثابت";
+"Decrease" = "کاهش";
+
+"Highest price today" = "بالاترین قیمت روز";
+"Lowest price today" = "پایین‌ترین قیمت روز";
+
 // MARK: - Currency names
 "USD (Centeral bank)" = "دلار آمریکا (بانک مرکزی)";
 "USD (Soleymanie)" = "دلار سلیمانیه";

@@ -22,7 +22,7 @@ class CurrencyModel {
     let percentChange	: Double
     let priceChange		: Double
     let shamsiTime		: String
-    let globalTime      : String
+    let globalTime      : Date
     
     init(
         object			: String,
@@ -35,7 +35,7 @@ class CurrencyModel {
 		 percentChange	: Double,
 		 priceChange	: Double,
          shamsiTime		: String,
-         globalTime     : String
+         globalTime     : Date
     ) {
         self.id             = UUID()
 		self.object			= object
@@ -194,13 +194,13 @@ struct CurrencyDetail: Codable {
     }
 }
 
-enum SymbolStatus {
-    case up
-    case stable
-    case down
+enum SymbolStatus: String {
+    case up = "Increase"
+    case stable = "Stable"
+    case down = "Decrease"
 }
 
-enum SymbolConvert {
-    case rial
-    case dollar
+enum SymbolConvert: String {
+    case rial = "Rial"
+    case dollar = "Dollar"
 }

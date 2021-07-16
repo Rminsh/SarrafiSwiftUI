@@ -376,7 +376,7 @@ struct CurrencyListResponse {
                 percentChange: currencyObject.dp,
                 priceChange: convertPrice(currencyObject.d),
                 shamsiTime: currencyObject.t,
-                globalTime: currencyObject.ts)
+                globalTime: convertDate(currencyObject.ts))
             )
         case .gold:
             goldStats.append(CurrencyModel(
@@ -390,7 +390,7 @@ struct CurrencyListResponse {
                 percentChange: currencyObject.dp,
                 priceChange: convertPrice(currencyObject.d),
                 shamsiTime: currencyObject.t,
-                globalTime: currencyObject.ts)
+                globalTime: convertDate(currencyObject.ts))
             )
         case .crypto:
             cryptoStats.append(CurrencyModel(
@@ -404,7 +404,7 @@ struct CurrencyListResponse {
                 percentChange: currencyObject.dp,
                 priceChange: convertPrice(currencyObject.d),
                 shamsiTime: currencyObject.t,
-                globalTime: currencyObject.ts)
+                globalTime: convertDate(currencyObject.ts))
             )
         case .oil:
             oilStats.append(CurrencyModel(
@@ -418,7 +418,7 @@ struct CurrencyListResponse {
                 percentChange: currencyObject.dp,
                 priceChange: convertPrice(currencyObject.d),
                 shamsiTime: currencyObject.t,
-                globalTime: currencyObject.ts)
+                globalTime: convertDate(currencyObject.ts))
             )
         }
     }
@@ -436,5 +436,11 @@ struct CurrencyListResponse {
     
     private func convertPrice(_ value: String) -> Double {
         return NSString(string: value.replacingOccurrences(of: ",", with: "")).doubleValue
+    }
+    
+    private func convertDate(_ globalTime: String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        return dateFormatter.date(from: globalTime) ?? Date()
     }
 }

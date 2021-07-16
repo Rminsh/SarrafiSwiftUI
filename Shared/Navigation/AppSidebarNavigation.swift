@@ -20,6 +20,7 @@ struct AppSidebarNavigation: View {
                         .navigationTitle(Text(NavigationItem.cash.name, comment: NavigationItem.cash.comment))
                 } label: {
                     Label(NavigationItem.cash.name, systemImage: NavigationItem.cash.icon)
+                        .customFont(name: "Shabnam", style: .body)
                 }
                 
                 // MARK: - Gold and coins price
@@ -28,6 +29,7 @@ struct AppSidebarNavigation: View {
                         .navigationTitle(Text(NavigationItem.gold.name, comment: NavigationItem.gold.comment))
                 } label: {
                     Label(NavigationItem.gold.name, systemImage: NavigationItem.gold.icon)
+                        .customFont(name: "Shabnam", style: .body)
                 }
             
                 // MARK: - Cryptocurrencies price
@@ -36,6 +38,7 @@ struct AppSidebarNavigation: View {
                         .navigationTitle(Text(NavigationItem.crypto.name, comment: NavigationItem.crypto.comment))
                 } label: {
                     Label(NavigationItem.crypto.name, systemImage: NavigationItem.crypto.icon)
+                        .customFont(name: "Shabnam", style: .body)
                 }
                 
                 // MARK: - Oil and gas price
@@ -44,6 +47,7 @@ struct AppSidebarNavigation: View {
                         .navigationTitle(Text(NavigationItem.oil.name, comment: NavigationItem.oil.comment))
                 } label: {
                     Label(NavigationItem.oil.name, systemImage: NavigationItem.oil.icon)
+                        .customFont(name: "Shabnam", style: .body)
                 }
             }
             .frame(minWidth: 200)

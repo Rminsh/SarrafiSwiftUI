@@ -25,6 +25,21 @@
 "Crypto" = "Crypto";
 "Oil" = "Oil & Energy";
 
+"Rial" = "Rial";
+"Toman" = "Toman";
+"Dollar" = "Dollar";
+
+"Without change" = "Without change";
+"Price Change" = "Price Change";
+"Last update" = "Last update";
+
+"Increase" = "Increase";
+"Stable" = "Stable";
+"Decrease" = "Decrease";
+
+"Highest price today" = "Highest price today";
+"Lowest price today" = "Lowest price today";
+
 // MARK: - Currency names
 "USD (Centeral bank)" = "USD (Centeral bank)";
 "USD (Soleymanie)" = "USD (Soleymanie)";

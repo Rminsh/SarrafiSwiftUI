@@ -9,29 +9,21 @@ import SwiftUI
 
 struct SymbolRowView: View {
     
-    @State var title: LocalizedStringKey
-    @State var price: Double
-    @State var priceHigh: Double
-    @State var priceLow: Double
-    @State var priceChange: Double
-    @State var pricePercentChange: Double
-    @State var status: SymbolStatus = .stable
-    @State var time: String
-    @State var symbolCurrency: SymbolConvert
+    let currency: CurrencyModel
     
     var body: some View {
         VStack(spacing: 20) {
             HStack {
                 VStack {
                     // MARK: - Symbol title
-                    Text(title)
+                    Text(currency.title)
                         .customFont(name: "Shabnam", style: .title3, weight: .medium)
                         .dynamicTypeSize(.xSmall ... .large)
                         .foregroundStyle(.primary)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
                     // MARK: - Updated time
-                    Text(time)
+                    Text(currency.globalTime.timeAgoDisplay())
                         .customFont(name: "Shabnam", style: .footnote, weight: .medium)
                         .foregroundStyle(.secondary)
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -40,45 +32,40 @@ struct SymbolRowView: View {
                 Spacer()
                 
                 // MARK: - Symbol price
-                switch symbolCurrency {
-                case .rial:
-                    Text(LocalizedStringKey("\(Int(price)) Rial"))
-                        .customFont(name: "Shabnam", style: .title2, weight: .medium)
-                        .dynamicTypeSize(.xSmall ... .large)
-                        .foregroundStyle(.primary)
-                case .dollar:
-                    Text(LocalizedStringKey("\(Int(price)) Dollar"))
-                        .customFont(name: "Shabnam", style: .title2, weight: .medium)
-                        .dynamicTypeSize(.xSmall ... .large)
-                        .foregroundStyle(.primary)
+                HStack(spacing: 1) {
+                    Text(String(currency.currentPrice.clean))
+                    Text(LocalizedStringKey(currency.toCurrency.rawValue))
                 }
+                .customFont(name: "Shabnam", style: .title2, weight: .medium)
+                .dynamicTypeSize(.xSmall ... .large)
+                .foregroundStyle(.primary)
             }
             
             HStack {
-                switch symbolCurrency {
-                case .rial:
-                    Text("\(Int(priceChange)) Rial")
-                        .customFont(name: "Shabnam", style: .subheadline, weight: .regular)
-                        .foregroundStyle(.primary)
-                case .dollar:
-                    Text("\(Int(priceChange)) Dollar")
-                        .customFont(name: "Shabnam", style: .subheadline, weight: .regular)
-                        .foregroundStyle(.primary)
+                HStack(spacing: 1) {
+                    if currency.status != .stable {
+                        Text(String(currency.priceChange.clean))
+                        Text(LocalizedStringKey(currency.toCurrency.rawValue))
+                    } else {
+                        Text("Without change")
+                    }
                 }
+                .customFont(name: "Shabnam", style: .subheadline, weight: .regular)
+                .foregroundStyle(.primary)
                 
                 Spacer()
                 
-                switch status {
+                switch currency.status {
                 case .up:
-                    Label("\(pricePercentChange, specifier: "%.2f")%", systemImage: "chevron.up")
+                    Label("\(currency.percentChange, specifier: "%.2f")%", systemImage: "chevron.up")
                         .customFont(name: "Shabnam", style: .subheadline, weight: .regular)
                         .foregroundStyle(.secondary)
                 case .down:
-                    Label("\(pricePercentChange, specifier: "%.2f")%", systemImage: "chevron.down")
+                    Label("\(currency.percentChange, specifier: "%.2f")%", systemImage: "chevron.down")
                         .customFont(name: "Shabnam", style: .subheadline, weight: .regular)
                         .foregroundStyle(.secondary)
                 case .stable:
-                    Text("\(pricePercentChange, specifier: "%.0f")%")
+                    Text("\(currency.percentChange, specifier: "%.0f")%")
                         .customFont(name: "Shabnam", style: .subheadline, weight: .regular)
                         .foregroundStyle(.secondary)
                 }
@@ -87,7 +74,7 @@ struct SymbolRowView: View {
         .padding(.horizontal)
         .padding(.vertical, 10)
         .foregroundColor(.white)
-        .background(SymbolBackground(status: status))
+        .background(SymbolBackground(status: currency.status))
     }
 }
 
@@ -96,19 +83,24 @@ struct SymbolRowView: View {
 
 struct SymbolRowView_Previews: PreviewProvider {
     static var previews: some View {
+        
+        let currency = CurrencyModel(
+            object: "price_dollar_rl",
+            title: "USD (Centeral bank)",
+            currentPrice: 241850,
+            toCurrency: .rial,
+            status: .up,
+            priceUp: 242250,
+            priceDown: 239450,
+            percentChange: 0.57,
+            priceChange: 1360,
+            shamsiTime: "۱۴:۴۷:۳۷",
+            globalTime: Date()
+        )
+        
         Group {
-            SymbolRowView(
-                title: "USD",
-                price: 241850,
-                priceHigh: 242250,
-                priceLow:239450,
-                priceChange: 1360,
-                pricePercentChange: 0.57,
-                status: .up,
-                time: "2021-06-16 19:59:49",
-                symbolCurrency: .rial
-            )
-            
+            SymbolRowView(currency: currency)
+
         }
         .previewLayout(.fixed(width: 450, height: 120))
     }

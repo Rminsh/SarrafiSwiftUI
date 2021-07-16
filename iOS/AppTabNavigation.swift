@@ -1,9 +1,9 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-Tab based app structure.
-*/
+//
+//  AppTabNavigation.swift
+//  Sarrafi (iOS)
+//
+//  Created by armin on 7/12/21.
+//
 
 import SwiftUI
 
