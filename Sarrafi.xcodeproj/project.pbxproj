@@ -47,8 +47,8 @@
 		C6ABD870267A90190082BDB2 /* SymbolBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */; };
 		C6C41964269B68C30050DD1C /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C41963269B68C30050DD1C /* SectionView.swift */; };
 		C6C41965269B68C30050DD1C /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C41963269B68C30050DD1C /* SectionView.swift */; };
-		C6D164F726A1DF7500EFC825 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C6D164F626A1DF7500EFC825 /* SwiftUICharts */; };
-		C6D164FA26A1DF8E00EFC825 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C6D164F926A1DF8E00EFC825 /* SwiftUICharts */; };
+		C6D164FD26A1FDF100EFC825 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C6D164FC26A1FDF100EFC825 /* SwiftUICharts */; };
+		C6D1650026A216DE00EFC825 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C6D164FF26A216DE00EFC825 /* SwiftUICharts */; };
 		C6EB21DE267FA7CB00671861 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21DD267FA7CB00671861 /* Constants.swift */; };
 		C6EB21DF267FA7CB00671861 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21DD267FA7CB00671861 /* Constants.swift */; };
 		C6EB21E3267FAF6000671861 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21E0267FAF5F00671861 /* Charts.swift */; };
@@ -95,6 +95,7 @@
 		C6A6BA64269CC58000967073 /* SymbolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetailView.swift; sourceTree = "<group>"; };
 		C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolBackground.swift; sourceTree = "<group>"; };
 		C6C41963269B68C30050DD1C /* SectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		C6D164FE26A216CE00EFC825 /* Sarrafi--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Sarrafi--macOS--Info.plist"; sourceTree = "<group>"; };
 		C6EB21DD267FA7CB00671861 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C6EB21E0267FAF5F00671861 /* Charts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
 		C6EB21E1267FAF5F00671861 /* CurrencyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
@@ -113,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6D164F726A1DF7500EFC825 /* SwiftUICharts in Frameworks */,
+				C6D164FD26A1FDF100EFC825 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6D164FA26A1DF8E00EFC825 /* SwiftUICharts in Frameworks */,
+				C6D1650026A216DE00EFC825 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +148,7 @@
 		C652CE53267A4F0300B1D9BA = {
 			isa = PBXGroup;
 			children = (
+				C6D164FE26A216CE00EFC825 /* Sarrafi--macOS--Info.plist */,
 				C6EB21D9267FA78400671861 /* Core */,
 				C6EB21F4267FC08600671861 /* iOS */,
 				C624263B26A1738E0064E7CD /* macOS */,
@@ -321,7 +323,7 @@
 			);
 			name = "Sarrafi (iOS)";
 			packageProductDependencies = (
-				C6D164F626A1DF7500EFC825 /* SwiftUICharts */,
+				C6D164FC26A1FDF100EFC825 /* SwiftUICharts */,
 			);
 			productName = "Sarrafi (iOS)";
 			productReference = C652CE60267A4F0500B1D9BA /* Sarrafi.app */;
@@ -341,7 +343,7 @@
 			);
 			name = "Sarrafi (macOS)";
 			packageProductDependencies = (
-				C6D164F926A1DF8E00EFC825 /* SwiftUICharts */,
+				C6D164FF26A216DE00EFC825 /* SwiftUICharts */,
 			);
 			productName = "Sarrafi (macOS)";
 			productReference = C652CE66267A4F0500B1D9BA /* Sarrafi.app */;
@@ -376,7 +378,7 @@
 			);
 			mainGroup = C652CE53267A4F0300B1D9BA;
 			packageReferences = (
-				C6D164F526A1DF7500EFC825 /* XCRemoteSwiftPackageReference "ChartView" */,
+				C6D164FB26A1FDF100EFC825 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
 			);
 			productRefGroup = C652CE61267A4F0500B1D9BA /* Products */;
 			projectDirPath = "";
@@ -618,7 +620,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L4C26EK8EJ;
+				DEVELOPMENT_TEAM = YB99NQ76R5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -636,7 +638,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.shalchian.Sarrafi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Sarrafi;
 				PRODUCT_NAME = Sarrafi;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -655,7 +657,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L4C26EK8EJ;
+				DEVELOPMENT_TEAM = YB99NQ76R5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -673,7 +675,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.shalchian.Sarrafi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.Sarrafi;
 				PRODUCT_NAME = Sarrafi;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -699,6 +701,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sarrafi--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -729,6 +732,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sarrafi--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -777,25 +781,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C6D164F526A1DF7500EFC825 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+		C6D164FB26A1FDF100EFC825 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AppPear/ChartView";
+			repositoryURL = "https://github.com/willdale/SwiftUICharts";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.5.5;
+				minimumVersion = 2.8.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C6D164F626A1DF7500EFC825 /* SwiftUICharts */ = {
+		C6D164FC26A1FDF100EFC825 /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C6D164F526A1DF7500EFC825 /* XCRemoteSwiftPackageReference "ChartView" */;
+			package = C6D164FB26A1FDF100EFC825 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
 			productName = SwiftUICharts;
 		};
-		C6D164F926A1DF8E00EFC825 /* SwiftUICharts */ = {
+		C6D164FF26A216DE00EFC825 /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C6D164F526A1DF7500EFC825 /* XCRemoteSwiftPackageReference "ChartView" */;
+			package = C6D164FB26A1FDF100EFC825 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
 			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */

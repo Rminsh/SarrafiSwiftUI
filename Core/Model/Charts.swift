@@ -8,6 +8,16 @@
 
 import Foundation
 
+enum ChartType: String, CaseIterable, Identifiable {
+    case day         = "Daily"
+    case month       = "Monthly"
+    case threeMonths = "3 Months"
+    case sixMonths   = "6 Months"
+    case summery     = "Summery"
+    
+    var id: String { self.rawValue }
+}
+
 struct Charts {
 	let day			: ChartItem
 	let month		: ChartItem

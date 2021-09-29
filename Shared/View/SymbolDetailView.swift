@@ -7,12 +7,16 @@
 //
 
 import SwiftUI
+import SwiftUICharts
 
 struct SymbolDetailView: View {
     var currencyProvider: CurrencyService = .shared
     let currency: CurrencyModel
     
     @State private var chartsObject: Charts? = nil
+    @State private var chartsData: LineChartData? = nil
+    @State private var selectedChart = ChartType.month
+    
     @State private var isLoading = false
     @State private var error: NetworkingError?
     @State private var hasError = false
@@ -86,12 +90,25 @@ struct SymbolDetailView: View {
                             .padding()
                         }
                         
-                        // TODO: Add Chart view
-                        
-                        
-                        
-                        
+                        VStack {
+                            Picker("", selection: $selectedChart) {
+                                ForEach(ChartType.allCases) {
+                                    Text($0.rawValue).tag(0)
+                                        .customFont(name: "Shabnam", style: .body)
+                                }
+                            }
+                            .pickerStyle(.segmented)
+                            
+                            Spacer()
+                            
+                            // TODO: Add Chart view
+                            if let chartsData = chartsData {
+                                FilledLineChart(chartData: chartsData)
+                            }
+                        }
                     }
+                    .padding(.horizontal)
+                    .frame(height: 300)
                     
                     // MARK: - Price Change
                     HStack {
@@ -116,11 +133,28 @@ struct SymbolDetailView: View {
                         
                         Spacer()
                         
-                        ProgressBar(
-                            progress: Float(currency.percentChange)/100,
-                            title: "\(String(format: "%.2f", currency.percentChange))%"
-                        )
-                        .frame(maxWidth: 70, maxHeight: 70)
+                        switch currency.status {
+                        case .up:
+                            ProgressBar(
+                                progress: Float(currency.percentChange)/100,
+                                title: "+\(String(format: "%.2f", currency.percentChange))%"
+                            )
+                            .frame(maxWidth: 70, maxHeight: 70)
+                            
+                        case .down:
+                            ProgressBar(
+                                progress: Float(-currency.percentChange)/100,
+                                title: "-\(String(format: "%.2f", currency.percentChange))%"
+                            )
+                            .frame(maxWidth: 70, maxHeight: 70)
+                            
+                        case .stable:
+                            ProgressBar(
+                                progress: Float(currency.percentChange)/100,
+                                title: "\(String(format: "%.2f", currency.percentChange))%"
+                            )
+                            .frame(maxWidth: 70, maxHeight: 70)
+                        }
                     }
                     .padding()
                     #if os(iOS)
