@@ -22,14 +22,13 @@ struct SarrafiApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
         .commands {
             SidebarCommands()
         }
         #if os(macOS)
-        .windowToolbarStyle(.unifiedCompact(showsTitle: false))
+        .windowToolbarStyle(.unifiedCompact(showsTitle: true))
         #endif
-        
     }
 }

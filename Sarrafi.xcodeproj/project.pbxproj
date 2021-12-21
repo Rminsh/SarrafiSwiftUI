@@ -20,10 +20,10 @@
 		C652CE6C267A4F0500B1D9BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C652CE5B267A4F0500B1D9BA /* Assets.xcassets */; };
 		C652CE79267A517200B1D9BA /* SymbolRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE78267A517200B1D9BA /* SymbolRowView.swift */; };
 		C652CE7A267A517200B1D9BA /* SymbolRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE78267A517200B1D9BA /* SymbolRowView.swift */; };
-		C653A76E267B3AA50043E4BB /* AppSidebarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653A76C267B3AA50043E4BB /* AppSidebarNavigation.swift */; };
-		C653A76F267B3AA50043E4BB /* AppSidebarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653A76C267B3AA50043E4BB /* AppSidebarNavigation.swift */; };
-		C653A770267B3AA50043E4BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653A76D267B3AA50043E4BB /* ContentView.swift */; };
-		C653A771267B3AA50043E4BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653A76D267B3AA50043E4BB /* ContentView.swift */; };
+		C653A76E267B3AA50043E4BB /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653A76C267B3AA50043E4BB /* Sidebar.swift */; };
+		C653A76F267B3AA50043E4BB /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653A76C267B3AA50043E4BB /* Sidebar.swift */; };
+		C653A770267B3AA50043E4BB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653A76D267B3AA50043E4BB /* MainView.swift */; };
+		C653A771267B3AA50043E4BB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653A76D267B3AA50043E4BB /* MainView.swift */; };
 		C657262D269C904B00461C8C /* Shabnam-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6572628269C904B00461C8C /* Shabnam-Light.ttf */; };
 		C657262E269C904B00461C8C /* Shabnam-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6572628269C904B00461C8C /* Shabnam-Light.ttf */; };
 		C657262F269C904B00461C8C /* Shabnam-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6572629269C904B00461C8C /* Shabnam-Medium.ttf */; };
@@ -63,7 +63,7 @@
 		C6EB21EF267FB09F00671861 /* CurrencyListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21ED267FB09F00671861 /* CurrencyListResponse.swift */; };
 		C6EB21F1267FB0D200671861 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21F0267FB0D200671861 /* NetworkingError.swift */; };
 		C6EB21F2267FB0D200671861 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21F0267FB0D200671861 /* NetworkingError.swift */; };
-		C6EB21F6267FC0A300671861 /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21F5267FC0A300671861 /* AppTabNavigation.swift */; };
+		C6EB21F6267FC0A300671861 /* TabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21F5267FC0A300671861 /* TabNavigation.swift */; };
 		C6F2C8702680B45B00C93AC0 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2C86F2680B45B00C93AC0 /* NavigationItem.swift */; };
 		C6F2C8712680B45B00C93AC0 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2C86F2680B45B00C93AC0 /* NavigationItem.swift */; };
 		C6F2C8762680C3CC00C93AC0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6F2C8792680C3CC00C93AC0 /* Localizable.strings */; };
@@ -80,8 +80,8 @@
 		C652CE60267A4F0500B1D9BA /* Sarrafi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sarrafi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C652CE66267A4F0500B1D9BA /* Sarrafi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sarrafi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C652CE78267A517200B1D9BA /* SymbolRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolRowView.swift; sourceTree = "<group>"; };
-		C653A76C267B3AA50043E4BB /* AppSidebarNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSidebarNavigation.swift; sourceTree = "<group>"; };
-		C653A76D267B3AA50043E4BB /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C653A76C267B3AA50043E4BB /* Sidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		C653A76D267B3AA50043E4BB /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C6572628269C904B00461C8C /* Shabnam-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-Light.ttf"; sourceTree = "<group>"; };
 		C6572629269C904B00461C8C /* Shabnam-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-Medium.ttf"; sourceTree = "<group>"; };
 		C657262A269C904B00461C8C /* Shabnam-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-Thin.ttf"; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		C6A6BA64269CC58000967073 /* SymbolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetailView.swift; sourceTree = "<group>"; };
 		C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolBackground.swift; sourceTree = "<group>"; };
 		C6C41963269B68C30050DD1C /* SectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
-		C6D164FE26A216CE00EFC825 /* Sarrafi--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Sarrafi--macOS--Info.plist"; sourceTree = "<group>"; };
+		C6D164FE26A216CE00EFC825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6EB21DD267FA7CB00671861 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C6EB21E0267FAF5F00671861 /* Charts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
 		C6EB21E1267FAF5F00671861 /* CurrencyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		C6EB21E9267FAFA200671861 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 		C6EB21ED267FB09F00671861 /* CurrencyListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyListResponse.swift; sourceTree = "<group>"; };
 		C6EB21F0267FB0D200671861 /* NetworkingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
-		C6EB21F5267FC0A300671861 /* AppTabNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabNavigation.swift; sourceTree = "<group>"; };
+		C6EB21F5267FC0A300671861 /* TabNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigation.swift; sourceTree = "<group>"; };
 		C6F2C86F2680B45B00C93AC0 /* NavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
 		C6F2C87A2680C3D300C93AC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C6F2C87B2680C3E500C93AC0 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -132,7 +132,8 @@
 		C624263B26A1738E0064E7CD /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				C624263C26A173B10064E7CD /* VisualEffectBlur.swift */,
+				C664553B2772694C005816CA /* Components */,
+				C664553A2772690F005816CA /* Resources */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -148,7 +149,6 @@
 		C652CE53267A4F0300B1D9BA = {
 			isa = PBXGroup;
 			children = (
-				C6D164FE26A216CE00EFC825 /* Sarrafi--macOS--Info.plist */,
 				C6EB21D9267FA78400671861 /* Core */,
 				C6EB21F4267FC08600671861 /* iOS */,
 				C624263B26A1738E0064E7CD /* macOS */,
@@ -162,10 +162,10 @@
 			isa = PBXGroup;
 			children = (
 				C652CE76267A4F2300B1D9BA /* Components */,
-				C652CE75267A4F1C00B1D9BA /* Model */,
 				C653A76B267B3AA50043E4BB /* Navigation */,
 				C6F2C8722680C37900C93AC0 /* Resources */,
 				C652CE77267A4F2B00B1D9BA /* View */,
+				C69EEE01277256B80041F0CE /* ViewModels */,
 				C652CE59267A4F0300B1D9BA /* SarrafiApp.swift */,
 			);
 			path = Shared;
@@ -178,13 +178,6 @@
 				C652CE66267A4F0500B1D9BA /* Sarrafi.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C652CE75267A4F1C00B1D9BA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		C652CE76267A4F2300B1D9BA /* Components */ = {
@@ -212,9 +205,8 @@
 		C653A76B267B3AA50043E4BB /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				C653A76C267B3AA50043E4BB /* AppSidebarNavigation.swift */,
-				C653A76D267B3AA50043E4BB /* ContentView.swift */,
-				C6F2C86F2680B45B00C93AC0 /* NavigationItem.swift */,
+				C653A76C267B3AA50043E4BB /* Sidebar.swift */,
+				C653A76D267B3AA50043E4BB /* MainView.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -229,6 +221,54 @@
 				C657262B269C904B00461C8C /* Shabnam.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C664553A2772690F005816CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C6D164FE26A216CE00EFC825 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C664553B2772694C005816CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C624263C26A173B10064E7CD /* VisualEffectBlur.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C664553C27726954005816CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C6572638269C90F500461C8C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C664553D2772698B005816CA /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				C6EB21F5267FC0A300671861 /* TabNavigation.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C664553E27726993005816CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C6A6BA5F269C94C100967073 /* Theme.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C69EEE01277256B80041F0CE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C6F2C86F2680B45B00C93AC0 /* NavigationItem.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		C6D164F826A1DF8E00EFC825 /* Frameworks */ = {
@@ -289,9 +329,9 @@
 		C6EB21F4267FC08600671861 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C6572638269C90F500461C8C /* Info.plist */,
-				C6EB21F5267FC0A300671861 /* AppTabNavigation.swift */,
-				C6A6BA5F269C94C100967073 /* Theme.swift */,
+				C664553E27726993005816CA /* Components */,
+				C664553D2772698B005816CA /* Navigation */,
+				C664553C27726954005816CA /* Resources */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -357,7 +397,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					C652CE5F267A4F0500B1D9BA = {
 						CreatedOnToolsVersion = 13.0;
@@ -433,12 +473,12 @@
 				C624264426A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */,
 				C6C41964269B68C30050DD1C /* SectionView.swift in Sources */,
 				C6F2C8702680B45B00C93AC0 /* NavigationItem.swift in Sources */,
-				C653A770267B3AA50043E4BB /* ContentView.swift in Sources */,
+				C653A770267B3AA50043E4BB /* MainView.swift in Sources */,
 				C6EB21EE267FB09F00671861 /* CurrencyListResponse.swift in Sources */,
 				C652CE67267A4F0500B1D9BA /* SarrafiApp.swift in Sources */,
 				C6EB21F1267FB0D200671861 /* NetworkingError.swift in Sources */,
 				C6EB21E7267FAF6000671861 /* ChartModel.swift in Sources */,
-				C6EB21F6267FC0A300671861 /* AppTabNavigation.swift in Sources */,
+				C6EB21F6267FC0A300671861 /* TabNavigation.swift in Sources */,
 				C6A6BA62269C95F700967073 /* CustomFont.swift in Sources */,
 				C6EB21EA267FAFA200671861 /* CurrencyService.swift in Sources */,
 				C69EA912269F385700BF1706 /* ProgressBar.swift in Sources */,
@@ -446,7 +486,7 @@
 				C6EB21E5267FAF6000671861 /* CurrencyModel.swift in Sources */,
 				C6EB21DE267FA7CB00671861 /* Constants.swift in Sources */,
 				C6A6BA65269CC58000967073 /* SymbolDetailView.swift in Sources */,
-				C653A76E267B3AA50043E4BB /* AppSidebarNavigation.swift in Sources */,
+				C653A76E267B3AA50043E4BB /* Sidebar.swift in Sources */,
 				C6ABD86F267A90190082BDB2 /* SymbolBackground.swift in Sources */,
 				C6A6BA60269C94C100967073 /* Theme.swift in Sources */,
 			);
@@ -461,7 +501,7 @@
 				C624264226A17EAD0064E7CD /* Date+Extensions.swift in Sources */,
 				C652CE6A267A4F0500B1D9BA /* SymbolListView.swift in Sources */,
 				C6A6BA63269C95F700967073 /* CustomFont.swift in Sources */,
-				C653A771267B3AA50043E4BB /* ContentView.swift in Sources */,
+				C653A771267B3AA50043E4BB /* MainView.swift in Sources */,
 				C624264526A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */,
 				C6EB21EF267FB09F00671861 /* CurrencyListResponse.swift in Sources */,
 				C6A6BA66269CC58000967073 /* SymbolDetailView.swift in Sources */,
@@ -475,7 +515,7 @@
 				C6EB21E6267FAF6000671861 /* CurrencyModel.swift in Sources */,
 				C624263E26A173B50064E7CD /* VisualEffectBlur.swift in Sources */,
 				C6EB21DF267FA7CB00671861 /* Constants.swift in Sources */,
-				C653A76F267B3AA50043E4BB /* AppSidebarNavigation.swift in Sources */,
+				C653A76F267B3AA50043E4BB /* Sidebar.swift in Sources */,
 				C6ABD870267A90190082BDB2 /* SymbolBackground.swift in Sources */,
 				C6F2C8712680B45B00C93AC0 /* NavigationItem.swift in Sources */,
 			);
@@ -501,6 +541,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -562,6 +603,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -620,10 +662,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YB99NQ76R5;
+				DEVELOPMENT_TEAM = L4C26EK8EJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_FILE = iOS/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleExecutable = Sarrafi;
 				INFOPLIST_KEY_CFBundleName = Sarrafi;
 				INFOPLIST_KEY_CFBundleVersion = 1;
@@ -657,10 +699,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YB99NQ76R5;
+				DEVELOPMENT_TEAM = L4C26EK8EJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_FILE = iOS/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleExecutable = Sarrafi;
 				INFOPLIST_KEY_CFBundleName = Sarrafi;
 				INFOPLIST_KEY_CFBundleVersion = 1;
@@ -692,6 +734,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sarrafi.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -701,7 +744,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Sarrafi--macOS--Info.plist";
+				INFOPLIST_FILE = macOS/Resources/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -723,6 +766,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sarrafi.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -732,7 +776,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Sarrafi--macOS--Info.plist";
+				INFOPLIST_FILE = macOS/Resources/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

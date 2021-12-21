@@ -18,72 +18,69 @@ struct SymbolListView: View {
     @State private var hasError = false
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color("BackgroundColor")
-                    .edgesIgnoringSafeArea(.all)
-                List {
-                    ForEach(currencyList, id: \.id) { currency in
-                        ZStack {
-                            SymbolRowView(currency: currency)
-                                .cornerRadius(12)
-                            NavigationLink(destination: SymbolDetailView(currency: currency)) {
-                                EmptyView()
-                            }
-                            .tint(.clear)
-                            .opacity(0)
-                        }
-                        #if os(iOS)
-                        .listRowSeparator(.hidden)
-                        .listRowBackground(Color.clear)
-                        #endif
+        ZStack {
+            Color("BackgroundColor")
+                .edgesIgnoringSafeArea(.all)
+            content
+        }
+    }
+    
+    var content: some View {
+        List {
+            ForEach(currencyList, id: \.id) { currency in
+                ZStack {
+                    SymbolRowView(currency: currency)
+                        .cornerRadius(12)
+                    NavigationLink(destination: SymbolDetailView(currency: currency)) {
+                        EmptyView()
                     }
+                    .tint(.clear)
+                    .opacity(0)
                 }
                 #if os(iOS)
-                .listStyle(.plain)
+                .listRowSeparator(.hidden)
+                .listRowBackground(Color.clear)
                 #endif
-                .overlay {
-                    if currencyList.isEmpty {
-                        ZStack {
-                            if isLoading {
-                                ProgressView()
-                            }
+            }
+        }
+        #if os(iOS)
+        .listStyle(.plain)
+        #endif
+        .overlay {
+            if currencyList.isEmpty {
+                ZStack {
+                    if isLoading {
+                        ProgressView()
+                    }
+                    
+                    if hasError {
+                        VStack {
+                            Text(error?.errorDescription ?? "")
+                                .customFont(name: "Shabnam", style: .body)
+                                .foregroundColor(.secondary)
+                                .multilineTextAlignment(.center)
                             
-                            if hasError {
-                                VStack {
-                                    Text(error?.errorDescription ?? "")
-                                        .customFont(name: "Shabnam", style: .body)
-                                        .foregroundColor(.secondary)
-                                        .multilineTextAlignment(.center)
-                                    
-                                    Button(action: {
-                                        Task.init() {
-                                            await fetchList()
-                                        }
-                                    }) {
-                                        Text("Try_again")
-                                            .customFont(name: "Shabnam", style: .body)
-                                    }
-                                    .buttonStyle(.bordered)
+                            Button(action: {
+                                Task.init() {
+                                    await fetchList()
                                 }
-                                .padding()
+                            }) {
+                                Text("Try_again")
+                                    .customFont(name: "Shabnam", style: .body)
                             }
+                            .buttonStyle(.bordered)
                         }
+                        .padding()
                     }
                 }
-                .refreshable {
-                    await fetchList()
-                }
-                .task {
-                    await fetchList()
-                }
             }
-            #if os(macOS)
-            .frame(minWidth: 325)
-            #endif
-            .navigationTitle("APP_NAME")
         }
-        
+        .refreshable {
+            await fetchList()
+        }
+        .task {
+            await fetchList()
+        }
     }
 }
 
