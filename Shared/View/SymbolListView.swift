@@ -9,13 +9,8 @@ import SwiftUI
 
 struct SymbolListView: View {
     
-    var currencyProvider: CurrencyService = .shared
-    @State var currencyList = [CurrencyModel]()
     @State var type: GlobalCurrencyType
-    
-    @State private var isLoading = false
-    @State private var error: NetworkingError?
-    @State private var hasError = false
+    @StateObject var viewModel = SymbolListViewModel()
     
     var body: some View {
         ZStack {
@@ -27,7 +22,7 @@ struct SymbolListView: View {
     
     var content: some View {
         List {
-            ForEach(currencyList, id: \.id) { currency in
+            ForEach(viewModel.currencyList, id: \.id) { currency in
                 ZStack {
                     SymbolRowView(currency: currency)
                         .cornerRadius(12)
@@ -47,22 +42,22 @@ struct SymbolListView: View {
         .listStyle(.plain)
         #endif
         .overlay {
-            if currencyList.isEmpty {
+            if viewModel.currencyList.isEmpty {
                 ZStack {
-                    if isLoading {
+                    if viewModel.isLoading {
                         ProgressView()
                     }
                     
-                    if hasError {
+                    if viewModel.hasError {
                         VStack {
-                            Text(error?.errorDescription ?? "")
+                            Text(viewModel.error?.errorDescription ?? "")
                                 .customFont(name: "Shabnam", style: .body)
                                 .foregroundColor(.secondary)
                                 .multilineTextAlignment(.center)
                             
                             Button(action: {
                                 Task.init() {
-                                    await fetchList()
+                                    await viewModel.fetchList(type: type)
                                 }
                             }) {
                                 Text("Try_again")
@@ -76,35 +71,11 @@ struct SymbolListView: View {
             }
         }
         .refreshable {
-            await fetchList()
+            await viewModel.fetchList(type: type)
         }
         .task {
-            await fetchList()
+            await viewModel.fetchList(type: type)
         }
-    }
-}
-
-extension SymbolListView {
-    private func fetchList() async {
-        hasError = false
-        isLoading = true
-        do {
-            let response = try await currencyProvider.fetchData()
-            switch type {
-            case .cash:
-                currencyList = response.cashStats
-            case .gold:
-                currencyList = response.goldStats
-            case .crypto:
-                currencyList = response.cryptoStats
-            case .oil:
-                currencyList = response.oilStats
-            }
-        } catch {
-            self.error = error as? NetworkingError
-            self.hasError = true
-        }
-        isLoading = false
     }
 }
 
