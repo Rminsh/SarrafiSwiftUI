@@ -14,9 +14,19 @@ struct SymbolListView: View {
     
     var body: some View {
         ZStack {
+            #if os(iOS)
             Color("BackgroundColor")
                 .edgesIgnoringSafeArea(.all)
+            
             content
+            #endif
+            
+            #if os(macOS)
+            NavigationView {
+                content
+                    .frame(minWidth: 320)
+            }
+            #endif
         }
     }
     
