@@ -9,6 +9,7 @@ import UIKit
 
 class Theme {
     static func navigationBar(
+        fontNormal: String,
         fontInLine: String,
         fontLarge: String,
         background : UIColor?,
@@ -34,7 +35,7 @@ class Theme {
         UINavigationBar.appearance().compactAppearance = navigationAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = navigationAppearance
         
-        UIBarButtonItem.appearance().setTitleTextAttributes(normalTextAttributes, for: UIControl.State.normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes(normalTextAttributes, for: .normal)
         UIBarButtonItem.appearance().setTitleTextAttributes(normalTextAttributes, for: .highlighted)
         UIBarButtonItem.appearance().setTitleTextAttributes(normalTextAttributes, for: .focused)
         
@@ -43,7 +44,22 @@ class Theme {
         UINavigationBar.appearance().backItem?.scrollEdgeAppearance?.titleTextAttributes = normalTextAttributes
         UINavigationBar.appearance().backItem?.compactScrollEdgeAppearance?.titleTextAttributes = normalTextAttributes
         
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.init(name: fontInLine, size: 10)! ], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([.font: UIFont.init(name: fontInLine, size: 10)! ], for: .normal)
+        
+        // SearchBar
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).attributedPlaceholder = NSAttributedString(
+            string: "Search",
+            attributes: [
+                .foregroundColor: UIColor.secondaryLabel,
+                .font : UIFont(name: fontNormal, size: 16)!
+            ]
+        )
+        
+        
+        // Search bar cancel button
+        UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).setTitleTextAttributes([.font : UIFont(name: fontNormal, size: 16)!
+        ], for: .normal)
+        UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).title = "Cancel"
     }
 }
 

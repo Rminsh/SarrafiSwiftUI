@@ -13,6 +13,7 @@ struct SarrafiApp: App {
     init(){
         #if os(iOS)
         Theme.navigationBar(
+            fontNormal: "Shabnam",
             fontInLine: "Shabnam-Medium",
             fontLarge: "Shabnam-Bold",
             background: UIColor(named: "BackgroundColor")
