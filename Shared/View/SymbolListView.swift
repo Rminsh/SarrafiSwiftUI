@@ -13,7 +13,7 @@ struct SymbolListView: View {
     
     var body: some View {
         List {
-            ForEach(viewModel.currencyList, id: \.id) { currency in
+            ForEach(currencyList, id: \.id) { currency in
                 ZStack {
                     SymbolRowView(currency: currency)                        
                     NavigationLink(destination: SymbolDetailView(currency: currency)) {
@@ -31,6 +31,19 @@ struct SymbolListView: View {
         #if os(iOS)
         .listStyle(.plain)
         #endif
+        .searchable(
+            text: $viewModel.searchText,
+            prompt: Text(LocalizedStringKey("Search"))
+        )
+    }
+}
+
+extension SymbolListView {
+    var currencyList: [CurrencyModel] {
+        return viewModel.currencyList
+            .filter {
+                return viewModel.searchText.isEmpty ? true : $0.name.toString().contains(viewModel.searchText)
+            }
     }
 }
 
