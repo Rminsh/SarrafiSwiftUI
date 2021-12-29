@@ -12,7 +12,7 @@ struct NavigationItem: Identifiable {
     let name: LocalizedStringKey
     let comment: LocalizedStringKey
     let icon: String
-    let content: SymbolListView
+    let content: SymbolView
 }
 
 final class NavigationItemsModel: ObservableObject {
@@ -30,28 +30,28 @@ final class NavigationItemsModel: ObservableObject {
             name: "Cash",
             comment: "List of exchange rates",
             icon: "dollarsign.circle",
-            content: SymbolListView(type: .cash)
+            content: SymbolView(type: .cash)
         ),
         
         NavigationItem(
             name: "Gold",
             comment: "List of the gold and coins prices",
             icon: "sparkles.rectangle.stack",
-            content: SymbolListView(type: .gold)
+            content: SymbolView(type: .gold)
         ),
         
         NavigationItem(
             name: "Crypto",
             comment: "List of the crytp currencies prices",
             icon: "bitcoinsign.circle",
-            content: SymbolListView(type: .crypto)
+            content: SymbolView(type: .crypto)
         ),
         
         NavigationItem(
             name: "Oil",
             comment: "List of the oil prices",
             icon: "fuelpump",
-            content: SymbolListView(type: .oil)
+            content: SymbolView(type: .oil)
         ),
     ]
 }

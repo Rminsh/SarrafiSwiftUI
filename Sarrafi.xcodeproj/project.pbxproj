@@ -12,10 +12,12 @@
 		C624264226A17EAD0064E7CD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624264026A17EAD0064E7CD /* Date+Extensions.swift */; };
 		C624264426A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624264326A190BA0064E7CD /* CurrencyService+ChartMethod.swift */; };
 		C624264526A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624264326A190BA0064E7CD /* CurrencyService+ChartMethod.swift */; };
+		C6417076277C55F9003375C4 /* CurrencyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6417075277C55F9003375C4 /* CurrencyTableView.swift */; };
+		C652CAD827735519002CF56F /* DisplayModePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CAD727735519002CF56F /* DisplayModePicker.swift */; };
 		C652CE67267A4F0500B1D9BA /* SarrafiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE59267A4F0300B1D9BA /* SarrafiApp.swift */; };
 		C652CE68267A4F0500B1D9BA /* SarrafiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE59267A4F0300B1D9BA /* SarrafiApp.swift */; };
-		C652CE69267A4F0500B1D9BA /* SymbolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE5A267A4F0300B1D9BA /* SymbolListView.swift */; };
-		C652CE6A267A4F0500B1D9BA /* SymbolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE5A267A4F0300B1D9BA /* SymbolListView.swift */; };
+		C652CE69267A4F0500B1D9BA /* SymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE5A267A4F0300B1D9BA /* SymbolView.swift */; };
+		C652CE6A267A4F0500B1D9BA /* SymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE5A267A4F0300B1D9BA /* SymbolView.swift */; };
 		C652CE6B267A4F0500B1D9BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C652CE5B267A4F0500B1D9BA /* Assets.xcassets */; };
 		C652CE6C267A4F0500B1D9BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C652CE5B267A4F0500B1D9BA /* Assets.xcassets */; };
 		C652CE79267A517200B1D9BA /* SymbolRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652CE78267A517200B1D9BA /* SymbolRowView.swift */; };
@@ -49,6 +51,10 @@
 		C6ABD870267A90190082BDB2 /* SymbolBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */; };
 		C6C41964269B68C30050DD1C /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C41963269B68C30050DD1C /* SectionView.swift */; };
 		C6C41965269B68C30050DD1C /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C41963269B68C30050DD1C /* SectionView.swift */; };
+		C6C43888277326BE003D1A52 /* Extensions+LocalizedStringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43887277326BE003D1A52 /* Extensions+LocalizedStringKey.swift */; };
+		C6C43889277326BE003D1A52 /* Extensions+LocalizedStringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43887277326BE003D1A52 /* Extensions+LocalizedStringKey.swift */; };
+		C6CE7276277CC1F5008CF32E /* SymbolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE7275277CC1F5008CF32E /* SymbolListView.swift */; };
+		C6CE7277277CC1F5008CF32E /* SymbolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE7275277CC1F5008CF32E /* SymbolListView.swift */; };
 		C6D164FD26A1FDF100EFC825 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C6D164FC26A1FDF100EFC825 /* SwiftUICharts */; };
 		C6D1650026A216DE00EFC825 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C6D164FF26A216DE00EFC825 /* SwiftUICharts */; };
 		C6EB21DE267FA7CB00671861 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21DD267FA7CB00671861 /* Constants.swift */; };
@@ -76,8 +82,10 @@
 		C624263C26A173B10064E7CD /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		C624264026A17EAD0064E7CD /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		C624264326A190BA0064E7CD /* CurrencyService+ChartMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrencyService+ChartMethod.swift"; sourceTree = "<group>"; };
+		C6417075277C55F9003375C4 /* CurrencyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableView.swift; sourceTree = "<group>"; };
+		C652CAD727735519002CF56F /* DisplayModePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayModePicker.swift; sourceTree = "<group>"; };
 		C652CE59267A4F0300B1D9BA /* SarrafiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SarrafiApp.swift; sourceTree = "<group>"; };
-		C652CE5A267A4F0300B1D9BA /* SymbolListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolListView.swift; sourceTree = "<group>"; };
+		C652CE5A267A4F0300B1D9BA /* SymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolView.swift; sourceTree = "<group>"; };
 		C652CE5B267A4F0500B1D9BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C652CE60267A4F0500B1D9BA /* Sarrafi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sarrafi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C652CE66267A4F0500B1D9BA /* Sarrafi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sarrafi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +106,8 @@
 		C6A6BA64269CC58000967073 /* SymbolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetailView.swift; sourceTree = "<group>"; };
 		C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolBackground.swift; sourceTree = "<group>"; };
 		C6C41963269B68C30050DD1C /* SectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		C6C43887277326BE003D1A52 /* Extensions+LocalizedStringKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+LocalizedStringKey.swift"; sourceTree = "<group>"; };
+		C6CE7275277CC1F5008CF32E /* SymbolListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolListView.swift; sourceTree = "<group>"; };
 		C6D164FE26A216CE00EFC825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6EB21DD267FA7CB00671861 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C6EB21E0267FAF5F00671861 /* Charts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
@@ -137,6 +147,7 @@
 			children = (
 				C664553B2772694C005816CA /* Components */,
 				C664553A2772690F005816CA /* Resources */,
+				C652CAD62773550D002CF56F /* Views */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -147,6 +158,15 @@
 				C624264026A17EAD0064E7CD /* Date+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C652CAD62773550D002CF56F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C652CAD727735519002CF56F /* DisplayModePicker.swift */,
+				C6417075277C55F9003375C4 /* CurrencyTableView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		C652CE53267A4F0300B1D9BA = {
@@ -191,6 +211,7 @@
 				C6C41963269B68C30050DD1C /* SectionView.swift */,
 				C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */,
 				C67F0926269EFA2A00E2A242 /* Extensions+Double.swift */,
+				C6C43887277326BE003D1A52 /* Extensions+LocalizedStringKey.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -198,9 +219,10 @@
 		C652CE77267A4F2B00B1D9BA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C652CE78267A517200B1D9BA /* SymbolRowView.swift */,
-				C652CE5A267A4F0300B1D9BA /* SymbolListView.swift */,
 				C6A6BA64269CC58000967073 /* SymbolDetailView.swift */,
+				C6CE7275277CC1F5008CF32E /* SymbolListView.swift */,
+				C652CE78267A517200B1D9BA /* SymbolRowView.swift */,
+				C652CE5A267A4F0300B1D9BA /* SymbolView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -473,7 +495,7 @@
 				C652CE79267A517200B1D9BA /* SymbolRowView.swift in Sources */,
 				C624264126A17EAD0064E7CD /* Date+Extensions.swift in Sources */,
 				C664554027726ED3005816CA /* SymbolListViewModel.swift in Sources */,
-				C652CE69267A4F0500B1D9BA /* SymbolListView.swift in Sources */,
+				C652CE69267A4F0500B1D9BA /* SymbolView.swift in Sources */,
 				C67F0927269EFA2A00E2A242 /* Extensions+Double.swift in Sources */,
 				C624264426A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */,
 				C6C41964269B68C30050DD1C /* SectionView.swift in Sources */,
@@ -492,7 +514,9 @@
 				C6EB21DE267FA7CB00671861 /* Constants.swift in Sources */,
 				C6A6BA65269CC58000967073 /* SymbolDetailView.swift in Sources */,
 				C653A76E267B3AA50043E4BB /* Sidebar.swift in Sources */,
+				C6C43888277326BE003D1A52 /* Extensions+LocalizedStringKey.swift in Sources */,
 				C6ABD86F267A90190082BDB2 /* SymbolBackground.swift in Sources */,
+				C6CE7276277CC1F5008CF32E /* SymbolListView.swift in Sources */,
 				C6A6BA60269C94C100967073 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,11 +528,14 @@
 				C652CE7A267A517200B1D9BA /* SymbolRowView.swift in Sources */,
 				C69EA913269F385700BF1706 /* ProgressBar.swift in Sources */,
 				C624264226A17EAD0064E7CD /* Date+Extensions.swift in Sources */,
-				C652CE6A267A4F0500B1D9BA /* SymbolListView.swift in Sources */,
+				C652CE6A267A4F0500B1D9BA /* SymbolView.swift in Sources */,
+				C6417076277C55F9003375C4 /* CurrencyTableView.swift in Sources */,
+				C6CE7277277CC1F5008CF32E /* SymbolListView.swift in Sources */,
 				C6A6BA63269C95F700967073 /* CustomFont.swift in Sources */,
 				C653A771267B3AA50043E4BB /* MainView.swift in Sources */,
 				C624264526A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */,
 				C6EB21EF267FB09F00671861 /* CurrencyListResponse.swift in Sources */,
+				C6C43889277326BE003D1A52 /* Extensions+LocalizedStringKey.swift in Sources */,
 				C6A6BA66269CC58000967073 /* SymbolDetailView.swift in Sources */,
 				C67F0928269EFA2A00E2A242 /* Extensions+Double.swift in Sources */,
 				C652CE68267A4F0500B1D9BA /* SarrafiApp.swift in Sources */,
@@ -520,6 +547,7 @@
 				C6EB21E6267FAF6000671861 /* CurrencyModel.swift in Sources */,
 				C624263E26A173B50064E7CD /* VisualEffectBlur.swift in Sources */,
 				C6EB21DF267FA7CB00671861 /* Constants.swift in Sources */,
+				C652CAD827735519002CF56F /* DisplayModePicker.swift in Sources */,
 				C653A76F267B3AA50043E4BB /* Sidebar.swift in Sources */,
 				C664554127726ED3005816CA /* SymbolListViewModel.swift in Sources */,
 				C6ABD870267A90190082BDB2 /* SymbolBackground.swift in Sources */,

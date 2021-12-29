@@ -42,7 +42,7 @@ struct SymbolDetailView: View {
                     
                     #if os(macOS)
                     // MARK: - Symbol title (Only for macOS)
-                    Text(currency.title)
+                    Text(currency.name)
                         .customFont(name: "Shabnam", style: .largeTitle, weight: .medium)
                     #endif
                     
@@ -208,7 +208,7 @@ struct SymbolDetailView: View {
             .textSelection(.enabled)
             .foregroundStyle(.primary)
             #if os(iOS)
-            .navigationTitle(currency.title)
+            .navigationTitle(currency.name)
             #endif
         }
 
@@ -272,7 +272,8 @@ struct SymbolDetailView_Previews: PreviewProvider {
         
         let currency = CurrencyModel(
             object: "price_dollar_rl",
-            title: "USD (Centeral bank)",
+            name: "USD (Centeral bank)",
+            symbol: "🇺🇸",
             currentPrice: 241850,
             toCurrency: .rial,
             status: .up,

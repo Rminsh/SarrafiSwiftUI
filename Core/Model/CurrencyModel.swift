@@ -10,10 +10,11 @@ import SwiftUI
 
 // MARK: - Currency Model Class
 
-class CurrencyModel {
+class CurrencyModel: Identifiable {
     let id              : UUID
     let object			: String
-    let title			: LocalizedStringKey
+    let name			: LocalizedStringKey
+    let symbol          : String
     let currentPrice	: Double
     let toCurrency		: SymbolConvert
     let status			: SymbolStatus
@@ -26,20 +27,22 @@ class CurrencyModel {
     
     init(
         object			: String,
-		 title			: LocalizedStringKey,
-		 currentPrice	: Double,
-		 toCurrency		: SymbolConvert,
-		 status			: SymbolStatus,
-		 priceUp		: Double,
-		 priceDown		: Double,
-		 percentChange	: Double,
-		 priceChange	: Double,
-         shamsiTime		: String,
-         globalTime     : Date
+        name			: LocalizedStringKey,
+        symbol          : String,
+        currentPrice	: Double,
+        toCurrency		: SymbolConvert,
+        status			: SymbolStatus,
+        priceUp		: Double,
+        priceDown		: Double,
+        percentChange	: Double,
+        priceChange	: Double,
+        shamsiTime		: String,
+        globalTime     : Date
     ) {
         self.id             = UUID()
 		self.object			= object
-		self.title			= title
+		self.name			= name
+        self.symbol         = symbol
 		self.currentPrice	= currentPrice
 		self.toCurrency		= toCurrency
 		self.status			= status

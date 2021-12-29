@@ -16,6 +16,8 @@ class SymbolListViewModel: ObservableObject {
     @Published var error: NetworkingError?
     @Published var hasError = false
     
+    @Published var searchText: String = ""
+    
     func fetchList(type: GlobalCurrencyType) async {
         hasError = false
         isLoading = true

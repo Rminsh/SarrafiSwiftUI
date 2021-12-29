@@ -28,7 +28,7 @@ struct SarrafiApp: App {
             SidebarCommands()
         }
         #if os(macOS)
-        .windowToolbarStyle(.unifiedCompact(showsTitle: true))
+        .windowToolbarStyle(.unified)
         #endif
     }
 }

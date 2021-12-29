@@ -29,6 +29,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_dollar_rl,
             currencyName: Current.CodingKeys.price_dollar_rl.rawValue,
             title: "USD (Centeral bank)",
+            symbol: "🇺🇸",
             toCurrency: .rial
         )
         
@@ -37,6 +38,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_dollar_soleymani,
             currencyName: Current.CodingKeys.price_dollar_soleymani.rawValue,
             title: "USD (Soleymanie)",
+            symbol: "🇺🇸",
             toCurrency: .rial
         )
         
@@ -45,6 +47,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_eur,
             currencyName: Current.CodingKeys.price_eur.rawValue,
             title: "EUR",
+            symbol: "🇪🇺",
             toCurrency: .rial
         )
         
@@ -53,6 +56,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_cad,
             currencyName: Current.CodingKeys.price_cad.rawValue,
             title: "CAD",
+            symbol: "🇨🇦",
             toCurrency: .rial
         )
         
@@ -61,6 +65,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_aud,
             currencyName: Current.CodingKeys.price_aud.rawValue,
             title: "AUD",
+            symbol: "🇦🇺",
             toCurrency: .rial
         )
         
@@ -69,6 +74,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_nzd,
             currencyName: Current.CodingKeys.price_nzd.rawValue,
             title: "NZD",
+            symbol: "🇳🇿",
             toCurrency: .rial
         )
         
@@ -77,6 +83,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_sgd,
             currencyName: Current.CodingKeys.price_sgd.rawValue,
             title: "SGD",
+            symbol: "🇸🇬",
             toCurrency: .rial
         )
         
@@ -85,6 +92,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_gbp,
             currencyName: Current.CodingKeys.price_gbp.rawValue,
             title: "GBP",
+            symbol: "🇬🇧",
             toCurrency: .rial
         )
         
@@ -93,6 +101,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_aed,
             currencyName: Current.CodingKeys.price_aed.rawValue,
             title: "AED",
+            symbol: "🇦🇪",
             toCurrency: .rial
         )
         
@@ -101,6 +110,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_try,
             currencyName: Current.CodingKeys.price_try.rawValue,
             title: "TRY",
+            symbol: "🇹🇷",
             toCurrency: .rial
         )
         
@@ -109,6 +119,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_chf,
             currencyName: Current.CodingKeys.price_chf.rawValue,
             title: "CHF",
+            symbol: "🇹🇷",
             toCurrency: .rial
         )
         
@@ -117,6 +128,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_cny,
             currencyName: Current.CodingKeys.price_cny.rawValue,
             title: "CNY",
+            symbol: "🇨🇭",
             toCurrency: .rial
         )
         
@@ -125,6 +137,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_jpy,
             currencyName: Current.CodingKeys.price_jpy.rawValue,
             title: "JPY",
+            symbol: "🇯🇵",
             toCurrency: .rial
         )
         
@@ -133,6 +146,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_afn,
             currencyName: Current.CodingKeys.price_afn.rawValue,
             title: "AFN",
+            symbol: "🇦🇫",
             toCurrency: .rial
         )
         
@@ -141,6 +155,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_inr,
             currencyName: Current.CodingKeys.price_inr.rawValue,
             title: "INR",
+            symbol: "🇮🇳",
             toCurrency: .rial
         )
         
@@ -149,6 +164,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_iqd,
             currencyName: Current.CodingKeys.price_iqd.rawValue,
             title: "IQD",
+            symbol: "🇮🇶",
             toCurrency: .rial
         )
         
@@ -157,6 +173,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_sek,
             currencyName: Current.CodingKeys.price_sek.rawValue,
             title: "SEK",
+            symbol: "🇸🇪",
             toCurrency: .rial
         )
         
@@ -165,6 +182,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_myr,
             currencyName: Current.CodingKeys.price_myr.rawValue,
             title: "MYR",
+            symbol: "🇲🇾",
             toCurrency: .rial
         )
         
@@ -173,6 +191,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.price_rub,
             currencyName: Current.CodingKeys.price_rub.rawValue,
             title: "RUB",
+            symbol: "🇷🇺",
             toCurrency: .rial
         )
         
@@ -182,6 +201,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.sekee,
             currencyName: Current.CodingKeys.sekee.rawValue,
             title: "New Coin",
+            symbol: "🟡",
             toCurrency: .rial
         )
         
@@ -190,6 +210,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.sekeb,
             currencyName: Current.CodingKeys.sekeb.rawValue,
             title: "Old Coin",
+            symbol: "🟡",
             toCurrency: .rial
         )
         
@@ -198,6 +219,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.nim,
             currencyName: Current.CodingKeys.nim.rawValue,
             title: "Coin / Half",
+            symbol: "🟡",
             toCurrency: .rial
         )
         
@@ -206,6 +228,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.rob,
             currencyName: Current.CodingKeys.rob.rawValue,
             title: "Coin / Quarter",
+            symbol: "🟡",
             toCurrency: .rial
         )
         
@@ -214,6 +237,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.gerami,
             currencyName: Current.CodingKeys.gerami.rawValue,
             title: "Coin / Gram",
+            symbol: "🟡",
             toCurrency: .rial
         )
         
@@ -222,6 +246,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.geram24,
             currencyName: Current.CodingKeys.geram24.rawValue,
             title: "Gold 24",
+            symbol: "🏅",
             toCurrency: .rial
         )
         
@@ -230,6 +255,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.geram18,
             currencyName: Current.CodingKeys.geram18.rawValue,
             title: "Gold 18",
+            symbol: "🏅",
             toCurrency: .rial
         )
         
@@ -238,6 +264,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.mesghal,
             currencyName: Current.CodingKeys.mesghal.rawValue,
             title: "Mesghal",
+            symbol: "🟡",
             toCurrency: .rial
         )
         
@@ -246,6 +273,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.ons,
             currencyName: Current.CodingKeys.ons.rawValue,
             title: "Gold",
+            symbol: "🟡",
             toCurrency: .dollar
         )
         
@@ -254,6 +282,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.silver,
             currencyName: Current.CodingKeys.silver.rawValue,
             title: "Silver",
+            symbol: "⚪️",
             toCurrency: .dollar
         )
         
@@ -263,6 +292,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.bitcoin,
             currencyName: Current.CodingKeys.bitcoin.rawValue,
             title: "Bitcoin",
+            symbol: "🪙",
             toCurrency: .dollar
         )
         
@@ -271,6 +301,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.ethereum,
             currencyName: Current.CodingKeys.ethereum.rawValue,
             title: "Ethereum",
+            symbol: "🪙",
             toCurrency: .dollar
         )
         
@@ -279,6 +310,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.ripple,
             currencyName: Current.CodingKeys.ripple.rawValue,
             title: "Ripple",
+            symbol: "🪙",
             toCurrency: .dollar
         )
         
@@ -287,6 +319,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.dash,
             currencyName: Current.CodingKeys.dash.rawValue,
             title: "Dash",
+            symbol: "🪙",
             toCurrency: .dollar
         )
         
@@ -295,6 +328,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.litecoin,
             currencyName: Current.CodingKeys.litecoin.rawValue,
             title: "Litecoin",
+            symbol: "🪙",
             toCurrency: .dollar
         )
         
@@ -303,6 +337,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.stellar,
             currencyName: Current.CodingKeys.stellar.rawValue,
             title: "Stellar",
+            symbol: "🪙",
             toCurrency: .dollar
         )
         
@@ -312,6 +347,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.oil_usa,
             currencyName: Current.CodingKeys.oil_usa.rawValue,
             title: "Oil USA",
+            symbol: "🇺🇸",
             toCurrency: .dollar
         )
         
@@ -320,6 +356,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.oil_brent,
             currencyName: Current.CodingKeys.oil_brent.rawValue,
             title: "Oil Brent",
+            symbol: "🇬🇧",
             toCurrency: .dollar
         )
         
@@ -328,6 +365,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.oil_opec,
             currencyName: Current.CodingKeys.oil_opec.rawValue,
             title: "Oil Opec",
+            symbol: "🇮🇷",
             toCurrency: .dollar
         )
         
@@ -336,6 +374,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.gas_usa,
             currencyName: Current.CodingKeys.gas_usa.rawValue,
             title: "Gas USA",
+            symbol: "🇺🇸",
             toCurrency: .dollar
         )
         
@@ -344,6 +383,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.gas_natural_usa,
             currencyName: Current.CodingKeys.gas_natural_usa.rawValue,
             title: "Natural Gas USA",
+            symbol: "🇺🇸",
             toCurrency: .dollar
         )
         
@@ -352,6 +392,7 @@ struct CurrencyListResponse {
             currencyObject: currencyStruct.current.gasoline_uk,
             currencyName: Current.CodingKeys.gasoline_uk.rawValue,
             title: "Gasoline UK",
+            symbol: "🇬🇧",
             toCurrency: .dollar
         )
     }
@@ -361,13 +402,15 @@ struct CurrencyListResponse {
         currencyObject: CurrencyDetail,
         currencyName: String,
         title: String,
+        symbol: String,
         toCurrency: SymbolConvert
     ) {
         switch type {
         case .cash:
             cashStats.append(CurrencyModel(
                 object: currencyName,
-                title: LocalizedStringKey(title),
+                name: LocalizedStringKey(title),
+                symbol: symbol,
                 currentPrice: convertPrice(currencyObject.p),
                 toCurrency: toCurrency,
                 status: convertStatus(currencyObject.dt),
@@ -381,7 +424,8 @@ struct CurrencyListResponse {
         case .gold:
             goldStats.append(CurrencyModel(
                 object: currencyName,
-                title: LocalizedStringKey(title),
+                name: LocalizedStringKey(title),
+                symbol: symbol,
                 currentPrice: convertPrice(currencyObject.p),
                 toCurrency: toCurrency,
                 status: convertStatus(currencyObject.dt),
@@ -395,7 +439,8 @@ struct CurrencyListResponse {
         case .crypto:
             cryptoStats.append(CurrencyModel(
                 object: currencyName,
-                title: LocalizedStringKey(title),
+                name: LocalizedStringKey(title),
+                symbol: symbol,
                 currentPrice: convertPrice(currencyObject.p),
                 toCurrency: toCurrency,
                 status: convertStatus(currencyObject.dt),
@@ -409,7 +454,8 @@ struct CurrencyListResponse {
         case .oil:
             oilStats.append(CurrencyModel(
                 object: currencyName,
-                title: LocalizedStringKey(title),
+                name: LocalizedStringKey(title),
+                symbol: symbol,
                 currentPrice: convertPrice(currencyObject.p),
                 toCurrency: toCurrency,
                 status: convertStatus(currencyObject.dt),

@@ -42,12 +42,13 @@ struct Sidebar: View {
                 #if os(macOS)
                 ToolbarItemGroup {
                     Button(action: toggleSidebar) {
-                        Image(systemName: "sidebar.left")
+                        Image(systemName: "sidebar.leading")
                             .help("Toggle Sidebar")
                     }
                 }
                 #endif
             }
+            .frame(minWidth: 150)
             Text("No selection")
         }
     }

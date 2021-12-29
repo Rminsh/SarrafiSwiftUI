@@ -7,6 +7,20 @@
 */
 // MARK: - App content
 "APP_NAME" = "Sarrafi";
+"Search" = "Search";
+"Currency name" = "Currency name";
+"Price" = "Price";
+"Price Changes" = "Price Changes";
+"Without change" = "Without change";
+"Price Change" = "Price Change";
+"Last update" = "Last update";
+
+"Increase" = "Increase";
+"Stable" = "Stable";
+"Decrease" = "Decrease";
+
+"Highest price today" = "Highest price today";
+"Lowest price today" = "Lowest price today";
 
 "Try_again" = "Try again";
 "network_error_failed" = "Failed to get data";
@@ -28,17 +42,6 @@
 "Rial" = "Rial";
 "Toman" = "Toman";
 "Dollar" = "Dollar";
-
-"Without change" = "Without change";
-"Price Change" = "Price Change";
-"Last update" = "Last update";
-
-"Increase" = "Increase";
-"Stable" = "Stable";
-"Decrease" = "Decrease";
-
-"Highest price today" = "Highest price today";
-"Lowest price today" = "Lowest price today";
 
 // MARK: - Currency names
 "USD (Centeral bank)" = "USD (Centeral bank)";

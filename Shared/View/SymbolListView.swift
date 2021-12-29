@@ -1,41 +1,21 @@
 //
-//  ContentView.swift
-//  Shared
+//  SymbolListView.swift
+//  Sarrafi
 //
-//  Created by armin on 6/16/21.
+//  Created by Armin on 12/29/21.
 //
 
 import SwiftUI
 
 struct SymbolListView: View {
     
-    @State var type: GlobalCurrencyType
-    @StateObject var viewModel = SymbolListViewModel()
+    @EnvironmentObject var viewModel: SymbolListViewModel
     
     var body: some View {
-        ZStack {
-            #if os(iOS)
-            Color("BackgroundColor")
-                .edgesIgnoringSafeArea(.all)
-            
-            content
-            #endif
-            
-            #if os(macOS)
-            NavigationView {
-                content
-                    .frame(minWidth: 320)
-            }
-            #endif
-        }
-    }
-    
-    var content: some View {
         List {
             ForEach(viewModel.currencyList, id: \.id) { currency in
                 ZStack {
-                    SymbolRowView(currency: currency)
-                        .cornerRadius(12)
+                    SymbolRowView(currency: currency)                        
                     NavigationLink(destination: SymbolDetailView(currency: currency)) {
                         EmptyView()
                     }
@@ -51,46 +31,11 @@ struct SymbolListView: View {
         #if os(iOS)
         .listStyle(.plain)
         #endif
-        .overlay {
-            if viewModel.currencyList.isEmpty {
-                ZStack {
-                    if viewModel.isLoading {
-                        ProgressView()
-                    }
-                    
-                    if viewModel.hasError {
-                        VStack {
-                            Text(viewModel.error?.errorDescription ?? "")
-                                .customFont(name: "Shabnam", style: .body)
-                                .foregroundColor(.secondary)
-                                .multilineTextAlignment(.center)
-                            
-                            Button(action: {
-                                Task.init() {
-                                    await viewModel.fetchList(type: type)
-                                }
-                            }) {
-                                Text("Try_again")
-                                    .customFont(name: "Shabnam", style: .body)
-                            }
-                            .buttonStyle(.bordered)
-                        }
-                        .padding()
-                    }
-                }
-            }
-        }
-        .refreshable {
-            await viewModel.fetchList(type: type)
-        }
-        .task {
-            await viewModel.fetchList(type: type)
-        }
     }
 }
 
 struct SymbolListView_Previews: PreviewProvider {
     static var previews: some View {
-        SymbolListView(type: .cash)
+        SymbolListView()
     }
 }

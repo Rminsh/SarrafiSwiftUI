@@ -16,7 +16,7 @@ struct SymbolRowView: View {
             HStack {
                 VStack {
                     // MARK: - Symbol title
-                    Text(currency.title)
+                    Text(currency.name)
                         .customFont(name: "Shabnam", style: .title3, weight: .medium)
                         .dynamicTypeSize(.xSmall ... .large)
                         .foregroundStyle(.primary)
@@ -75,6 +75,8 @@ struct SymbolRowView: View {
         .padding(.vertical, 10)
         .foregroundColor(.white)
         .background(SymbolBackground(status: currency.status))
+        .cornerRadius(5)
+        .padding(.vertical, 2)
     }
 }
 
@@ -86,7 +88,8 @@ struct SymbolRowView_Previews: PreviewProvider {
         
         let currency = CurrencyModel(
             object: "price_dollar_rl",
-            title: "USD (Centeral bank)",
+            name: "USD (Centeral bank)",
+            symbol: "🇺🇸",
             currentPrice: 241850,
             toCurrency: .rial,
             status: .up,

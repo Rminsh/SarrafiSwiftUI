@@ -7,6 +7,20 @@
 */
 // MARK: - App content
 "APP_NAME" = "صرافی";
+"Search" = "جست و جو";
+"Currency name" = "نوع ارز";
+"Price" = "قیمت";
+"Price Changes" = "تغییرات قیمت";
+"Without change" = "بدون تغییر";
+"Price Change" = "تغییرات قیمت";
+"Last update" = "آخرین به‌روزرسانی";
+
+"Increase" = "افزایش";
+"Stable" = "ثابت";
+"Decrease" = "کاهش";
+
+"Highest price today" = "بالاترین قیمت روز";
+"Lowest price today" = "پایین‌ترین قیمت روز";
 
 "Try_again" = "دوباره تلاش کنید";
 "network_error_failed" = "خطا در دریافت اطلاعات";
@@ -28,17 +42,6 @@
 "Rial" = "ریال";
 "Toman" = "تومان";
 "Dollar" = "دلار";
-
-"Without change" = "بدون تغییر";
-"Price Change" = "تغییرات قیمت";
-"Last update" = "آخرین به‌روزرسانی";
-
-"Increase" = "افزایش";
-"Stable" = "ثابت";
-"Decrease" = "کاهش";
-
-"Highest price today" = "بالاترین قیمت روز";
-"Lowest price today" = "پایین‌ترین قیمت روز";
 
 // MARK: - Currency names
 "USD (Centeral bank)" = "دلار آمریکا (بانک مرکزی)";
