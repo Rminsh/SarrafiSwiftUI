@@ -63,7 +63,7 @@ class Theme {
         UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).title = "Cancel"
         
         // MARK: - UISegmentedControl
-        UISegmentedControl.appearance().setTitleTextAttributes([.font : UIFont(name: fontNormal, size: 16)!], for: .normal)
+        UISegmentedControl.appearance().setTitleTextAttributes([.font : UIFont(name: fontNormal, size: 14)!], for: .normal)
     }
 }
 

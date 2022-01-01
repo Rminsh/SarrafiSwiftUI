@@ -95,7 +95,7 @@ struct SymbolDetailView: View {
                                 ForEach(ChartType.allCases) {
                                     Text(LocalizedStringKey($0.rawValue))
                                         .customFont(name: "Shabnam", style: .body)
-                                        .tag(0)
+                                        .tag($0)
                                 }
                             }
                             .pickerStyle(.segmented)
