@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C60763B2278042340018D758 /* SymbolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60763B1278042340018D758 /* SymbolDetailsViewModel.swift */; };
+		C60763B3278042340018D758 /* SymbolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60763B1278042340018D758 /* SymbolDetailsViewModel.swift */; };
 		C624263E26A173B50064E7CD /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624263C26A173B10064E7CD /* VisualEffectBlur.swift */; };
 		C624264126A17EAD0064E7CD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624264026A17EAD0064E7CD /* Date+Extensions.swift */; };
 		C624264226A17EAD0064E7CD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624264026A17EAD0064E7CD /* Date+Extensions.swift */; };
@@ -36,6 +38,8 @@
 		C6572634269C904B00461C8C /* Shabnam.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C657262B269C904B00461C8C /* Shabnam.ttf */; };
 		C6572635269C904B00461C8C /* Shabnam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C657262C269C904B00461C8C /* Shabnam-Bold.ttf */; };
 		C6572636269C904B00461C8C /* Shabnam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C657262C269C904B00461C8C /* Shabnam-Bold.ttf */; };
+		C660632A2780535500699A9B /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C66063292780535500699A9B /* SwiftUICharts */; };
+		C660632C2780535F00699A9B /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C660632B2780535F00699A9B /* SwiftUICharts */; };
 		C664554027726ED3005816CA /* SymbolListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664553F27726ED3005816CA /* SymbolListViewModel.swift */; };
 		C664554127726ED3005816CA /* SymbolListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664553F27726ED3005816CA /* SymbolListViewModel.swift */; };
 		C67F0927269EFA2A00E2A242 /* Extensions+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0926269EFA2A00E2A242 /* Extensions+Double.swift */; };
@@ -55,8 +59,6 @@
 		C6C43889277326BE003D1A52 /* Extensions+LocalizedStringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43887277326BE003D1A52 /* Extensions+LocalizedStringKey.swift */; };
 		C6CE7276277CC1F5008CF32E /* SymbolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE7275277CC1F5008CF32E /* SymbolListView.swift */; };
 		C6CE7277277CC1F5008CF32E /* SymbolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE7275277CC1F5008CF32E /* SymbolListView.swift */; };
-		C6D164FD26A1FDF100EFC825 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C6D164FC26A1FDF100EFC825 /* SwiftUICharts */; };
-		C6D1650026A216DE00EFC825 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C6D164FF26A216DE00EFC825 /* SwiftUICharts */; };
 		C6EB21DE267FA7CB00671861 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21DD267FA7CB00671861 /* Constants.swift */; };
 		C6EB21DF267FA7CB00671861 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21DD267FA7CB00671861 /* Constants.swift */; };
 		C6EB21E3267FAF6000671861 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21E0267FAF5F00671861 /* Charts.swift */; };
@@ -79,6 +81,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C60763B1278042340018D758 /* SymbolDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetailsViewModel.swift; sourceTree = "<group>"; };
 		C624263C26A173B10064E7CD /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		C624264026A17EAD0064E7CD /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		C624264326A190BA0064E7CD /* CurrencyService+ChartMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrencyService+ChartMethod.swift"; sourceTree = "<group>"; };
@@ -127,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6D164FD26A1FDF100EFC825 /* SwiftUICharts in Frameworks */,
+				C660632A2780535500699A9B /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6D1650026A216DE00EFC825 /* SwiftUICharts in Frameworks */,
+				C660632C2780535F00699A9B /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +296,7 @@
 			children = (
 				C6F2C86F2680B45B00C93AC0 /* NavigationItem.swift */,
 				C664553F27726ED3005816CA /* SymbolListViewModel.swift */,
+				C60763B1278042340018D758 /* SymbolDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -389,7 +393,7 @@
 			);
 			name = "Sarrafi (iOS)";
 			packageProductDependencies = (
-				C6D164FC26A1FDF100EFC825 /* SwiftUICharts */,
+				C66063292780535500699A9B /* SwiftUICharts */,
 			);
 			productName = "Sarrafi (iOS)";
 			productReference = C652CE60267A4F0500B1D9BA /* Sarrafi.app */;
@@ -409,7 +413,7 @@
 			);
 			name = "Sarrafi (macOS)";
 			packageProductDependencies = (
-				C6D164FF26A216DE00EFC825 /* SwiftUICharts */,
+				C660632B2780535F00699A9B /* SwiftUICharts */,
 			);
 			productName = "Sarrafi (macOS)";
 			productReference = C652CE66267A4F0500B1D9BA /* Sarrafi.app */;
@@ -444,7 +448,7 @@
 			);
 			mainGroup = C652CE53267A4F0300B1D9BA;
 			packageReferences = (
-				C6D164FB26A1FDF100EFC825 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+				C66063282780535500699A9B /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
 			);
 			productRefGroup = C652CE61267A4F0500B1D9BA /* Products */;
 			projectDirPath = "";
@@ -500,6 +504,7 @@
 				C624264426A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */,
 				C6C41964269B68C30050DD1C /* SectionView.swift in Sources */,
 				C6F2C8702680B45B00C93AC0 /* NavigationItem.swift in Sources */,
+				C60763B2278042340018D758 /* SymbolDetailsViewModel.swift in Sources */,
 				C653A770267B3AA50043E4BB /* MainView.swift in Sources */,
 				C6EB21EE267FB09F00671861 /* CurrencyListResponse.swift in Sources */,
 				C652CE67267A4F0500B1D9BA /* SarrafiApp.swift in Sources */,
@@ -532,6 +537,7 @@
 				C6417076277C55F9003375C4 /* CurrencyTableView.swift in Sources */,
 				C6CE7277277CC1F5008CF32E /* SymbolListView.swift in Sources */,
 				C6A6BA63269C95F700967073 /* CustomFont.swift in Sources */,
+				C60763B3278042340018D758 /* SymbolDetailsViewModel.swift in Sources */,
 				C653A771267B3AA50043E4BB /* MainView.swift in Sources */,
 				C624264526A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */,
 				C6EB21EF267FB09F00671861 /* CurrencyListResponse.swift in Sources */,
@@ -859,25 +865,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C6D164FB26A1FDF100EFC825 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+		C66063282780535500699A9B /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/willdale/SwiftUICharts";
+			repositoryURL = "https://github.com/mecid/SwiftUICharts";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.8.1;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C6D164FC26A1FDF100EFC825 /* SwiftUICharts */ = {
+		C66063292780535500699A9B /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C6D164FB26A1FDF100EFC825 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			package = C66063282780535500699A9B /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
 			productName = SwiftUICharts;
 		};
-		C6D164FF26A216DE00EFC825 /* SwiftUICharts */ = {
+		C660632B2780535F00699A9B /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C6D164FB26A1FDF100EFC825 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			package = C66063282780535500699A9B /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
 			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */

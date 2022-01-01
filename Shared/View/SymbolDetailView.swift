@@ -10,16 +10,9 @@ import SwiftUI
 import SwiftUICharts
 
 struct SymbolDetailView: View {
-    var currencyProvider: CurrencyService = .shared
     let currency: CurrencyModel
     
-    @State private var chartsObject: Charts? = nil
-    @State private var chartsData: LineChartData? = nil
-    @State private var selectedChart = ChartType.month
-    
-    @State private var isLoading = false
-    @State private var error: NetworkingError?
-    @State private var hasError = false
+    @StateObject var viewModel = SymbolDetailsViewModel()
     
     @Environment(\.colorScheme) var colorScheme
     
@@ -64,13 +57,13 @@ struct SymbolDetailView: View {
                     
                     // MARK: - Chart
                     ZStack {
-                        if isLoading {
+                        if viewModel.isLoading {
                             ProgressView()
                         }
                         
-                        if hasError {
+                        if viewModel.hasError {
                             VStack {
-                                Text(error?.errorDescription ?? "")
+                                Text(viewModel.error?.errorDescription ?? "")
                                     .customFont(name: "Shabnam", style: .body)
                                     .foregroundColor(.secondary)
                                     .multilineTextAlignment(.center)
@@ -78,7 +71,7 @@ struct SymbolDetailView: View {
                                 
                                 Button(action: {
                                     Task.init() {
-                                        await fetchChart()
+                                        await viewModel.fetchChart(currency)
                                     }
                                 }) {
                                     Text("Try_again")
@@ -91,7 +84,7 @@ struct SymbolDetailView: View {
                         }
                         
                         VStack {
-                            Picker("", selection: $selectedChart) {
+                            Picker("", selection: $viewModel.selectedChart) {
                                 ForEach(ChartType.allCases) {
                                     Text(LocalizedStringKey($0.rawValue))
                                         .customFont(name: "Shabnam", style: .body)
@@ -103,8 +96,8 @@ struct SymbolDetailView: View {
                             Spacer()
                             
                             // TODO: Add Chart view
-                            if let chartsData = chartsData {
-                                FilledLineChart(chartData: chartsData)
+                            if let chartsData = viewModel.chartsData {
+                                BarChartView(dataPoints: chartsData)
                             }
                         }
                     }
@@ -124,7 +117,7 @@ struct SymbolDetailView: View {
                                     Text(LocalizedStringKey(currency.status.rawValue))
                                 }
                                 .customFont(name: "Shabnam", style: .headline)
-                                .foregroundColor(colorStatus(status: currency.status))
+                                .foregroundColor(viewModel.colorStatus(status: currency.status))
                             } else {
                                 Text("Without change")
                                     .customFont(name: "Shabnam", style: .headline)
@@ -201,10 +194,10 @@ struct SymbolDetailView: View {
                 }
             }
             .refreshable {
-                await fetchChart()
+                await viewModel.fetchChart(currency)
             }
             .task {
-                await fetchChart()
+                await viewModel.fetchChart(currency)
             }
             .textSelection(.enabled)
             .foregroundStyle(.primary)
@@ -242,30 +235,6 @@ struct PriceChangeView: View {
     }
 }
 
-extension SymbolDetailView {
-    private func fetchChart() async {
-        hasError = false
-        isLoading = true
-        do {
-            chartsObject = try await currencyProvider.getChart(for: currency)
-        } catch {
-            self.error = error as? NetworkingError
-            self.hasError = true
-        }
-        isLoading = false
-    }
-    
-    func colorStatus(status: SymbolStatus) -> Color {
-        switch status {
-        case .up:
-            return .green
-        case .down:
-            return .red
-        case .stable:
-            return .primary
-        }
-    }
-}
 
 struct SymbolDetailView_Previews: PreviewProvider {
     
