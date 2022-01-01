@@ -27,6 +27,12 @@
 "network_error_parsing" = "خطا در بارگزاری اطلاعات";
 "network_error_unexpected" = "خطای ناشناس در دریافت اطلاعات";
 
+"Daily" = "روزانه";
+"Monthly" = "ماهانه";
+"3 Months" = "۳ ماهه";
+"6 Months" = "۶ ماهه";
+"Summery" = "همه";
+
 // MARK: - Settings (iOS)
 "Settings" = "تنظیمات";
 "App_Icon" = "آیکون برنامه";

@@ -8,13 +8,14 @@
 import UIKit
 
 class Theme {
-    static func navigationBar(
+    static func setTheme(
         fontNormal: String,
         fontInLine: String,
         fontLarge: String,
         background : UIColor?,
         titleColor : UIColor = .label
     ){
+        // MARK: - NavigationBar
         let navigationAppearance = UINavigationBarAppearance()
         navigationAppearance.configureWithOpaqueBackground()
         navigationAppearance.backgroundColor = background ?? .clear
@@ -44,9 +45,10 @@ class Theme {
         UINavigationBar.appearance().backItem?.scrollEdgeAppearance?.titleTextAttributes = normalTextAttributes
         UINavigationBar.appearance().backItem?.compactScrollEdgeAppearance?.titleTextAttributes = normalTextAttributes
         
+        // MARK: - TabBar
         UITabBarItem.appearance().setTitleTextAttributes([.font: UIFont.init(name: fontInLine, size: 10)! ], for: .normal)
         
-        // SearchBar
+        // MARK: - SearchBar
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).attributedPlaceholder = NSAttributedString(
             string: "Search",
             attributes: [
@@ -55,11 +57,13 @@ class Theme {
             ]
         )
         
-        
-        // Search bar cancel button
+        // MARK: - Search bar cancel button
         UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).setTitleTextAttributes([.font : UIFont(name: fontNormal, size: 16)!
         ], for: .normal)
         UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).title = "Cancel"
+        
+        // MARK: - UISegmentedControl
+        UISegmentedControl.appearance().setTitleTextAttributes([.font : UIFont(name: fontNormal, size: 16)!], for: .normal)
     }
 }
 

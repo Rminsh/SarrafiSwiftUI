@@ -27,6 +27,12 @@
 "network_error_parsing" = "Could not parse data";
 "network_error_unexpected" = "Received unexpected error";
 
+"Daily" = "Daily";
+"Monthly" = "Monthly";
+"3 Months" = "3 Months";
+"6 Months" = "6 Months";
+"Summery" = "Summery";
+
 // MARK: - Settings (iOS)
 "Settings" = "Settings";
 "App_Icon" = "App Icon";

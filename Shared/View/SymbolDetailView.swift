@@ -93,8 +93,9 @@ struct SymbolDetailView: View {
                         VStack {
                             Picker("", selection: $selectedChart) {
                                 ForEach(ChartType.allCases) {
-                                    Text($0.rawValue).tag(0)
+                                    Text(LocalizedStringKey($0.rawValue))
                                         .customFont(name: "Shabnam", style: .body)
+                                        .tag(0)
                                 }
                             }
                             .pickerStyle(.segmented)
