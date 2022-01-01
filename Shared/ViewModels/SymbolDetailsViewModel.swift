@@ -6,14 +6,13 @@
 //
 
 import SwiftUI
-import SwiftUICharts
 
 class SymbolDetailsViewModel: ObservableObject {
     
     var currencyProvider: CurrencyService = .shared
     
     @Published var chartsObject: Charts? = nil
-    @Published var chartsData: [DataPoint]? = nil
+    @Published var currentChartsData: [Double]? = nil
     @Published var selectedChart = ChartType.month
     
     @Published var isLoading = false
@@ -39,14 +38,32 @@ class SymbolDetailsViewModel: ObservableObject {
             let result = try await currencyProvider.getChart(for: currency)
             DispatchQueue.main.async {
                 self.chartsObject = result
+                self.loadChart()
             }
         } catch {
-            self.error = error as? NetworkingError
-            self.hasError = true
+            DispatchQueue.main.async {
+                self.error = error as? NetworkingError
+                self.hasError = true
+            }
         }
         
         DispatchQueue.main.async {
             self.isLoading = false
+        }
+    }
+    
+    func loadChart() {
+        switch selectedChart {
+        case .day:
+            currentChartsData = chartsObject?.month.prices
+        case .month:
+            currentChartsData = chartsObject?.month.prices
+        case .threeMonths:
+            currentChartsData = chartsObject?.threeMonths.prices
+        case .sixMonths:
+            currentChartsData = chartsObject?.sixMonths.prices
+        case .summery:
+            currentChartsData = chartsObject?.summary.prices
         }
     }
 }

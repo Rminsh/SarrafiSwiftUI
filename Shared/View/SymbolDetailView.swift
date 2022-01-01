@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import SwiftUICharts
 
 struct SymbolDetailView: View {
     let currency: CurrencyModel
@@ -31,37 +30,37 @@ struct SymbolDetailView: View {
             
             ScrollView {
                 VStack(spacing: 10) {
-                    Spacer()
-                    
                     #if os(macOS)
                     // MARK: - Symbol title (Only for macOS)
+                    Spacer()
                     Text(currency.name)
                         .customFont(name: "Shabnam", style: .largeTitle, weight: .medium)
                     #endif
                     
-                    // MARK: - Symbol price
-                    HStack(spacing: 1) {
-                        Text(String(currency.currentPrice.clean))
-                        Text(LocalizedStringKey(currency.toCurrency.rawValue))
+                    VStack(spacing: 0) {
+                        // MARK: - Symbol price
+                        HStack(spacing: 1) {
+                            Text(String(currency.currentPrice.clean))
+                            Text(LocalizedStringKey(currency.toCurrency.rawValue))
+                        }
+                        .customFont(name: "Shabnam", style: .largeTitle, weight: .medium)
+                        .dynamicTypeSize(.xSmall ... .medium)
+                        
+                        // MARK: - Last update of symbol
+                        HStack(spacing: 2) {
+                            Text("Last update")
+                            Text(currency.globalTime.timeAgoDisplay())
+                        }
+                        .customFont(name: "Shabnam", style: .subheadline, weight: .light)
+                        .dynamicTypeSize(.xSmall ... .small)
                     }
-                    .customFont(name: "Shabnam", style: .largeTitle, weight: .medium)
-                    .dynamicTypeSize(.xSmall ... .medium)
-                    
-                    // MARK: - Last update of symbol
-                    HStack(spacing: 2) {
-                        Text("Last update")
-                        Text(currency.globalTime.timeAgoDisplay())
-                    }
-                    .customFont(name: "Shabnam", style: .subheadline, weight: .light)
-                    .dynamicTypeSize(.xSmall ... .small)
+                    .padding()
                     
                     // MARK: - Chart
                     ZStack {
                         if viewModel.isLoading {
                             ProgressView()
-                        }
-                        
-                        if viewModel.hasError {
+                        } else if viewModel.hasError {
                             VStack {
                                 Text(viewModel.error?.errorDescription ?? "")
                                     .customFont(name: "Shabnam", style: .body)
@@ -81,28 +80,40 @@ struct SymbolDetailView: View {
                                 .buttonStyle(.bordered)
                             }
                             .padding()
-                        }
-                        
-                        VStack {
-                            Picker("", selection: $viewModel.selectedChart) {
-                                ForEach(ChartType.allCases) {
-                                    Text(LocalizedStringKey($0.rawValue))
-                                        .customFont(name: "Shabnam", style: .body)
-                                        .tag($0)
+                        } else {
+                            VStack {
+                                Picker("", selection: $viewModel.selectedChart) {
+                                    ForEach(ChartType.allCases) {
+                                        Text(LocalizedStringKey($0.rawValue))
+                                            .customFont(name: "Shabnam", style: .body)
+                                            .tag($0)
+                                    }
                                 }
-                            }
-                            .pickerStyle(.segmented)
-                            
-                            Spacer()
-                            
-                            // TODO: Add Chart view
-                            if let chartsData = viewModel.chartsData {
-                                BarChartView(dataPoints: chartsData)
+                                .pickerStyle(.segmented)
+                                .onChange(of: viewModel.selectedChart) { _ in
+                                    viewModel.loadChart()
+                                }
+                                
+                                Spacer()
+                                
+                                if let chartsData = viewModel.currentChartsData {
+                                    LineView(
+                                        data: chartsData,
+                                        style: ChartStyle(
+                                            backgroundColor: Color.clear,
+                                            accentColor: Color.blue,
+                                            gradientColor: GradientColor.init(start: Color.blue, end: Color.purple),
+                                            textColor: Color.primary,
+                                            legendTextColor: Color.gray,
+                                            dropShadowColor: Color.gray
+                                        )
+                                    )
+                                }
                             }
                         }
                     }
                     .padding(.horizontal)
-                    .frame(height: 300)
+                    .frame(height: 340)
                     
                     // MARK: - Price Change
                     HStack {
@@ -116,11 +127,11 @@ struct SymbolDetailView: View {
                                     Text(LocalizedStringKey(currency.toCurrency.rawValue))
                                     Text(LocalizedStringKey(currency.status.rawValue))
                                 }
-                                .customFont(name: "Shabnam", style: .headline)
+                                .customFont(name: "Shabnam", style: .headline, weight: .medium)
                                 .foregroundColor(viewModel.colorStatus(status: currency.status))
                             } else {
                                 Text("Without change")
-                                    .customFont(name: "Shabnam", style: .headline)
+                                    .customFont(name: "Shabnam", style: .headline, weight: .medium)
                             }
                         }
                         .dynamicTypeSize(.xSmall ... .small)
@@ -225,7 +236,7 @@ struct PriceChangeView: View {
                 Text(String(price.clean))
                 Text(LocalizedStringKey(toCurrency))
             }
-            .customFont(name: "Shabnam", style: .body)
+            .customFont(name: "Shabnam", style: .body, weight: .bold)
             .foregroundStyle(.primary)
             
             Text(status == .up ? "Highest price today" : "Lowest price today")

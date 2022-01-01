@@ -17,14 +17,14 @@ struct SymbolRowView: View {
                 VStack {
                     // MARK: - Symbol title
                     Text(currency.name)
-                        .customFont(name: "Shabnam", style: .title3, weight: .medium)
+                        .customFont(name: "Shabnam", style: .title3, weight: .bold)
                         .dynamicTypeSize(.xSmall ... .large)
                         .foregroundStyle(.primary)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
                     // MARK: - Updated time
                     Text(currency.globalTime.timeAgoDisplay())
-                        .customFont(name: "Shabnam", style: .footnote, weight: .medium)
+                        .customFont(name: "Shabnam", style: .footnote, weight: .light)
                         .foregroundStyle(.secondary)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
@@ -36,7 +36,7 @@ struct SymbolRowView: View {
                     Text(String(currency.currentPrice.clean))
                     Text(LocalizedStringKey(currency.toCurrency.rawValue))
                 }
-                .customFont(name: "Shabnam", style: .title2, weight: .medium)
+                .customFont(name: "Shabnam", style: .title2, weight: .bold)
                 .dynamicTypeSize(.xSmall ... .large)
                 .foregroundStyle(.primary)
             }
@@ -50,7 +50,7 @@ struct SymbolRowView: View {
                         Text("Without change")
                     }
                 }
-                .customFont(name: "Shabnam", style: .subheadline, weight: .regular)
+                .customFont(name: "Shabnam", style: .subheadline, weight: .medium)
                 .foregroundStyle(.primary)
                 
                 Spacer()
