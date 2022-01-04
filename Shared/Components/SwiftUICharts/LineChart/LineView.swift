@@ -48,7 +48,7 @@ public struct LineView: View {
     
     public var body: some View {
         GeometryReader{ geometry in
-            VStack(alignment: .leading, spacing: 8) {
+            VStack(spacing: 8) {
                 Group{
                     if let title = title {
                         Text(title)
@@ -76,6 +76,10 @@ public struct LineView: View {
                                 .transition(.opacity)
                                 .animation(.easeOut(duration: 1))
                         }
+                        HStack {
+                            Spacer()
+                                .frame(width: xOffset)
+                        
                         Line(data: self.data,
                              frame: .constant(CGRect(x: 0, y: 0, width: reader.frame(in: .local).width - xOffset, height: reader.frame(in: .local).height + 25)),
                              touchLocation: self.$indicatorLocation,
@@ -85,13 +89,13 @@ public struct LineView: View {
                              showBackground: false,
                              gradient: self.style.gradientColor
                         )
-                            .offset(x: xOffset, y: 0)
                             .onAppear(){
                                 self.showLegend = true
                             }
                             .onDisappear(){
                                 self.showLegend = false
                             }
+                        }
                     }
                     .frame(width: geometry.frame(in: .local).size.width, height: 240)
                     .offset(x: 0, y: 40 )
@@ -104,9 +108,9 @@ public struct LineView: View {
                 .gesture(DragGesture()
                 .onChanged({ value in
                     self.dragLocation = value.location
-                    self.indicatorLocation = CGPoint(x: max(value.location.x-30,0), y: 32)
+                    self.indicatorLocation = CGPoint(x: max(value.location.x - (xOffset/2), 0), y: 32)
                     self.opacity = 1
-                    self.closestPoint = self.getClosestDataPoint(toPoint: value.location, width: geometry.frame(in: .local).size.width - xOffset, height: 240)
+                    self.closestPoint = self.getClosestDataPoint(toPoint: value.location, width: geometry.frame(in: .local).size.width - (xOffset/2) - 12, height: 240)
                     self.hideHorizontalLines = true
                 })
                     .onEnded({ value in

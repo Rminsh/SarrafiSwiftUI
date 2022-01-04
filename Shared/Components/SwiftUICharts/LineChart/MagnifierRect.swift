@@ -13,18 +13,23 @@ public struct MagnifierRect: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     public var body: some View {
         ZStack{
-            Text("\(self.currentNumber, specifier: valueSpecifier)")
-                .customFont(name: "Shabnam-Bold", style: .body)
-                .offset(x: 0, y:-110)
-                .foregroundColor(self.colorScheme == .dark ? Color.white : Color.black)
-                .padding(.horizontal)
+            VStack {
+                Text("\(self.currentNumber, specifier: valueSpecifier)")
+                    .customFont(name: "Shabnam-Bold", style: .body)
+                    .foregroundColor(self.colorScheme == .dark ? Color.white : Color.black)
+                    .padding(.horizontal)
+                
+                Spacer()
+            }
+            .padding(.horizontal, 5)
+            .padding(.top, 15)
             if (self.colorScheme == .dark) {
                 RoundedRectangle(cornerRadius: 16)
                     .stroke(Color.white, lineWidth: self.colorScheme == .dark ? 2 : 0)
-                    .frame(height: 260)
+                    .frame(height: 300)
             } else {
                 RoundedRectangle(cornerRadius: 16)
-                    .frame(height: 280)
+                    .frame(height: 300)
                     .foregroundColor(Color.white)
                     .shadow(color: Colors.LegendText, radius: 12, x: 0, y: 6 )
                     .blendMode(.multiply)

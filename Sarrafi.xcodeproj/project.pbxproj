@@ -40,38 +40,18 @@
 		C6572636269C904B00461C8C /* Shabnam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C657262C269C904B00461C8C /* Shabnam-Bold.ttf */; };
 		C664554027726ED3005816CA /* SymbolListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664553F27726ED3005816CA /* SymbolListViewModel.swift */; };
 		C664554127726ED3005816CA /* SymbolListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664553F27726ED3005816CA /* SymbolListViewModel.swift */; };
-		C6776D74278089AA00542BF7 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D61278089AA00542BF7 /* BarChartView.swift */; };
-		C6776D75278089AA00542BF7 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D61278089AA00542BF7 /* BarChartView.swift */; };
-		C6776D76278089AA00542BF7 /* BarChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D62278089AA00542BF7 /* BarChartRow.swift */; };
-		C6776D77278089AA00542BF7 /* BarChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D62278089AA00542BF7 /* BarChartRow.swift */; };
-		C6776D78278089AA00542BF7 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D63278089AA00542BF7 /* LabelView.swift */; };
-		C6776D79278089AA00542BF7 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D63278089AA00542BF7 /* LabelView.swift */; };
-		C6776D7A278089AA00542BF7 /* BarChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D64278089AA00542BF7 /* BarChartCell.swift */; };
-		C6776D7B278089AA00542BF7 /* BarChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D64278089AA00542BF7 /* BarChartCell.swift */; };
 		C6776D7C278089AA00542BF7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D65278089AA00542BF7 /* Helpers.swift */; };
 		C6776D7D278089AA00542BF7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D65278089AA00542BF7 /* Helpers.swift */; };
-		C6776D7E278089AA00542BF7 /* PieChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D67278089AA00542BF7 /* PieChartRow.swift */; };
-		C6776D7F278089AA00542BF7 /* PieChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D67278089AA00542BF7 /* PieChartRow.swift */; };
-		C6776D80278089AA00542BF7 /* PieChartHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D68278089AA00542BF7 /* PieChartHelpers.swift */; };
-		C6776D81278089AA00542BF7 /* PieChartHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D68278089AA00542BF7 /* PieChartHelpers.swift */; };
-		C6776D82278089AA00542BF7 /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D69278089AA00542BF7 /* PieChartCell.swift */; };
-		C6776D83278089AA00542BF7 /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D69278089AA00542BF7 /* PieChartCell.swift */; };
-		C6776D84278089AA00542BF7 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6A278089AA00542BF7 /* PieChartView.swift */; };
-		C6776D85278089AA00542BF7 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6A278089AA00542BF7 /* PieChartView.swift */; };
 		C6776D86278089AA00542BF7 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6C278089AA00542BF7 /* IndicatorPoint.swift */; };
 		C6776D87278089AA00542BF7 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6C278089AA00542BF7 /* IndicatorPoint.swift */; };
 		C6776D88278089AA00542BF7 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6D278089AA00542BF7 /* LineView.swift */; };
 		C6776D89278089AA00542BF7 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6D278089AA00542BF7 /* LineView.swift */; };
 		C6776D8A278089AA00542BF7 /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6E278089AA00542BF7 /* Legend.swift */; };
 		C6776D8B278089AA00542BF7 /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6E278089AA00542BF7 /* Legend.swift */; };
-		C6776D8C278089AA00542BF7 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6F278089AA00542BF7 /* LineChartView.swift */; };
-		C6776D8D278089AA00542BF7 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6F278089AA00542BF7 /* LineChartView.swift */; };
 		C6776D8E278089AA00542BF7 /* MagnifierRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D70278089AA00542BF7 /* MagnifierRect.swift */; };
 		C6776D8F278089AA00542BF7 /* MagnifierRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D70278089AA00542BF7 /* MagnifierRect.swift */; };
 		C6776D90278089AA00542BF7 /* Path+QuadCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D71278089AA00542BF7 /* Path+QuadCurve.swift */; };
 		C6776D91278089AA00542BF7 /* Path+QuadCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D71278089AA00542BF7 /* Path+QuadCurve.swift */; };
-		C6776D92278089AA00542BF7 /* MultiLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D72278089AA00542BF7 /* MultiLineChartView.swift */; };
-		C6776D93278089AA00542BF7 /* MultiLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D72278089AA00542BF7 /* MultiLineChartView.swift */; };
 		C6776D94278089AA00542BF7 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D73278089AA00542BF7 /* Line.swift */; };
 		C6776D95278089AA00542BF7 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D73278089AA00542BF7 /* Line.swift */; };
 		C67F0927269EFA2A00E2A242 /* Extensions+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67F0926269EFA2A00E2A242 /* Extensions+Double.swift */; };
@@ -134,22 +114,12 @@
 		C657262C269C904B00461C8C /* Shabnam-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-Bold.ttf"; sourceTree = "<group>"; };
 		C6572638269C90F500461C8C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C664553F27726ED3005816CA /* SymbolListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolListViewModel.swift; sourceTree = "<group>"; };
-		C6776D61278089AA00542BF7 /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
-		C6776D62278089AA00542BF7 /* BarChartRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartRow.swift; sourceTree = "<group>"; };
-		C6776D63278089AA00542BF7 /* LabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
-		C6776D64278089AA00542BF7 /* BarChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartCell.swift; sourceTree = "<group>"; };
 		C6776D65278089AA00542BF7 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		C6776D67278089AA00542BF7 /* PieChartRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartRow.swift; sourceTree = "<group>"; };
-		C6776D68278089AA00542BF7 /* PieChartHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartHelpers.swift; sourceTree = "<group>"; };
-		C6776D69278089AA00542BF7 /* PieChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
-		C6776D6A278089AA00542BF7 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		C6776D6C278089AA00542BF7 /* IndicatorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
 		C6776D6D278089AA00542BF7 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		C6776D6E278089AA00542BF7 /* Legend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legend.swift; sourceTree = "<group>"; };
-		C6776D6F278089AA00542BF7 /* LineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		C6776D70278089AA00542BF7 /* MagnifierRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagnifierRect.swift; sourceTree = "<group>"; };
 		C6776D71278089AA00542BF7 /* Path+QuadCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Path+QuadCurve.swift"; sourceTree = "<group>"; };
-		C6776D72278089AA00542BF7 /* MultiLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLineChartView.swift; sourceTree = "<group>"; };
 		C6776D73278089AA00542BF7 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		C67F0926269EFA2A00E2A242 /* Extensions+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Double.swift"; sourceTree = "<group>"; };
 		C69EA911269F385600BF1706 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
@@ -342,34 +312,10 @@
 		C6776D5F278089AA00542BF7 /* SwiftUICharts */ = {
 			isa = PBXGroup;
 			children = (
-				C6776D60278089AA00542BF7 /* BarChart */,
 				C6776D65278089AA00542BF7 /* Helpers.swift */,
 				C6776D6B278089AA00542BF7 /* LineChart */,
-				C6776D66278089AA00542BF7 /* PieChart */,
 			);
 			path = SwiftUICharts;
-			sourceTree = "<group>";
-		};
-		C6776D60278089AA00542BF7 /* BarChart */ = {
-			isa = PBXGroup;
-			children = (
-				C6776D61278089AA00542BF7 /* BarChartView.swift */,
-				C6776D62278089AA00542BF7 /* BarChartRow.swift */,
-				C6776D63278089AA00542BF7 /* LabelView.swift */,
-				C6776D64278089AA00542BF7 /* BarChartCell.swift */,
-			);
-			path = BarChart;
-			sourceTree = "<group>";
-		};
-		C6776D66278089AA00542BF7 /* PieChart */ = {
-			isa = PBXGroup;
-			children = (
-				C6776D67278089AA00542BF7 /* PieChartRow.swift */,
-				C6776D68278089AA00542BF7 /* PieChartHelpers.swift */,
-				C6776D69278089AA00542BF7 /* PieChartCell.swift */,
-				C6776D6A278089AA00542BF7 /* PieChartView.swift */,
-			);
-			path = PieChart;
 			sourceTree = "<group>";
 		};
 		C6776D6B278089AA00542BF7 /* LineChart */ = {
@@ -378,10 +324,8 @@
 				C6776D6C278089AA00542BF7 /* IndicatorPoint.swift */,
 				C6776D6D278089AA00542BF7 /* LineView.swift */,
 				C6776D6E278089AA00542BF7 /* Legend.swift */,
-				C6776D6F278089AA00542BF7 /* LineChartView.swift */,
 				C6776D70278089AA00542BF7 /* MagnifierRect.swift */,
 				C6776D71278089AA00542BF7 /* Path+QuadCurve.swift */,
-				C6776D72278089AA00542BF7 /* MultiLineChartView.swift */,
 				C6776D73278089AA00542BF7 /* Line.swift */,
 			);
 			path = LineChart;
@@ -590,9 +534,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6776D8E278089AA00542BF7 /* MagnifierRect.swift in Sources */,
-				C6776D84278089AA00542BF7 /* PieChartView.swift in Sources */,
-				C6776D82278089AA00542BF7 /* PieChartCell.swift in Sources */,
-				C6776D7A278089AA00542BF7 /* BarChartCell.swift in Sources */,
 				C6776D86278089AA00542BF7 /* IndicatorPoint.swift in Sources */,
 				C652CE79267A517200B1D9BA /* SymbolRowView.swift in Sources */,
 				C624264126A17EAD0064E7CD /* Date+Extensions.swift in Sources */,
@@ -600,23 +541,17 @@
 				C652CE69267A4F0500B1D9BA /* SymbolView.swift in Sources */,
 				C6776D94278089AA00542BF7 /* Line.swift in Sources */,
 				C67F0927269EFA2A00E2A242 /* Extensions+Double.swift in Sources */,
-				C6776D7E278089AA00542BF7 /* PieChartRow.swift in Sources */,
 				C624264426A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */,
-				C6776D8C278089AA00542BF7 /* LineChartView.swift in Sources */,
 				C6C41964269B68C30050DD1C /* SectionView.swift in Sources */,
 				C6F2C8702680B45B00C93AC0 /* NavigationItem.swift in Sources */,
 				C60763B2278042340018D758 /* SymbolDetailsViewModel.swift in Sources */,
 				C653A770267B3AA50043E4BB /* MainView.swift in Sources */,
 				C6EB21EE267FB09F00671861 /* CurrencyListResponse.swift in Sources */,
 				C6776D8A278089AA00542BF7 /* Legend.swift in Sources */,
-				C6776D80278089AA00542BF7 /* PieChartHelpers.swift in Sources */,
-				C6776D92278089AA00542BF7 /* MultiLineChartView.swift in Sources */,
-				C6776D74278089AA00542BF7 /* BarChartView.swift in Sources */,
 				C652CE67267A4F0500B1D9BA /* SarrafiApp.swift in Sources */,
 				C6EB21F1267FB0D200671861 /* NetworkingError.swift in Sources */,
 				C6EB21E7267FAF6000671861 /* ChartModel.swift in Sources */,
 				C6EB21F6267FC0A300671861 /* TabNavigation.swift in Sources */,
-				C6776D76278089AA00542BF7 /* BarChartRow.swift in Sources */,
 				C6A6BA62269C95F700967073 /* CustomFont.swift in Sources */,
 				C6EB21EA267FAFA200671861 /* CurrencyService.swift in Sources */,
 				C69EA912269F385700BF1706 /* ProgressBar.swift in Sources */,
@@ -632,7 +567,6 @@
 				C6A6BA60269C94C100967073 /* Theme.swift in Sources */,
 				C6776D90278089AA00542BF7 /* Path+QuadCurve.swift in Sources */,
 				C6776D88278089AA00542BF7 /* LineView.swift in Sources */,
-				C6776D78278089AA00542BF7 /* LabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,10 +577,8 @@
 				C652CE7A267A517200B1D9BA /* SymbolRowView.swift in Sources */,
 				C69EA913269F385700BF1706 /* ProgressBar.swift in Sources */,
 				C624264226A17EAD0064E7CD /* Date+Extensions.swift in Sources */,
-				C6776D93278089AA00542BF7 /* MultiLineChartView.swift in Sources */,
 				C652CE6A267A4F0500B1D9BA /* SymbolView.swift in Sources */,
 				C6776D7D278089AA00542BF7 /* Helpers.swift in Sources */,
-				C6776D81278089AA00542BF7 /* PieChartHelpers.swift in Sources */,
 				C6776D8B278089AA00542BF7 /* Legend.swift in Sources */,
 				C6417076277C55F9003375C4 /* CurrencyTableView.swift in Sources */,
 				C6CE7277277CC1F5008CF32E /* SymbolListView.swift in Sources */,
@@ -658,26 +590,18 @@
 				C6EB21EF267FB09F00671861 /* CurrencyListResponse.swift in Sources */,
 				C6C43889277326BE003D1A52 /* Extensions+LocalizedStringKey.swift in Sources */,
 				C6A6BA66269CC58000967073 /* SymbolDetailView.swift in Sources */,
-				C6776D77278089AA00542BF7 /* BarChartRow.swift in Sources */,
 				C67F0928269EFA2A00E2A242 /* Extensions+Double.swift in Sources */,
 				C6776D89278089AA00542BF7 /* LineView.swift in Sources */,
-				C6776D83278089AA00542BF7 /* PieChartCell.swift in Sources */,
-				C6776D7F278089AA00542BF7 /* PieChartRow.swift in Sources */,
 				C652CE68267A4F0500B1D9BA /* SarrafiApp.swift in Sources */,
 				C6776D95278089AA00542BF7 /* Line.swift in Sources */,
 				C6EB21F2267FB0D200671861 /* NetworkingError.swift in Sources */,
-				C6776D8D278089AA00542BF7 /* LineChartView.swift in Sources */,
 				C6EB21E8267FAF6000671861 /* ChartModel.swift in Sources */,
 				C6776D87278089AA00542BF7 /* IndicatorPoint.swift in Sources */,
 				C6EB21EB267FAFA200671861 /* CurrencyService.swift in Sources */,
-				C6776D79278089AA00542BF7 /* LabelView.swift in Sources */,
-				C6776D85278089AA00542BF7 /* PieChartView.swift in Sources */,
-				C6776D7B278089AA00542BF7 /* BarChartCell.swift in Sources */,
 				C6776D8F278089AA00542BF7 /* MagnifierRect.swift in Sources */,
 				C6EB21E4267FAF6000671861 /* Charts.swift in Sources */,
 				C6C41965269B68C30050DD1C /* SectionView.swift in Sources */,
 				C6EB21E6267FAF6000671861 /* CurrencyModel.swift in Sources */,
-				C6776D75278089AA00542BF7 /* BarChartView.swift in Sources */,
 				C624263E26A173B50064E7CD /* VisualEffectBlur.swift in Sources */,
 				C6EB21DF267FA7CB00671861 /* Constants.swift in Sources */,
 				C652CAD827735519002CF56F /* DisplayModePicker.swift in Sources */,
