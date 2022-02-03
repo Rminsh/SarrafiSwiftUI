@@ -5,7 +5,7 @@ Sarrafi (SwiftUI / Work in Progress 🚧)
 
 Simple iOS and macOS applications that shows latest price of currencies, gold, oil and digital currencies. This Project is the continuation of the previous the [old sarrafi](https://github.com/Rminsh/Sarrafi-ios), and this is completly rewritten in SwiftUI (I will merge this project with the old one or create a new repo after completing it).
 
-This project implemented in [Persian language](https://en.wikipedia.org/wiki/Persian_language) and use [tgju.org](http://www.tgju.org/) website API to get the latest prices.
+This project uses [tgju.org](http://www.tgju.org/) API to get the latest prices.
 
 
 
