@@ -13,14 +13,17 @@ struct SymbolRowView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            HStack {
+            HStack(alignment: .top) {
                 VStack {
                     // MARK: - Symbol title
-                    Text(currency.name)
-                        .customFont(name: "Shabnam", style: .title3, weight: .bold)
-                        .dynamicTypeSize(.xSmall ... .large)
-                        .foregroundStyle(.primary)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                    HStack {
+                        Text(currency.symbol)
+                        Text(currency.name)
+                    }
+                    .customFont(name: "Shabnam", style: .headline, weight: .bold)
+                    .dynamicTypeSize(.xSmall ... .large)
+                    .foregroundStyle(.primary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     
                     // MARK: - Updated time
                     Text(currency.globalTime.timeAgoDisplay())
@@ -32,25 +35,32 @@ struct SymbolRowView: View {
                 Spacer()
                 
                 // MARK: - Symbol price
-                HStack(spacing: 1) {
+                HStack {
                     Text(String(currency.currentPrice.clean))
+                        .customFont(name: "Shabnam", style: .title2, weight: .bold)
+                        .dynamicTypeSize(.xSmall ... .large)
+                        .foregroundStyle(.primary)
+                    
                     Text(LocalizedStringKey(currency.toCurrency.rawValue))
+                        .customFont(name: "Shabnam", style: .body, weight: .light)
+                        .dynamicTypeSize(.xSmall ... .large)
+                        .foregroundStyle(.primary)
                 }
-                .customFont(name: "Shabnam", style: .title2, weight: .bold)
-                .dynamicTypeSize(.xSmall ... .large)
-                .foregroundStyle(.primary)
+                
             }
             
             HStack {
-                HStack(spacing: 1) {
+                HStack {
                     if currency.status != .stable {
                         Text(String(currency.priceChange.clean))
+                            .customFont(name: "Shabnam", style: .subheadline, weight: .medium)
                         Text(LocalizedStringKey(currency.toCurrency.rawValue))
+                            .customFont(name: "Shabnam", style: .footnote, weight: .light)
                     } else {
                         Text("Without change")
+                            .customFont(name: "Shabnam", style: .subheadline, weight: .regular)
                     }
                 }
-                .customFont(name: "Shabnam", style: .subheadline, weight: .medium)
                 .foregroundStyle(.primary)
                 
                 Spacer()
