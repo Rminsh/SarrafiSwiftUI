@@ -51,7 +51,7 @@ struct Legend: View {
                         .opacity((self.hideHorizontalLines && height != 0) ? 0 : 1)
                         .rotationEffect(.degrees(180), anchor: .center)
                         .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
-                        .animation(.easeOut(duration: 0.2))
+                        .animation(.easeOut(duration: 0.2), value: height)
                         .clipped()
                 }
                

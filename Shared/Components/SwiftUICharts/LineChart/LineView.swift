@@ -74,7 +74,7 @@ public struct LineView: View {
                                 specifier: legendSpecifier
                             )
                                 .transition(.opacity)
-                                .animation(.easeOut(duration: 1))
+                                .animation(.easeOut(duration: 1), value: showLegend)
                         }
                         HStack {
                             Spacer()
