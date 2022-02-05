@@ -21,7 +21,9 @@ struct SymbolRowView: View {
                         Text(currency.name)
                     }
                     .customFont(name: "Shabnam", style: .headline, weight: .bold)
-                    .dynamicTypeSize(.xSmall ... .large)
+                    .dynamicTypeSize(.xSmall ... .medium)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.4)
                     .foregroundStyle(.primary)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     
@@ -29,6 +31,9 @@ struct SymbolRowView: View {
                     // FIXME: The time should be updated frequently
                     Text(currency.globalTime.timeAgoDisplay())
                         .customFont(name: "Shabnam", style: .footnote, weight: .light)
+                        .dynamicTypeSize(.xSmall ... .small)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.4)
                         .foregroundStyle(.secondary)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
@@ -39,7 +44,9 @@ struct SymbolRowView: View {
                 HStack {
                     Text(currency.currentPrice.formatted(FloatingPointFormatStyle()))
                         .customFont(name: "Shabnam", style: .title2, weight: .bold)
-                        .dynamicTypeSize(.xSmall ... .large)
+                        .dynamicTypeSize(.xSmall ... .medium)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.4)
                         .foregroundStyle(.primary)
                     
                     Text(LocalizedStringKey(currency.toCurrency.rawValue))
@@ -62,6 +69,9 @@ struct SymbolRowView: View {
                             .customFont(name: "Shabnam", style: .subheadline, weight: .regular)
                     }
                 }
+                .dynamicTypeSize(.xSmall ... .small)
+                .lineLimit(1)
+                .minimumScaleFactor(0.4)
                 .foregroundStyle(.primary)
                 
                 Spacer()
