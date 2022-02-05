@@ -26,6 +26,7 @@ struct SymbolRowView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     
                     // MARK: - Updated time
+                    // FIXME: The time should be updated frequently
                     Text(currency.globalTime.timeAgoDisplay())
                         .customFont(name: "Shabnam", style: .footnote, weight: .light)
                         .foregroundStyle(.secondary)
@@ -36,7 +37,7 @@ struct SymbolRowView: View {
                 
                 // MARK: - Symbol price
                 HStack {
-                    Text(String(currency.currentPrice.clean))
+                    Text(currency.currentPrice.formatted(FloatingPointFormatStyle()))
                         .customFont(name: "Shabnam", style: .title2, weight: .bold)
                         .dynamicTypeSize(.xSmall ... .large)
                         .foregroundStyle(.primary)
@@ -52,7 +53,7 @@ struct SymbolRowView: View {
             HStack {
                 HStack {
                     if currency.status != .stable {
-                        Text(String(currency.priceChange.clean))
+                        Text(currency.priceChange.formatted(FloatingPointFormatStyle()))
                             .customFont(name: "Shabnam", style: .subheadline, weight: .medium)
                         Text(LocalizedStringKey(currency.toCurrency.rawValue))
                             .customFont(name: "Shabnam", style: .footnote, weight: .light)

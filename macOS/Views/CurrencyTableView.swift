@@ -38,13 +38,13 @@ struct CurrencyTableView: View {
                 let toCurrency = LocalizedStringKey(currency.toCurrency.rawValue).stringValue(locale: Locale(identifier: Locale.preferredLanguages.first!))
                 switch currency.status {
                 case .up:
-                    Text("\(currency.percentChange, specifier: "%.2f")% ↑   \(currency.priceChange.clean) \(toCurrency)")
+                    Text("\(currency.percentChange, specifier: "%.2f")% ↑   \(currency.priceChange.formatted(FloatingPointFormatStyle())) \(toCurrency)")
                         .customFont(name: "Shabnam", style: .body, weight: .regular)
                         .foregroundColor(.white)
                         .padding(.horizontal, 5)
                         .background(Capsule().fill(Color.green))
                 case .down:
-                    Text("\(currency.percentChange, specifier: "%.2f")% ↓   \(currency.priceChange.clean) \(toCurrency)")
+                    Text("\(currency.percentChange, specifier: "%.2f")% ↓   \(currency.priceChange.formatted(FloatingPointFormatStyle())) \(toCurrency)")
                         .customFont(name: "Shabnam", style: .body, weight: .regular)
                         .foregroundColor(.white)
                         .padding(.horizontal, 5)

@@ -40,7 +40,7 @@ struct SymbolDetailView: View {
                     VStack(spacing: 0) {
                         // MARK: - Symbol price
                         HStack(spacing: 1) {
-                            Text(String(currency.currentPrice.clean))
+                            Text(currency.currentPrice.formatted(FloatingPointFormatStyle()))
                             Text(LocalizedStringKey(currency.toCurrency.rawValue))
                         }
                         .customFont(name: "Shabnam", style: .largeTitle, weight: .medium)
@@ -123,7 +123,7 @@ struct SymbolDetailView: View {
                                 
                             if currency.status != .stable {
                                 HStack(spacing: 2) {
-                                    Text(String(currency.priceChange.clean))
+                                    Text(currency.priceChange.formatted(FloatingPointFormatStyle()))
                                     Text(LocalizedStringKey(currency.toCurrency.rawValue))
                                     Text(LocalizedStringKey(currency.status.rawValue))
                                 }
@@ -233,7 +233,7 @@ struct PriceChangeView: View {
                 .font(.title)
             
             HStack(spacing: 2) {
-                Text(String(price.clean))
+                Text(price.formatted(FloatingPointFormatStyle()))
                 Text(LocalizedStringKey(toCurrency))
             }
             .customFont(name: "Shabnam", style: .body, weight: .bold)
