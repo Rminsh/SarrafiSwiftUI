@@ -69,6 +69,8 @@
 		C6C43889277326BE003D1A52 /* Extensions+LocalizedStringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C43887277326BE003D1A52 /* Extensions+LocalizedStringKey.swift */; };
 		C6CE7276277CC1F5008CF32E /* SymbolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE7275277CC1F5008CF32E /* SymbolListView.swift */; };
 		C6CE7277277CC1F5008CF32E /* SymbolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CE7275277CC1F5008CF32E /* SymbolListView.swift */; };
+		C6DECFE127B46BF300C110C8 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C6DECFE027B46BF300C110C8 /* Config.xcconfig */; };
+		C6DECFE227B46BF300C110C8 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C6DECFE027B46BF300C110C8 /* Config.xcconfig */; };
 		C6EB21DE267FA7CB00671861 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21DD267FA7CB00671861 /* Constants.swift */; };
 		C6EB21DF267FA7CB00671861 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21DD267FA7CB00671861 /* Constants.swift */; };
 		C6EB21E3267FAF6000671861 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB21E0267FAF5F00671861 /* Charts.swift */; };
@@ -128,6 +130,7 @@
 		C6C43887277326BE003D1A52 /* Extensions+LocalizedStringKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+LocalizedStringKey.swift"; sourceTree = "<group>"; };
 		C6CE7275277CC1F5008CF32E /* SymbolListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolListView.swift; sourceTree = "<group>"; };
 		C6D164FE26A216CE00EFC825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6DECFE027B46BF300C110C8 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		C6EB21DD267FA7CB00671861 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C6EB21E0267FAF5F00671861 /* Charts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
 		C6EB21E1267FAF5F00671861 /* CurrencyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
@@ -408,6 +411,7 @@
 				C6572627269C903D00461C8C /* Fonts */,
 				C652CE5B267A4F0500B1D9BA /* Assets.xcassets */,
 				C6F2C8792680C3CC00C93AC0 /* Localizable.strings */,
+				C6DECFE027B46BF300C110C8 /* Config.xcconfig */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -502,6 +506,7 @@
 				C652CE6B267A4F0500B1D9BA /* Assets.xcassets in Resources */,
 				C6572631269C904B00461C8C /* Shabnam-Thin.ttf in Resources */,
 				C6F2C8762680C3CC00C93AC0 /* Localizable.strings in Resources */,
+				C6DECFE127B46BF300C110C8 /* Config.xcconfig in Resources */,
 				C6572635269C904B00461C8C /* Shabnam-Bold.ttf in Resources */,
 				C657262F269C904B00461C8C /* Shabnam-Medium.ttf in Resources */,
 				C6572633269C904B00461C8C /* Shabnam.ttf in Resources */,
@@ -516,6 +521,7 @@
 				C652CE6C267A4F0500B1D9BA /* Assets.xcassets in Resources */,
 				C6572632269C904B00461C8C /* Shabnam-Thin.ttf in Resources */,
 				C6F2C8772680C3CC00C93AC0 /* Localizable.strings in Resources */,
+				C6DECFE227B46BF300C110C8 /* Config.xcconfig in Resources */,
 				C6572636269C904B00461C8C /* Shabnam-Bold.ttf in Resources */,
 				C6572630269C904B00461C8C /* Shabnam-Medium.ttf in Resources */,
 				C6572634269C904B00461C8C /* Shabnam.ttf in Resources */,
@@ -623,6 +629,7 @@
 /* Begin XCBuildConfiguration section */
 		C652CE6D267A4F0500B1D9BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DECFE027B46BF300C110C8 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
@@ -685,6 +692,7 @@
 		};
 		C652CE6E267A4F0500B1D9BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DECFE027B46BF300C110C8 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = YES;
@@ -740,13 +748,14 @@
 		};
 		C652CE70267A4F0500B1D9BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DECFE027B46BF300C110C8 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(SARRAFI_APP_BUNDLE_VERSION)";
 				DEVELOPMENT_TEAM = L4C26EK8EJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -764,8 +773,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.Sarrafi;
+				MARKETING_VERSION = "$(SARRAFI_APP_VERSION)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(SARRAFI_APP_BUNDLE_ID)";
 				PRODUCT_NAME = Sarrafi;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -777,13 +786,14 @@
 		};
 		C652CE71267A4F0500B1D9BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DECFE027B46BF300C110C8 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(SARRAFI_APP_BUNDLE_VERSION)";
 				DEVELOPMENT_TEAM = L4C26EK8EJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -801,8 +811,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.Sarrafi;
+				MARKETING_VERSION = "$(SARRAFI_APP_VERSION)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(SARRAFI_APP_BUNDLE_ID)";
 				PRODUCT_NAME = Sarrafi;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -815,6 +825,7 @@
 		};
 		C652CE73267A4F0500B1D9BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DECFE027B46BF300C110C8 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -847,6 +858,7 @@
 		};
 		C652CE74267A4F0500B1D9BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DECFE027B46BF300C110C8 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

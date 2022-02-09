@@ -1,0 +1,14 @@
+//
+//  Config.xcconfig
+//  Sarrafi
+//
+//  Created by Armin on 2/10/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+SARRAFI_APP_NAME = Sarrafi
+SARRAFI_APP_VERSION = 1.0
+SARRAFI_APP_BUNDLE_ID = com.app.Sarrafi
+SARRAFI_APP_BUNDLE_VERSION = 1
