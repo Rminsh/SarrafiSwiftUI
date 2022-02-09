@@ -14,7 +14,7 @@ struct SymbolView: View {
     @StateObject var viewModel = SymbolListViewModel()
     
     #if os(macOS)
-    @SceneStorage("viewMode") private var mode: ViewMode = .table
+    @SceneStorage("viewMode") private var mode: ViewMode = .gallery
     enum ViewMode: String, CaseIterable, Identifiable {
         var id: Self { self }
         case table

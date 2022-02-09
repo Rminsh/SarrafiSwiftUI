@@ -86,6 +86,7 @@ struct SymbolDetailView: View {
                                     ForEach(ChartType.allCases) {
                                         Text(LocalizedStringKey($0.rawValue))
                                             .customFont(name: "Shabnam", style: .body)
+                                            .minimumScaleFactor(0.4)
                                             .tag($0)
                                     }
                                 }
