@@ -64,7 +64,7 @@ struct CurrencyStruct: Codable {
 struct Current: Codable {
 
     let price_dollar_rl			: CurrencyDetail
-    let price_dollar_soleymani	: CurrencyDetail
+    let price_dollar_soleymani	: CurrencyDetail?
     let price_eur				: CurrencyDetail
     let price_cad				: CurrencyDetail
     let price_aud               : CurrencyDetail

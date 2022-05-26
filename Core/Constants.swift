@@ -11,6 +11,6 @@ struct Constants {
     
     static let AppID: String = "com.app.Sarrafi"
     
-    static let SymbolListAPI: String = "https://call.tgju.org/ajax.json"
+    static let SymbolListAPI: String = "https://call3.tgju.org/ajax.json"
     static let SymbolTableAPI: String = "https://www.tgju.org/"
 }

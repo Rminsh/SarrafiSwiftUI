@@ -33,14 +33,16 @@ struct CurrencyListResponse {
             toCurrency: .rial
         )
         
-        addObj(
-            type: .cash,
-            currencyObject: currencyStruct.current.price_dollar_soleymani,
-            currencyName: Current.CodingKeys.price_dollar_soleymani.rawValue,
-            title: "USD (Soleymanie)",
-            symbol: "🇺🇸",
-            toCurrency: .rial
-        )
+        if let price_dollar_soleymani = currencyStruct.current.price_dollar_soleymani {
+            addObj(
+                type: .cash,
+                currencyObject: price_dollar_soleymani,
+                currencyName: Current.CodingKeys.price_dollar_soleymani.rawValue,
+                title: "USD (Soleymanie)",
+                symbol: "🇺🇸",
+                toCurrency: .rial
+            )
+        }
         
         addObj(
             type: .cash,
