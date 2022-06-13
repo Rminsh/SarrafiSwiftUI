@@ -11,12 +11,6 @@ struct Sidebar: View {
 
     @StateObject var viewModel = NavigationItemsModel()
     
-    init() {
-        #if os(iOS)
-        UITableView.appearance().backgroundColor = .clear
-        #endif
-    }
-    
     var body: some View {
         NavigationView {
             List {
@@ -35,9 +29,6 @@ struct Sidebar: View {
             }
             .listStyle(.sidebar)
             .navigationTitle("APP_NAME")
-            #if os(iOS)
-            .background(Color("BackgroundColor"))
-            #endif
             .toolbar {
                 #if os(macOS)
                 ToolbarItemGroup {

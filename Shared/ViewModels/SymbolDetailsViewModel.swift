@@ -31,8 +31,10 @@ class SymbolDetailsViewModel: ObservableObject {
     }
     
     func fetchChart(_ currency: CurrencyModel) async {
-        hasError = false
-        isLoading = true
+        DispatchQueue.main.async {
+            self.hasError = false
+            self.isLoading = true
+        }
         
         do {
             let result = try await currencyProvider.getChart(for: currency)

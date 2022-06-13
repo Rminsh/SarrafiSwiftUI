@@ -40,23 +40,8 @@
 		C6572636269C904B00461C8C /* Shabnam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C657262C269C904B00461C8C /* Shabnam-Bold.ttf */; };
 		C664554027726ED3005816CA /* SymbolListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664553F27726ED3005816CA /* SymbolListViewModel.swift */; };
 		C664554127726ED3005816CA /* SymbolListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664553F27726ED3005816CA /* SymbolListViewModel.swift */; };
-		C6776D7C278089AA00542BF7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D65278089AA00542BF7 /* Helpers.swift */; };
-		C6776D7D278089AA00542BF7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D65278089AA00542BF7 /* Helpers.swift */; };
-		C6776D86278089AA00542BF7 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6C278089AA00542BF7 /* IndicatorPoint.swift */; };
-		C6776D87278089AA00542BF7 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6C278089AA00542BF7 /* IndicatorPoint.swift */; };
-		C6776D88278089AA00542BF7 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6D278089AA00542BF7 /* LineView.swift */; };
-		C6776D89278089AA00542BF7 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6D278089AA00542BF7 /* LineView.swift */; };
-		C6776D8A278089AA00542BF7 /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6E278089AA00542BF7 /* Legend.swift */; };
-		C6776D8B278089AA00542BF7 /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D6E278089AA00542BF7 /* Legend.swift */; };
-		C6776D8E278089AA00542BF7 /* MagnifierRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D70278089AA00542BF7 /* MagnifierRect.swift */; };
-		C6776D8F278089AA00542BF7 /* MagnifierRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D70278089AA00542BF7 /* MagnifierRect.swift */; };
-		C6776D90278089AA00542BF7 /* Path+QuadCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D71278089AA00542BF7 /* Path+QuadCurve.swift */; };
-		C6776D91278089AA00542BF7 /* Path+QuadCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D71278089AA00542BF7 /* Path+QuadCurve.swift */; };
-		C6776D94278089AA00542BF7 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D73278089AA00542BF7 /* Line.swift */; };
-		C6776D95278089AA00542BF7 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6776D73278089AA00542BF7 /* Line.swift */; };
 		C69EA912269F385700BF1706 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA911269F385600BF1706 /* ProgressBar.swift */; };
 		C69EA913269F385700BF1706 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA911269F385600BF1706 /* ProgressBar.swift */; };
-		C6A6BA60269C94C100967073 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6BA5F269C94C100967073 /* Theme.swift */; };
 		C6A6BA62269C95F700967073 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6BA61269C95F700967073 /* CustomFont.swift */; };
 		C6A6BA63269C95F700967073 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6BA61269C95F700967073 /* CustomFont.swift */; };
 		C6A6BA65269CC58000967073 /* SymbolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6BA64269CC58000967073 /* SymbolDetailView.swift */; };
@@ -114,15 +99,7 @@
 		C657262C269C904B00461C8C /* Shabnam-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-Bold.ttf"; sourceTree = "<group>"; };
 		C6572638269C90F500461C8C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C664553F27726ED3005816CA /* SymbolListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolListViewModel.swift; sourceTree = "<group>"; };
-		C6776D65278089AA00542BF7 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		C6776D6C278089AA00542BF7 /* IndicatorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
-		C6776D6D278089AA00542BF7 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
-		C6776D6E278089AA00542BF7 /* Legend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legend.swift; sourceTree = "<group>"; };
-		C6776D70278089AA00542BF7 /* MagnifierRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagnifierRect.swift; sourceTree = "<group>"; };
-		C6776D71278089AA00542BF7 /* Path+QuadCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Path+QuadCurve.swift"; sourceTree = "<group>"; };
-		C6776D73278089AA00542BF7 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		C69EA911269F385600BF1706 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
-		C6A6BA5F269C94C100967073 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		C6A6BA61269C95F700967073 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		C6A6BA64269CC58000967073 /* SymbolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetailView.swift; sourceTree = "<group>"; };
 		C6ABD86E267A90190082BDB2 /* SymbolBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolBackground.swift; sourceTree = "<group>"; };
@@ -226,7 +203,6 @@
 		C652CE76267A4F2300B1D9BA /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				C6776D5F278089AA00542BF7 /* SwiftUICharts */,
 				C69EA911269F385600BF1706 /* ProgressBar.swift */,
 				C6A6BA61269C95F700967073 /* CustomFont.swift */,
 				C6C41963269B68C30050DD1C /* SectionView.swift */,
@@ -300,36 +276,6 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		C664553E27726993005816CA /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				C6A6BA5F269C94C100967073 /* Theme.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		C6776D5F278089AA00542BF7 /* SwiftUICharts */ = {
-			isa = PBXGroup;
-			children = (
-				C6776D65278089AA00542BF7 /* Helpers.swift */,
-				C6776D6B278089AA00542BF7 /* LineChart */,
-			);
-			path = SwiftUICharts;
-			sourceTree = "<group>";
-		};
-		C6776D6B278089AA00542BF7 /* LineChart */ = {
-			isa = PBXGroup;
-			children = (
-				C6776D6C278089AA00542BF7 /* IndicatorPoint.swift */,
-				C6776D6D278089AA00542BF7 /* LineView.swift */,
-				C6776D6E278089AA00542BF7 /* Legend.swift */,
-				C6776D70278089AA00542BF7 /* MagnifierRect.swift */,
-				C6776D71278089AA00542BF7 /* Path+QuadCurve.swift */,
-				C6776D73278089AA00542BF7 /* Line.swift */,
-			);
-			path = LineChart;
-			sourceTree = "<group>";
-		};
 		C69EEE01277256B80041F0CE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,7 +344,6 @@
 		C6EB21F4267FC08600671861 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C664553E27726993005816CA /* Components */,
 				C664553D2772698B005816CA /* Navigation */,
 				C664553C27726954005816CA /* Resources */,
 			);
@@ -535,20 +480,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6776D8E278089AA00542BF7 /* MagnifierRect.swift in Sources */,
-				C6776D86278089AA00542BF7 /* IndicatorPoint.swift in Sources */,
 				C652CE79267A517200B1D9BA /* SymbolRowView.swift in Sources */,
 				C624264126A17EAD0064E7CD /* Date+Extensions.swift in Sources */,
 				C664554027726ED3005816CA /* SymbolListViewModel.swift in Sources */,
 				C652CE69267A4F0500B1D9BA /* SymbolView.swift in Sources */,
-				C6776D94278089AA00542BF7 /* Line.swift in Sources */,
 				C624264426A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */,
 				C6C41964269B68C30050DD1C /* SectionView.swift in Sources */,
 				C6F2C8702680B45B00C93AC0 /* NavigationItem.swift in Sources */,
 				C60763B2278042340018D758 /* SymbolDetailsViewModel.swift in Sources */,
 				C653A770267B3AA50043E4BB /* MainView.swift in Sources */,
 				C6EB21EE267FB09F00671861 /* CurrencyListResponse.swift in Sources */,
-				C6776D8A278089AA00542BF7 /* Legend.swift in Sources */,
 				C652CE67267A4F0500B1D9BA /* SarrafiApp.swift in Sources */,
 				C6EB21F1267FB0D200671861 /* NetworkingError.swift in Sources */,
 				C6EB21E7267FAF6000671861 /* ChartModel.swift in Sources */,
@@ -562,12 +503,8 @@
 				C6A6BA65269CC58000967073 /* SymbolDetailView.swift in Sources */,
 				C653A76E267B3AA50043E4BB /* Sidebar.swift in Sources */,
 				C6C43888277326BE003D1A52 /* Extensions+LocalizedStringKey.swift in Sources */,
-				C6776D7C278089AA00542BF7 /* Helpers.swift in Sources */,
 				C6ABD86F267A90190082BDB2 /* SymbolBackground.swift in Sources */,
 				C6CE7276277CC1F5008CF32E /* SymbolListView.swift in Sources */,
-				C6A6BA60269C94C100967073 /* Theme.swift in Sources */,
-				C6776D90278089AA00542BF7 /* Path+QuadCurve.swift in Sources */,
-				C6776D88278089AA00542BF7 /* LineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,26 +516,19 @@
 				C69EA913269F385700BF1706 /* ProgressBar.swift in Sources */,
 				C624264226A17EAD0064E7CD /* Date+Extensions.swift in Sources */,
 				C652CE6A267A4F0500B1D9BA /* SymbolView.swift in Sources */,
-				C6776D7D278089AA00542BF7 /* Helpers.swift in Sources */,
-				C6776D8B278089AA00542BF7 /* Legend.swift in Sources */,
 				C6417076277C55F9003375C4 /* CurrencyTableView.swift in Sources */,
 				C6CE7277277CC1F5008CF32E /* SymbolListView.swift in Sources */,
 				C6A6BA63269C95F700967073 /* CustomFont.swift in Sources */,
 				C60763B3278042340018D758 /* SymbolDetailsViewModel.swift in Sources */,
 				C653A771267B3AA50043E4BB /* MainView.swift in Sources */,
-				C6776D91278089AA00542BF7 /* Path+QuadCurve.swift in Sources */,
 				C624264526A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */,
 				C6EB21EF267FB09F00671861 /* CurrencyListResponse.swift in Sources */,
 				C6C43889277326BE003D1A52 /* Extensions+LocalizedStringKey.swift in Sources */,
 				C6A6BA66269CC58000967073 /* SymbolDetailView.swift in Sources */,
-				C6776D89278089AA00542BF7 /* LineView.swift in Sources */,
 				C652CE68267A4F0500B1D9BA /* SarrafiApp.swift in Sources */,
-				C6776D95278089AA00542BF7 /* Line.swift in Sources */,
 				C6EB21F2267FB0D200671861 /* NetworkingError.swift in Sources */,
 				C6EB21E8267FAF6000671861 /* ChartModel.swift in Sources */,
-				C6776D87278089AA00542BF7 /* IndicatorPoint.swift in Sources */,
 				C6EB21EB267FAFA200671861 /* CurrencyService.swift in Sources */,
-				C6776D8F278089AA00542BF7 /* MagnifierRect.swift in Sources */,
 				C6EB21E4267FAF6000671861 /* Charts.swift in Sources */,
 				C6C41965269B68C30050DD1C /* SectionView.swift in Sources */,
 				C6EB21E6267FAF6000671861 /* CurrencyModel.swift in Sources */,

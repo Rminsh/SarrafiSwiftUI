@@ -18,10 +18,7 @@ struct SymbolDetailView: View {
     var body: some View {
         
         ZStack {
-            #if os(iOS)
-            Color("BackgroundColor")
-                .edgesIgnoringSafeArea(.all)
-            #elseif os(macOS)
+            #if os(macOS)
             if colorScheme == .light {
                 Color(nsColor: NSColor.controlBackgroundColor)
                     .edgesIgnoringSafeArea(.all)
@@ -98,17 +95,8 @@ struct SymbolDetailView: View {
                                 Spacer()
                                 
                                 if let chartsData = viewModel.currentChartsData {
-                                    LineView(
-                                        data: chartsData,
-                                        style: ChartStyle(
-                                            backgroundColor: Color.clear,
-                                            accentColor: Color.blue,
-                                            gradientColor: GradientColor.init(start: Color.blue, end: Color.purple),
-                                            textColor: Color.primary,
-                                            legendTextColor: Color.gray,
-                                            dropShadowColor: Color.gray
-                                        )
-                                    )
+                                    ZStack {}
+                                        .frame(height: 200)
                                 }
                             }
                         }
@@ -164,7 +152,7 @@ struct SymbolDetailView: View {
                     }
                     .padding()
                     #if os(iOS)
-                    .background(Color("SecondBackgroundColor"))
+                    .background(.thinMaterial)
                     #elseif os(macOS)
                     .background(VisualEffectBlur(material: .sidebar, blendingMode: .behindWindow))
                     #endif
@@ -181,7 +169,7 @@ struct SymbolDetailView: View {
                             .frame(maxWidth: .infinity)
                             .padding()
                             #if os(iOS)
-                            .background(Color("SecondBackgroundColor"))
+                            .background(.thinMaterial)
                             #elseif os(macOS)
                             .background(VisualEffectBlur(material: .sidebar, blendingMode: .behindWindow))
                             #endif
@@ -195,7 +183,7 @@ struct SymbolDetailView: View {
                             .frame(maxWidth: .infinity)
                             .padding()
                             #if os(iOS)
-                            .background(Color("SecondBackgroundColor"))
+                            .background(.thinMaterial)
                             #elseif os(macOS)
                             .background(VisualEffectBlur(material: .sidebar, blendingMode: .behindWindow))
                             #endif

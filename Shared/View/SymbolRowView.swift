@@ -97,7 +97,6 @@ struct SymbolRowView: View {
         .foregroundColor(.white)
         .background(SymbolBackground(status: currency.status))
         .cornerRadius(5)
-        .padding(.vertical, 2)
     }
 }
 

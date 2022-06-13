@@ -19,8 +19,10 @@ class SymbolListViewModel: ObservableObject {
     @Published var searchText: String = ""
     
     func fetchList(type: GlobalCurrencyType) async {
-        hasError = false
-        isLoading = true
+        DispatchQueue.main.async {
+            self.hasError = false
+            self.isLoading = true
+        }
         do {
             let response = try await currencyProvider.fetchData()
             DispatchQueue.main.async { [self] in

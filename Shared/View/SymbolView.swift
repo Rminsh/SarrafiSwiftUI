@@ -25,9 +25,6 @@ struct SymbolView: View {
     var body: some View {
         ZStack {
             #if os(iOS)
-            Color("BackgroundColor")
-                .edgesIgnoringSafeArea(.all)
-            
             SymbolListView()
                 .environmentObject(viewModel)
                 .overlay {

@@ -15,7 +15,7 @@ struct ProgressBar: View {
         ZStack {
             Circle()
                 .stroke(lineWidth: 5.0)
-                .foregroundColor(Color("BackgroundColor"))
+                .foregroundColor(.primary.opacity(0.15))
             
             Circle()
                 .trim(from: 0.0, to: CGFloat(min(abs(self.progress) > 0.01 ? abs(self.progress) : 0.01 , 1.0)))
