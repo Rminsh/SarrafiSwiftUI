@@ -92,11 +92,10 @@ struct SymbolRowView: View {
                 }
             }
         }
-        .padding(.horizontal)
-        .padding(.vertical, 10)
+        .padding()
         .foregroundColor(.white)
         .background(SymbolBackground(status: currency.status))
-        .cornerRadius(5)
+        .cornerRadius(20, antialiased: true)
     }
 }
 
@@ -123,7 +122,6 @@ struct SymbolRowView_Previews: PreviewProvider {
         
         Group {
             SymbolRowView(currency: currency)
-
         }
         .previewLayout(.fixed(width: 450, height: 120))
     }
