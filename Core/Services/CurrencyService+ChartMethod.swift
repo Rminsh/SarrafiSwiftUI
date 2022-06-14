@@ -38,28 +38,25 @@ extension CurrencyService {
         do {
             let chart = try JSONDecoder().decode(ChartStruct.self, from: data)
             
-            let chart_Day            : ChartItem?
-            let chart_Month          : ChartItem?
-            let chart_ThreeMonths    : ChartItem?
-            let chart_SixMonths      : ChartItem?
-            let chart_Summary        : ChartItem?
+            let chart_Day            : [NormalTable]?
+            let chart_Month          : [NormalTable]?
+            let chart_ThreeMonths    : [NormalTable]?
+            let chart_SixMonths      : [NormalTable]?
+            let chart_Summary        : [NormalTable]?
             
-            // TODO: Today Chart has slow performance on UI
             // Get Today chart
-            chart_Day = .init(dates: [], prices: [])
-            /* for item in decoder.today_table.reversed() {
-             let price = Double(item.price.replacingOccurrences(of: ",", with: "", options: .literal, range: nil))
-             self.dateDaily.append(item.time)
-             self.pricesDaily.append(price!)
-             }*/
+            var tempChartDay = [NormalTable]()
+            for item in chart.today_table.reversed() {
+                let price = Double(item.price.replacingOccurrences(of: ",", with: "", options: .literal, range: nil))
+                tempChartDay.append(NormalTable(jdate: item.time, value: price ?? 0))
+            }
+            chart_Day = tempChartDay
             
             // Get Monthly Chart
             let chart_1 = "[" + chart.chart_1.replaceFirst(of: ".$", with: "") + "]"
             if let chart_1_data = chart_1.data(using: .utf8),
                let chart_1_table = try? JSONDecoder().decode([NormalTable].self, from: chart_1_data) {
-                let dates = chart_1_table.map { String($0.jdate.suffix(5)) }
-                let prices = chart_1_table.map(\.value)
-                chart_Month = ChartItem(dates: dates, prices: prices)
+                chart_Month = chart_1_table
             } else {
                 chart_Month = nil
             }
@@ -68,9 +65,7 @@ extension CurrencyService {
             let chart_3 = "[" + chart.chart_3.replaceFirst(of: ".$", with: "") + "]"
             if let chart_3_data = chart_3.data(using: .utf8),
                let chart_3_table = try? JSONDecoder().decode([NormalTable].self, from: chart_3_data) {
-                let dates = chart_3_table.map { String($0.jdate.suffix(5)) }
-                let prices = chart_3_table.map(\.value)
-                chart_ThreeMonths = ChartItem(dates: dates, prices: prices)
+                chart_ThreeMonths = chart_3_table
             } else {
                 chart_ThreeMonths = nil
             }
@@ -79,9 +74,7 @@ extension CurrencyService {
             let chart_6 = "[" + chart.chart_6.replaceFirst(of: ".$", with: "") + "]"
             if let chart_6_data = chart_6.data(using: .utf8),
                let chart_6_table = try? JSONDecoder().decode([NormalTable].self, from: chart_6_data) {
-                let dates = chart_6_table.map { String($0.jdate.suffix(5)) }
-                let prices = chart_6_table.map(\.value)
-                chart_SixMonths = ChartItem(dates: dates, prices: prices)
+                chart_SixMonths = chart_6_table
             } else {
                 chart_SixMonths = nil
             }
@@ -90,9 +83,7 @@ extension CurrencyService {
             let chart_summary = "[" + chart.chart_summary + "]"
             if let chart_summary_data = chart_summary.data(using: .utf8),
                let chart_summary_table = try? JSONDecoder().decode([NormalTable].self, from: chart_summary_data) {
-                let dates = chart_summary_table.map { String($0.jdate.suffix(5)) }
-                let prices = chart_summary_table.map(\.value)
-                chart_Summary = ChartItem(dates: dates, prices: prices)
+                chart_Summary = chart_summary_table
             } else {
                 chart_Summary = nil
             }

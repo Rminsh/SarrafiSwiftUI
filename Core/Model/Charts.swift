@@ -19,14 +19,14 @@ enum ChartType: String, CaseIterable, Identifiable {
 }
 
 struct Charts {
-	let day			: ChartItem
-	let month		: ChartItem
-	let threeMonths	: ChartItem
-	let sixMonths	: ChartItem
-	let summary		: ChartItem
+	let day			: [NormalTable]
+	let month		: [NormalTable]
+	let threeMonths	: [NormalTable]
+	let sixMonths	: [NormalTable]
+	let summary		: [NormalTable]
 }
 
 struct ChartItem {
-	let dates: [String]
-	let prices: [Double]
+	let date: String
+	let price: Double
 }

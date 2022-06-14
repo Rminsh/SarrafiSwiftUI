@@ -12,7 +12,7 @@ class SymbolDetailsViewModel: ObservableObject {
     var currencyProvider: CurrencyService = .shared
     
     @Published var chartsObject: Charts? = nil
-    @Published var currentChartsData: [Double]? = nil
+    @Published var currentChartsData: [NormalTable]? = nil
     @Published var selectedChart = ChartType.month
     
     @Published var isLoading = false
@@ -57,15 +57,15 @@ class SymbolDetailsViewModel: ObservableObject {
     func loadChart() {
         switch selectedChart {
         case .day:
-            currentChartsData = chartsObject?.month.prices
+            currentChartsData = chartsObject?.day
         case .month:
-            currentChartsData = chartsObject?.month.prices
+            currentChartsData = chartsObject?.month
         case .threeMonths:
-            currentChartsData = chartsObject?.threeMonths.prices
+            currentChartsData = chartsObject?.threeMonths
         case .sixMonths:
-            currentChartsData = chartsObject?.sixMonths.prices
+            currentChartsData = chartsObject?.sixMonths
         case .summery:
-            currentChartsData = chartsObject?.summary.prices
+            currentChartsData = chartsObject?.summary
         }
     }
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C60763B2278042340018D758 /* SymbolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60763B1278042340018D758 /* SymbolDetailsViewModel.swift */; };
 		C60763B3278042340018D758 /* SymbolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60763B1278042340018D758 /* SymbolDetailsViewModel.swift */; };
-		C624263E26A173B50064E7CD /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624263C26A173B10064E7CD /* VisualEffectBlur.swift */; };
 		C624264126A17EAD0064E7CD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624264026A17EAD0064E7CD /* Date+Extensions.swift */; };
 		C624264226A17EAD0064E7CD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624264026A17EAD0064E7CD /* Date+Extensions.swift */; };
 		C624264426A190BA0064E7CD /* CurrencyService+ChartMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624264326A190BA0064E7CD /* CurrencyService+ChartMethod.swift */; };
@@ -77,7 +76,6 @@
 
 /* Begin PBXFileReference section */
 		C60763B1278042340018D758 /* SymbolDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetailsViewModel.swift; sourceTree = "<group>"; };
-		C624263C26A173B10064E7CD /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		C624264026A17EAD0064E7CD /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		C624264326A190BA0064E7CD /* CurrencyService+ChartMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrencyService+ChartMethod.swift"; sourceTree = "<group>"; };
 		C6417075277C55F9003375C4 /* CurrencyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableView.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 		C624263B26A1738E0064E7CD /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				C664553B2772694C005816CA /* Components */,
 				C664553A2772690F005816CA /* Resources */,
 				C652CAD62773550D002CF56F /* Views */,
 			);
@@ -248,14 +245,6 @@
 				C6D164FE26A216CE00EFC825 /* Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		C664553B2772694C005816CA /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				C624263C26A173B10064E7CD /* VisualEffectBlur.swift */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		C664553C27726954005816CA /* Resources */ = {
@@ -528,7 +517,6 @@
 				C6EB21E4267FAF6000671861 /* Charts.swift in Sources */,
 				C6C41965269B68C30050DD1C /* SectionView.swift in Sources */,
 				C6EB21E6267FAF6000671861 /* CurrencyModel.swift in Sources */,
-				C624263E26A173B50064E7CD /* VisualEffectBlur.swift in Sources */,
 				C6EB21DF267FA7CB00671861 /* Constants.swift in Sources */,
 				C652CAD827735519002CF56F /* DisplayModePicker.swift in Sources */,
 				C653A76F267B3AA50043E4BB /* Sidebar.swift in Sources */,
@@ -696,7 +684,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -734,7 +722,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -775,7 +763,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.Sarrafi;
 				PRODUCT_NAME = Sarrafi;
@@ -809,7 +797,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.Sarrafi;
 				PRODUCT_NAME = Sarrafi;

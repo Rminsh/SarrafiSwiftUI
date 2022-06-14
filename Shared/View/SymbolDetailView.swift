@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Charts
 
 struct SymbolDetailView: View {
     let currency: CurrencyModel
@@ -16,195 +17,181 @@ struct SymbolDetailView: View {
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
-        
-        ZStack {
-            #if os(macOS)
-            if colorScheme == .light {
-                Color(nsColor: NSColor.controlBackgroundColor)
-                    .edgesIgnoringSafeArea(.all)
-            }
-            #endif
-            
-            ScrollView {
-                VStack(spacing: 10) {
-                    #if os(macOS)
-                    // MARK: - Symbol title (Only for macOS)
-                    Spacer()
-                    Text(currency.name)
-                        .customFont(name: "Shabnam", style: .largeTitle, weight: .medium)
-                    #endif
-                    
-                    VStack(spacing: 0) {
-                        // MARK: - Symbol price
-                        HStack(spacing: 1) {
-                            Text(currency.currentPrice.formatted(FloatingPointFormatStyle()))
-                            Text(LocalizedStringKey(currency.toCurrency.rawValue))
-                        }
-                        .customFont(name: "Shabnam", style: .largeTitle, weight: .medium)
-                        .dynamicTypeSize(.xSmall ... .medium)
-                        
-                        // MARK: - Last update of symbol
-                        HStack(spacing: 2) {
-                            Text("Last update")
-                            Text(currency.globalTime.timeAgoDisplay())
-                        }
-                        .customFont(name: "Shabnam", style: .subheadline, weight: .light)
-                        .dynamicTypeSize(.xSmall ... .small)
+        ScrollView {
+            VStack(spacing: 10) {
+                #if os(macOS)
+                // MARK: - Symbol title (Only for macOS)
+                Spacer()
+                Text(currency.name)
+                    .customFont(name: "Shabnam", style: .largeTitle, weight: .medium)
+                #endif
+                
+                VStack(spacing: 0) {
+                    // MARK: - Symbol price
+                    HStack(spacing: 1) {
+                        Text(currency.currentPrice.formatted(FloatingPointFormatStyle()))
+                        Text(LocalizedStringKey(currency.toCurrency.rawValue))
                     }
-                    .padding()
+                    .customFont(name: "Shabnam", style: .largeTitle, weight: .medium)
+                    .dynamicTypeSize(.xSmall ... .medium)
                     
-                    // MARK: - Chart
-                    ZStack {
-                        if viewModel.isLoading {
-                            ProgressView()
-                        } else if viewModel.hasError {
-                            VStack {
-                                Text(viewModel.error?.errorDescription ?? "")
-                                    .customFont(name: "Shabnam", style: .body)
-                                    .foregroundColor(.secondary)
-                                    .multilineTextAlignment(.center)
-                                    .textSelection(.disabled)
-                                
-                                Button(action: {
-                                    Task.init() {
-                                        await viewModel.fetchChart(currency)
-                                    }
-                                }) {
-                                    Text("Try_again")
-                                        .customFont(name: "Shabnam", style: .body)
-                                        .textSelection(.disabled)
-                                }
-                                .buttonStyle(.bordered)
-                            }
-                            .padding()
-                        } else {
-                            VStack {
-                                Picker("", selection: $viewModel.selectedChart) {
-                                    ForEach(ChartType.allCases) {
-                                        Text(LocalizedStringKey($0.rawValue))
-                                            .customFont(name: "Shabnam", style: .body)
-                                            .minimumScaleFactor(0.4)
-                                            .tag($0)
-                                    }
-                                }
-                                .pickerStyle(.segmented)
-                                .onChange(of: viewModel.selectedChart) { _ in
-                                    viewModel.loadChart()
-                                }
-                                
-                                Spacer()
-                                
-                                if let chartsData = viewModel.currentChartsData {
-                                    ZStack {}
-                                        .frame(height: 200)
-                                }
-                            }
-                        }
+                    // MARK: - Last update of symbol
+                    HStack(spacing: 2) {
+                        Text("Last update")
+                        Text(currency.globalTime.timeAgoDisplay())
                     }
-                    .padding(.horizontal)
-                    .frame(height: 340)
-                    
-                    // MARK: - Price Change
-                    HStack {
-                        VStack(alignment: .leading, spacing: 10) {
-                            Text("Price Change")
-                                .customFont(name: "Shabnam", style: .subheadline, weight: .light)
-                                
-                            if currency.status != .stable {
-                                HStack(spacing: 2) {
-                                    Text(currency.priceChange.formatted(FloatingPointFormatStyle()))
-                                    Text(LocalizedStringKey(currency.toCurrency.rawValue))
-                                    Text(LocalizedStringKey(currency.status.rawValue))
-                                }
-                                .customFont(name: "Shabnam", style: .headline, weight: .medium)
-                                .foregroundColor(viewModel.colorStatus(status: currency.status))
-                            } else {
-                                Text("Without change")
-                                    .customFont(name: "Shabnam", style: .headline, weight: .medium)
-                            }
-                        }
-                        .dynamicTypeSize(.xSmall ... .small)
-                        
-                        Spacer()
-                        
-                        switch currency.status {
-                        case .up:
-                            ProgressBar(
-                                progress: Float(currency.percentChange)/100,
-                                title: "+\(String(format: "%.2f", currency.percentChange))%"
-                            )
-                            .frame(maxWidth: 70, maxHeight: 70)
-                            
-                        case .down:
-                            ProgressBar(
-                                progress: Float(-currency.percentChange)/100,
-                                title: "-\(String(format: "%.2f", currency.percentChange))%"
-                            )
-                            .frame(maxWidth: 70, maxHeight: 70)
-                            
-                        case .stable:
-                            ProgressBar(
-                                progress: Float(currency.percentChange)/100,
-                                title: "\(String(format: "%.2f", currency.percentChange))%"
-                            )
-                            .frame(maxWidth: 70, maxHeight: 70)
-                        }
-                    }
-                    .padding()
-                    #if os(iOS)
-                    .background(.thinMaterial)
-                    #elseif os(macOS)
-                    .background(VisualEffectBlur(material: .sidebar, blendingMode: .behindWindow))
-                    #endif
-                    .cornerRadius(8)
-                    .padding(.horizontal)
-                    
-                    // MARK: - Most and least price of the day
-                    HStack {
-                        PriceChangeView(
-                            status: .up,
-                            price: currency.priceUp,
-                            toCurrency: currency.toCurrency.rawValue
-                        )
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            #if os(iOS)
-                            .background(.thinMaterial)
-                            #elseif os(macOS)
-                            .background(VisualEffectBlur(material: .sidebar, blendingMode: .behindWindow))
-                            #endif
-                            .cornerRadius(8)
-                        
-                        PriceChangeView(
-                            status: .down,
-                            price: currency.priceDown,
-                            toCurrency: currency.toCurrency.rawValue
-                        )
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            #if os(iOS)
-                            .background(.thinMaterial)
-                            #elseif os(macOS)
-                            .background(VisualEffectBlur(material: .sidebar, blendingMode: .behindWindow))
-                            #endif
-                            .cornerRadius(8)
-                            
-                    }
-                    .padding(.horizontal)
+                    .customFont(name: "Shabnam", style: .subheadline, weight: .light)
+                    .dynamicTypeSize(.xSmall ... .small)
                 }
+                .padding()
+                
+                // MARK: - Chart
+                ZStack {
+                    if viewModel.isLoading {
+                        ProgressView()
+                    } else if viewModel.hasError {
+                        VStack {
+                            Text(viewModel.error?.errorDescription ?? "")
+                                .customFont(name: "Shabnam", style: .body)
+                                .foregroundColor(.secondary)
+                                .multilineTextAlignment(.center)
+                                .textSelection(.disabled)
+                            
+                            Button(action: {
+                                Task.init() {
+                                    await viewModel.fetchChart(currency)
+                                }
+                            }) {
+                                Text("Try_again")
+                                    .customFont(name: "Shabnam", style: .body)
+                                    .textSelection(.disabled)
+                            }
+                            .buttonStyle(.bordered)
+                        }
+                        .padding()
+                    } else {
+                        VStack {
+                            Picker("", selection: $viewModel.selectedChart) {
+                                ForEach(ChartType.allCases) {
+                                    Text(LocalizedStringKey($0.rawValue))
+                                        .customFont(name: "Shabnam", style: .body)
+                                        .minimumScaleFactor(0.4)
+                                        .tag($0)
+                                }
+                            }
+                            .pickerStyle(.segmented)
+                            .onChange(of: viewModel.selectedChart) { _ in
+                                viewModel.loadChart()
+                            }
+                            
+                            Spacer()
+                            
+                            if let chartsData = viewModel.currentChartsData {
+                                Chart(chartsData, id: \.jdate) { data in
+                                    LineMark(
+                                        x: .value("Date", data.jdate),
+                                        y: .value("Price", data.value)
+                                    )
+                                    .interpolationMethod(.catmullRom)
+                                }
+                            }
+                        }
+                    }
+                }
+                .padding(.horizontal)
+                .frame(height: 340)
+                
+                // MARK: - Price Change
+                HStack {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("Price Change")
+                            .customFont(name: "Shabnam", style: .subheadline, weight: .light)
+                            
+                        if currency.status != .stable {
+                            HStack(spacing: 2) {
+                                Text(currency.priceChange.formatted(FloatingPointFormatStyle()))
+                                Text(LocalizedStringKey(currency.toCurrency.rawValue))
+                                Text(LocalizedStringKey(currency.status.rawValue))
+                            }
+                            .customFont(name: "Shabnam", style: .headline, weight: .medium)
+                            .foregroundColor(viewModel.colorStatus(status: currency.status))
+                        } else {
+                            Text("Without change")
+                                .customFont(name: "Shabnam", style: .headline, weight: .medium)
+                        }
+                    }
+                    .dynamicTypeSize(.xSmall ... .small)
+                    
+                    Spacer()
+                    
+                    switch currency.status {
+                    case .up:
+                        ProgressBar(
+                            progress: Float(currency.percentChange)/100,
+                            title: "+\(String(format: "%.2f", currency.percentChange))%"
+                        )
+                        .frame(maxWidth: 70, maxHeight: 70)
+                        
+                    case .down:
+                        ProgressBar(
+                            progress: Float(-currency.percentChange)/100,
+                            title: "-\(String(format: "%.2f", currency.percentChange))%"
+                        )
+                        .frame(maxWidth: 70, maxHeight: 70)
+                        
+                    case .stable:
+                        ProgressBar(
+                            progress: Float(currency.percentChange)/100,
+                            title: "\(String(format: "%.2f", currency.percentChange))%"
+                        )
+                        .frame(maxWidth: 70, maxHeight: 70)
+                    }
+                }
+                .padding()
+                .background(.ultraThickMaterial)
+                .cornerRadius(8)
+                .padding(.horizontal)
+                .shadow(color: .primary,radius: 0.25)
+                
+                // MARK: - Most and least price of the day
+                HStack {
+                    PriceChangeView(
+                        status: .up,
+                        price: currency.priceUp,
+                        toCurrency: currency.toCurrency.rawValue
+                    )
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(.ultraThickMaterial)
+                        .cornerRadius(8)
+                        .shadow(color: .primary,radius: 0.25)
+                    
+                    PriceChangeView(
+                        status: .down,
+                        price: currency.priceDown,
+                        toCurrency: currency.toCurrency.rawValue
+                    )
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(.ultraThickMaterial)
+                        .cornerRadius(8)
+                        .shadow(color: .primary,radius: 0.25)
+                        
+                }
+                .padding(.horizontal)
             }
-            .refreshable {
-                await viewModel.fetchChart(currency)
-            }
-            .task {
-                await viewModel.fetchChart(currency)
-            }
-            .textSelection(.enabled)
-            .foregroundStyle(.primary)
-            #if os(iOS)
-            .navigationTitle(currency.name)
-            #endif
         }
+        .refreshable {
+            await viewModel.fetchChart(currency)
+        }
+        .task {
+            await viewModel.fetchChart(currency)
+        }
+        .textSelection(.enabled)
+        .foregroundStyle(.primary)
+        #if os(iOS)
+        .navigationTitle(currency.name)
+        #endif
 
     }
 }
@@ -259,7 +246,6 @@ struct SymbolDetailView_Previews: PreviewProvider {
             NavigationView {
                 SymbolDetailView(currency: currency)
             }
-            .environment(\.colorScheme, .dark)
             .environment(\.locale, .init(identifier: "fa"))
             .environment(\.layoutDirection, .rightToLeft)
             
